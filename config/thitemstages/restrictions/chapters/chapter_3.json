@@ -1,0 +1,19 @@
+{
+  "Restriction Data": {
+    "stage": "chapter_3",
+    "itemList": ["twilightforest:shader"],
+    "tagList": ["im:chapter_3"]
+  },
+  "Settings": {
+    "advancedTooltips": "ADVANCED",
+    "itemTitle": "Unknown Item",
+    "pickupDelay": 15,
+    "hideInJEI": true,
+    "canPickup": false,
+    "containerListWhitelist": false,
+    "checkPlayerInventory": false,
+    "checkPlayerEquipment": true,
+    "usableItems": false,
+    "usableBlocks": false
+  }
+}

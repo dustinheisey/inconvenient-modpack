@@ -1,0 +1,71 @@
+{
+  "name": "Deserts Fauna",
+  "icon": "minecraft:cactus",
+  "category": "patchouli:bestiary",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": ""
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "cnb:lizard",
+      "scale": 0.75
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "cnb:cactem",
+      "scale": 0.75
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "za:vulture",
+      "scale": 0.75
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "za:scorpion",
+      "scale": 0.75
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "za:frilled_lizard",
+      "scale": 0.75
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "za:fennec_fox",
+      "scale": 0.75
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "za:cobra",
+      "scale": 0.75
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "za:chameleon",
+      "scale": 0.75
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "naturalist:zebra",
+      "scale": 0.75
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "naturalist:vulture",
+      "scale": 0.75
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "naturalist:snake",
+      "scale": 0.75
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "ppr:bactrian_camel",
+      "scale": 0.75
+    }
+  ]
+}

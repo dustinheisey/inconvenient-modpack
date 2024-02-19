@@ -1,0 +1,51 @@
+{
+  "name": "Jungles Fauna",
+  "icon": "minecraft:vine",
+  "category": "patchouli:bestiary",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": ""
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "za:jaguar",
+      "scale": 0.75
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "za:golden_tamarin",
+      "scale": 0.75
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "naturalist:coral_snake",
+      "scale": 0.75
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "ecofriendly:clouded_leopard_ym",
+      "scale": 0.75
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "ppr:sumatran_orangutan",
+      "scale": 0.75
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "ppr:blue_macaw",
+      "scale": 0.75
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "crittersandcompanions:leaf_insect",
+      "scale": 0.75
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "ppr:bengal_tiger",
+      "scale": 0.75
+    }
+  ]
+}

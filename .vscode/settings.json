@@ -1,0 +1,58 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        ".husky": false,
+        "**/.DS_Store": true,
+        "downloads": true,
+        ".prettierignore": true,
+        "package-lock.json": true,
+        "lightspeed-cache": true,
+        "mods": true,
+        "XaeroWaypoints": true,
+        "XaeroWaypoints_BACKUP032021": true,
+        "XaeroWorldMap": true,
+        ".curseclient": true,
+        "servers.dat": true,
+        "servers.dat_old": true,
+        "minecraftinstance.json": true,
+        "patchouli_data.json": true,
+        "usercache.json": true,
+        "usernamecache.json": true,
+        "rhino.local.properties": true,
+        "options.txt": true,
+        "node_modules": false,
+        ".vscode/probe.*": true,
+        "kubejs/probe": true,
+        "kubejs/jsconfig.json": true,
+        "kubejs/assets/ponderjs_generated": true,
+        "logs/*.log.gz": true,
+
+        ".gitignore": true,
+        "package.json": false,
+        "crash-reports": true,
+        "resourcepacks": true,
+        "shaderpacks": true,
+        "screenshots": false,
+        ".commitlintrc.json": true,
+        "xaerominimap.txt": true,
+        "xaeroworldmap.txt": true,
+         "kubejs/README.txt": true,
+        "kubejs/defaultoptions.txt": true,
+        "kubejs/config": true,
+        "logs/hordes.log": true
+    },
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/lang/*.json"
+            ],
+            "url": "./.vscode/probe.lang-schema.json"
+        },
+        {
+            "fileMatch": [
+                "/probe/docs/*.json"
+            ],
+            "url": "./.vscode/probe.doc-schema.json"
+        }
+    ]
+}

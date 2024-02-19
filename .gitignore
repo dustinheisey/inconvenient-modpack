@@ -1,0 +1,15 @@
+/logs
+/saves
+/crash-reports
+/lightspeed-cache
+/XaeroWaypoints
+/XaeroWorldMap
+.DS_Store
+lightspeed-chache/**/*
+options.txt
+usercache.json
+minecraftinstance.json
+xaerominimap_entities.json
+/config/jei/world/**/*
+/node_modules
+package-lock.json
