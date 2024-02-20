@@ -1,7 +1,7 @@
 {
-  "name": "",
-  "icon": "endrem:cryptic_eye",
-  "category": "patchouli:colds",
+  "name": "Ocean Acidification",
+  "icon": "",
+  "category": "patchouli:disasters",
   "pages": [
     {
       "type": "patchouli:text",
