@@ -1,7 +1,27 @@
 {
   "Restriction Data": {
     "stage": "chapter_5_1",
-    "tagList": ["im:chapter_5_1"]
+    "tagList": ["im:chapter_5_1"],
+    "itemList": [
+      {
+        "item": "patchouli:guide_book",
+        "nbt": {
+          "patchouli:book": "productivebees:guide"
+        }
+      },
+      {
+        "item": "gateways:gate_pearl",
+        "nbt": {"gateway": "gateways:small_bumblezone_gateway"}
+      },
+      {
+        "item": "gateways:gate_pearl",
+        "nbt": {"gateway": "gateways:medium_bumblezone_gateway"}
+      },
+      {
+        "item": "gateways:gate_pearl",
+        "nbt": {"gateway": "gateways:large_bumblezone_gateway"}
+      }
+    ]
   },
   "Settings": {
     "advancedTooltips": "ADVANCED",

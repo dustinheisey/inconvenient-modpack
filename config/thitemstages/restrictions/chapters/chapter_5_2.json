@@ -1,7 +1,15 @@
 {
   "Restriction Data": {
     "stage": "chapter_5_2",
-    "tagList": ["im:chapter_5_2"]
+    "tagList": ["im:chapter_5_2"],
+    "itemList": [
+      {
+        "item": "patchouli:guide_book",
+        "nbt": {
+          "patchouli:book": "pneumaticcraft:book"
+        }
+      }
+    ]
   },
   "Settings": {
     "advancedTooltips": "ADVANCED",

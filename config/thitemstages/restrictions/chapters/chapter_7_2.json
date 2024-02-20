@@ -1,7 +1,21 @@
 {
   "Restriction Data": {
     "stage": "chapter_7_2",
-    "tagList": ["im:chapter_7_2"]
+    "tagList": ["im:chapter_7_2"],
+    "itemList": [
+      {
+        "item": "patchouli:guide_book",
+        "nbt": {
+          "patchouli:book": "patchouli:employee_handbook"
+        }
+      },
+      {
+        "item": "patchouli:guide_book",
+        "nbt": {
+          "patchouli:book": "patchouli:project_adapt"
+        }
+      }
+    ]
   },
   "Settings": {
     "advancedTooltips": "ADVANCED",
