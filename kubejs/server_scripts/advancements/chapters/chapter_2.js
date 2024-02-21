@@ -2,40 +2,40 @@ onEvent('server.datapack.high_priority', event => {
   addAdvancements(event, 'chapter_2', {
     icon: 'naturesaura:gold_leaf',
     item: 'cold_sweat:hearth',
-    title: 'Chapter 2: Questions',
-    description: 'Answer some questions',
+    title: 'Chapter 2: Lingering Questions',
+    description: 'Who am I? What Happened Here? Why am I here?',
     background: 'occultism:textures/block/otherstone.png',
     children: [
       {
         item: 'minecraft:iron_hoe',
-        title: 'Iron Hoe',
-        description: 'Create an iron hoe',
+        title: "Plow's Promise",
+        description: 'Craft an iron hoe',
         children: [
           {
             item: 'astikorcarts:plow',
-            title: 'Plow',
+            title: 'Promise Fufilled',
             description: 'Craft a plow',
           },
         ],
       },
       {
         item: 'rankine:wooden_gold_pan',
-        title: 'Wooden Gold Pan',
+        title: "Sifter's Start",
         description: 'Craft a wooden gold pan',
         children: [
           {
             item: 'rankine:jute',
-            title: 'Jute',
+            title: 'Weave of The Wild',
             description: 'Grow some jute',
             children: [
               {
                 item: 'tconstruct:pattern',
-                title: 'Pattern',
+                title: 'First Draft',
                 description: 'Craft a pattern',
                 children: [
                   {
                     item: 'tconstruct:tinker_station',
-                    title: 'Tinker Station',
+                    title: 'Workbench Wonders',
                     description: 'Craft a tinker station',
                   },
                 ],
@@ -44,17 +44,17 @@ onEvent('server.datapack.high_priority', event => {
           },
           {
             item: 'rankine:compost',
-            title: 'Compost',
+            title: 'Cycle of Life',
             description: 'Collect some compost',
             children: [
               {
                 item: 'farmersdelight:organic_compost',
-                title: 'Organic Compost',
+                title: 'Bounty of Decay',
                 description: 'Craft some organic compost',
                 children: [
                   {
                     item: 'farmersdelight:rich_soil_farmland',
-                    title: 'Rich Soil Farmland',
+                    title: 'Fertile Grounds',
                     description: 'Develop some rich farmland',
                   },
                 ],
@@ -63,74 +63,81 @@ onEvent('server.datapack.high_priority', event => {
           },
           {
             item: 'occultism:datura',
-            title: 'Demon Dream Fruit',
+            title: 'Fruit of Nightmares',
             description: 'Grow some demon dream fruit',
             children: [
               {
                 item: 'occultism:burnt_otherstone',
-                title: 'Burnt Otherstone',
+                title: 'Burnt Into Memory',
                 description: 'Create some burnt otherstone',
                 children: [
                   {
-                    item: 'tconstruct:seared_bricks',
-                    title: 'Seared Bricks',
-                    description: 'Craft some seared bricks',
+                    item: 'tconstruct:seared_brick',
+                    title: 'Rekindling The Flames',
+                    description: 'Craft a seared brick',
                     children: [
                       {
                         item: 'tconstruct:seared_melter',
-                        title: 'Seared Melter',
+                        title: "Forge's Beginnings",
                         description: 'Craft a seared melter',
                         children: [
                           {
                             item: 'tconstruct:smeltery_controller',
-                            title: 'Smeltery Controller',
+                            title: 'Heart of the Forge',
                             description: 'Craft a smeltery controller',
                             children: [
                               {
                                 item: 'glass',
-                                title: 'Glass',
+                                title: 'Clarity in Sand',
                                 description: 'Melt sand and create some glass',
+                                children: [
+                                  {
+                                    item: 'kubejs:glass_tube',
+                                    title: 'Glass and Shadow',
+                                    description: 'Craft a slender glass tube',
+                                  },
+                                ],
                               },
                               {
                                 item: 'bucket',
-                                title: 'Bucket',
-                                description: 'Craft a bucket',
+                                title: 'Metallic Pour',
+                                description: 'Upgrade your bucket',
                               },
                               {
                                 item: 'tconstruct:ingot_cast',
-                                title: 'Ingot Cast',
+                                title: 'Casting Futures',
                                 description:
-                                  'Craft an ingot cast in your smeltery',
+                                  'Forge an ingot cast in your smeltery',
                                 frame: 'goal',
                                 children: [
                                   {
                                     item: 'tconstruct:amethyst_bronze_ingot',
-                                    title: 'Amethyst Bronze',
+                                    title: 'Mystic Metallurgy',
                                     description:
-                                      'Craft an amethyst bronze ingot',
+                                      'Forge an amethyst bronze ingot',
                                     children: [
                                       {
                                         item: 'hexerei:mixing_cauldron',
-                                        title: 'Mixing Cauldron',
+                                        title: "Cauldron's Call",
                                         description: 'Craft a mixing cauldron',
                                         frame: 'goal',
                                         children: [
                                           {
                                             item: 'hexerei:candle_dipper',
-                                            title: 'Candle Dipper',
+                                            title: "Dipper's Dance",
                                             description:
                                               'Craft a candle dipper',
                                             frame: 'goal',
                                             children: [
                                               {
                                                 item: 'blue_skies:bluebright_sapling',
-                                                title: 'Bluebright Sapling',
+                                                title: 'Whisper of Winter',
                                                 description:
-                                                  'Create a bluebright sapling',
+                                                  'Dip a sapling in molten amethyst bronze',
                                               },
                                               {
                                                 item: 'blue_skies:turquoise_stone',
-                                                title: 'Turquoise stone',
+                                                title: "Winter's Framework",
                                                 description:
                                                   'Create some turquoise stone',
                                                 frame: 'goal',
@@ -138,7 +145,7 @@ onEvent('server.datapack.high_priority', event => {
                                                   {
                                                     icon: 'blue_skies:everbright_portal',
                                                     id: 'everbright',
-                                                    title: 'Everbright',
+                                                    title: 'Winter Bound',
                                                     description:
                                                       'Construct and light a portal to Everbright, then enter',
                                                     frame: 'goal',
@@ -155,7 +162,8 @@ onEvent('server.datapack.high_priority', event => {
                                                     children: [
                                                       {
                                                         item: 'blue_skies:loot_bag_summoner',
-                                                        title: 'Summoner',
+                                                        title:
+                                                          'Silence of Summons',
                                                         parent: 'everbright',
                                                         description:
                                                           'Kill the Summoner',
@@ -163,45 +171,55 @@ onEvent('server.datapack.high_priority', event => {
                                                           {
                                                             item: 'totemic:medicine_bag',
                                                             title:
-                                                              'Medicine Bag',
+                                                              "Wanderer's Pouch",
                                                             description:
-                                                              'Collect a medicine bag from the summoner',
+                                                              'Collect a medicine bag from the Summoner',
                                                           },
                                                           {
                                                             item: 'malum:crude_scythe',
                                                             title:
-                                                              'Crude Scythe',
+                                                              'Soulful Harvest',
                                                             description:
-                                                              'Create some candles with the tallow',
+                                                              'Collect a crude scythe from the Summoner',
                                                             children: [
                                                               {
                                                                 item: 'malum:sacred_spirit',
                                                                 title:
-                                                                  'Sacred Spirit',
+                                                                  'Innocence Lost',
                                                                 description:
-                                                                  'Craft a fishing rod',
+                                                                  'Kill an innocent animal and reap their spirit',
                                                                 children: [
                                                                   {
                                                                     item: 'relics:researching_table',
                                                                     title:
-                                                                      'Research Table',
+                                                                      "Echo's of The Forgotten",
                                                                     description:
                                                                       'Craft an research table',
                                                                   },
                                                                 ],
                                                               },
                                                               {
-                                                                item: 'hexerei:tallow_bucket',
-                                                                title: 'Tallow',
+                                                                item: 'hexerei:animal_fat',
+                                                                title:
+                                                                  'Visceral Harvest',
                                                                 description:
-                                                                  'Make some tallow',
+                                                                  'Kill some animals in Everbright and collect their fat',
                                                                 children: [
                                                                   {
-                                                                    item: 'hexerei:candle',
+                                                                    item: 'hexerei:tallow_bucket',
                                                                     title:
-                                                                      'Candle',
+                                                                      'Waxen Concoction',
                                                                     description:
-                                                                      'Create some candles with the tallow',
+                                                                      'Make some tallow',
+                                                                    children: [
+                                                                      {
+                                                                        item: 'hexerei:candle',
+                                                                        title:
+                                                                          'First Flicker',
+                                                                        description:
+                                                                          'Create some candles with the tallow',
+                                                                      },
+                                                                    ],
                                                                   },
                                                                 ],
                                                               },
@@ -212,42 +230,40 @@ onEvent('server.datapack.high_priority', event => {
                                                       {
                                                         item: 'blue_skies:loot_bag_starlit_crusher',
                                                         title:
-                                                          'Starlit Crusher',
+                                                          'Silence of The Verdant',
                                                         parent: 'everbright',
                                                         description:
-                                                          'Kill the starlit crusher',
+                                                          'Kill the Starlit Crusher',
                                                         frame: 'goal',
                                                         children: [
                                                           {
                                                             item: 'malum:runewood_sapling',
                                                             title:
-                                                              'Runewood Sapling',
+                                                              'Roots of Renewal',
                                                             description:
-                                                              'Collect a runewood sapling from the starlit crusher',
+                                                              'Collect a runewood sapling from the Starlit Crusher',
                                                             children: [
                                                               {
                                                                 item: 'occultism:otherworld_ashes',
                                                                 title:
-                                                                  'Otherworld Ashes',
+                                                                  'Dust of Dimensions',
                                                                 description:
-                                                                  'Craft some otherworld ashes',
+                                                                  'Burn runewood in a spirit fire',
                                                                 children: [
                                                                   {
                                                                     item: 'occultism:chalk_white',
                                                                     title:
-                                                                      'Chalk',
+                                                                      'Boundry of The Beyond',
                                                                     description:
-                                                                      'Craft white chalk',
+                                                                      'Craft some white chalk',
                                                                     children: [
                                                                       {
                                                                         icon: 'gateways:gate_pearl',
                                                                         id: 'gateways',
                                                                         title:
-                                                                          'Aquatic Gateway',
+                                                                          'Veil of The Waters',
                                                                         description:
                                                                           'Open a portal between Everbright and The Overworld',
-                                                                        background:
-                                                                          'blue_skies:textures/block/stone/turquoise_stone.png',
                                                                         nbt: '{gateway:"gateways:aquatic_gate"}',
                                                                         frame:
                                                                           'challenge',
@@ -284,23 +300,23 @@ onEvent('server.datapack.high_priority', event => {
                                                           {
                                                             item: 'totemic:totem_whittling_knife',
                                                             title:
-                                                              'Totem Whittling Knife',
+                                                              'Mark of The Woods',
                                                             frame: 'goal',
                                                             description:
-                                                              'Collect a totem whittling knife from the starlit crusher',
+                                                              'Collect a totem whittling knife from the Starlit Crusher',
                                                             children: [
                                                               {
                                                                 item: 'totemic:cedar_sapling',
                                                                 title:
-                                                                  'Cedar Sapling',
+                                                                  "Cedar's Chorus",
                                                                 frame: 'goal',
                                                                 description:
-                                                                  'Create a cedar sapling',
+                                                                  'Transform a sapling into a cedar sapling',
                                                                 children: [
                                                                   {
                                                                     item: 'naturesaura:gold_fiber',
                                                                     title:
-                                                                      'Gold Fiber',
+                                                                      'Gilded Growth',
                                                                     description:
                                                                       'Apply brilliant fibers to tree leaves, and collect some gold fiber',
                                                                     frame:
@@ -309,7 +325,7 @@ onEvent('server.datapack.high_priority', event => {
                                                                       {
                                                                         item: 'naturesaura:wood_stand',
                                                                         title:
-                                                                          'Wood Stand',
+                                                                          'Sacred Scaffolds',
                                                                         description:
                                                                           'Craft multiple wooden stands',
                                                                         count: 4,
@@ -320,9 +336,9 @@ onEvent('server.datapack.high_priority', event => {
                                                                             {
                                                                               item: 'naturesaura:eye',
                                                                               title:
-                                                                                'Environmental Eye',
+                                                                                'Vision of The Verdant',
                                                                               description:
-                                                                                'Craft an environmental eye with a ritual of the forest',
+                                                                                "Conduct a ritual of the forest, and see through nature's eyes",
                                                                               frame:
                                                                                 'challenge',
                                                                               reward:
@@ -343,28 +359,28 @@ onEvent('server.datapack.high_priority', event => {
                                                         parent: 'everbright',
                                                         id: 'ocean',
                                                         title:
-                                                          'Heart of The Sea',
+                                                          'Ruins of The Deep',
                                                         description:
                                                           'Slay an elder guardian & collect its heart',
                                                       },
                                                       {
                                                         item: 'rankine:mercury',
-                                                        title: 'Mercury',
+                                                        title: "Mercury's Rise",
                                                         parent: 'everbright',
                                                         description:
-                                                          'Crush some pyrope ore and collect mercury',
+                                                          'Crush some pyrope ore, a poor form of cinnabar, and collect mercury',
                                                         children: [
                                                           {
                                                             item: 'cold_sweat:thermometer',
                                                             title:
-                                                              'Thermometer',
+                                                              "Mercury's Message",
                                                             description:
-                                                              'Forge a thermometer',
+                                                              'Fill a glass tube with mercury to create a thermometer',
                                                           },
                                                         ],
                                                       },
                                                       {
-                                                        title: 'Lost Page',
+                                                        title: 'Thawing Truth',
                                                         description:
                                                           'Find a page from a lost story',
                                                         parent: 'everbright',
@@ -383,27 +399,29 @@ onEvent('server.datapack.high_priority', event => {
                                                       {
                                                         item: 'rankine:steel_gold_pan',
                                                         title:
-                                                          'Falsite Gold Pan',
+                                                          "Sifter's Summit",
                                                         description:
                                                           'Upgrade your gold pan',
                                                         parent: 'everbright',
                                                         children: [
                                                           {
                                                             item: 'rankine:cotton',
-                                                            title: 'Cotton',
+                                                            title:
+                                                              'Cotton Continuum',
                                                             description:
                                                               'Grow some cotton',
                                                             children: [
                                                               {
                                                                 item: 'paragon_textiles:silk',
-                                                                title: 'Silk',
+                                                                title:
+                                                                  'Silken Start',
                                                                 description:
                                                                   'Craft some silk',
                                                                 children: [
                                                                   {
                                                                     item: 'fishing_rod',
                                                                     title:
-                                                                      'Fishing',
+                                                                      'Catch of The Day',
                                                                     description:
                                                                       'Craft a fishing rod',
                                                                   },
@@ -411,7 +429,7 @@ onEvent('server.datapack.high_priority', event => {
                                                                     icon: 'smallships:oak_cog',
                                                                     tag: 'smallships:cogs',
                                                                     title:
-                                                                      'Cog',
+                                                                      'Sails of Silk',
                                                                     description:
                                                                       'Upgrade a raft into a cog',
                                                                   },
@@ -420,14 +438,14 @@ onEvent('server.datapack.high_priority', event => {
                                                               {
                                                                 item: 'rankine:gun_cotton',
                                                                 title:
-                                                                  'Gun Cotton',
+                                                                  'Boom Blossom',
                                                                 description:
                                                                   'Craft some gun cotton',
                                                                 children: [
                                                                   {
                                                                     icon: 'totemic:tipi',
                                                                     title:
-                                                                      'Bed',
+                                                                      "Nomad's Nook",
                                                                     description:
                                                                       'Craft a better bed',
                                                                     tag: 'minecraft:beds',
@@ -435,7 +453,7 @@ onEvent('server.datapack.high_priority', event => {
                                                                   {
                                                                     item: 'totemic:drum',
                                                                     title:
-                                                                      'Drum',
+                                                                      'Beat of the Wilds',
                                                                     description:
                                                                       'Craft a drum',
                                                                   },
@@ -453,7 +471,7 @@ onEvent('server.datapack.high_priority', event => {
                                           },
                                           {
                                             item: 'blue_skies:zeal_lighter',
-                                            title: 'Zeal Lighter',
+                                            title: "Winter's Breath",
                                             description: 'Craft a zeal lighter',
                                             reward: 'im:dimensions/everbright',
                                           },
@@ -463,24 +481,24 @@ onEvent('server.datapack.high_priority', event => {
                                   },
                                   {
                                     item: 'rankine:pewter_ingot',
-                                    title: 'Pewter',
-                                    description: 'Craft a pewter ingot',
+                                    title: 'Feasts of The Forged',
+                                    description: 'Forge a pewter ingot',
                                     children: [
                                       {
                                         item: 'rankine:pewter_gold_pan',
-                                        title: 'Pewter Gold Pan',
+                                        title: "Sifter's Stride",
                                         description: 'Craft a better gold pan',
                                         children: [
                                           {
                                             item: 'kubejs:wheat',
-                                            title: 'Wheat',
+                                            title: 'Harvest Moon',
                                             description: 'Grow some wheat',
                                             children: [
                                               {
                                                 icon: 'strawgolem:straw_hat',
-                                                title: 'Straw Golem',
+                                                title: 'Flicker of Life',
                                                 description:
-                                                  'Create a straw golem with hay and a carved pumpkin',
+                                                  'Summon a straw golem with hay and a carved pumpkin',
                                                 criteria: {
                                                   example: {
                                                     trigger:
@@ -497,25 +515,27 @@ onEvent('server.datapack.high_priority', event => {
                                           },
                                           {
                                             item: 'paragon_textiles:flax_seeds',
-                                            title: 'Flax Seeds',
+                                            title: 'Seeds of The Artisan',
                                             description:
                                               'Find some flax seeds in the soil',
                                             children: [
                                               {
                                                 item: 'paragon_textiles:wicker',
-                                                title: 'Wicker',
+                                                title: 'Twist of Fate',
                                                 description:
                                                   'Collect some wicker',
                                                 children: [
                                                   {
                                                     item: 'paragon_textiles:basket',
-                                                    title: 'Basket',
+                                                    title:
+                                                      'Sustainable Storage',
                                                     description:
                                                       'Craft a basket',
                                                     children: [
                                                       {
                                                         item: 'paragon_textiles:basket_sturdy',
-                                                        title: 'Sturdy Basket',
+                                                        title:
+                                                          'Fortified Storage',
                                                         description:
                                                           'Reinforce your basket',
                                                       },
@@ -525,14 +545,14 @@ onEvent('server.datapack.high_priority', event => {
                                               },
                                               {
                                                 item: 'paragon_textiles:fabric_red',
-                                                title: 'Red Fabric',
+                                                title: 'Crimson Creations',
                                                 description:
                                                   'Dye your fabric red',
                                                 children: [
                                                   {
                                                     item: 'cold_sweat:sewing_table',
                                                     id: 'sewing_table',
-                                                    title: 'Sewing Table',
+                                                    title: 'Warmth Weaver',
                                                     description:
                                                       'Craft a sewing table and insulate your armor',
                                                   },
@@ -540,14 +560,14 @@ onEvent('server.datapack.high_priority', event => {
                                               },
                                               {
                                                 item: 'paragon_textiles:fabric_plain',
-                                                title: 'Plain Fabric',
+                                                title: 'Plain Potential',
                                                 description:
                                                   'Craft some plain fabric',
                                                 children: [
                                                   {
                                                     item: 'ecofriendly:recycled_carrier_bag_ym',
                                                     title:
-                                                      'Recyled Carrier Bag',
+                                                      'From Scraps to Straps',
                                                     description:
                                                       'Transform a plastic bag into a basic backpack',
                                                   },
@@ -559,17 +579,17 @@ onEvent('server.datapack.high_priority', event => {
                                       },
                                       {
                                         item: 'farmersdelight:stove',
-                                        title: 'Stove',
+                                        title: 'Culinary Canvas',
                                         description: 'Craft a stove',
                                         children: [
                                           {
                                             item: 'farmersdelight:cooking_pot',
-                                            title: 'Cooking Pot',
+                                            title: 'Boiling Point',
                                             description: 'Craft a cooking pot',
                                             children: [
                                               {
                                                 item: 'farmersdelight:rice_roll_medley_block',
-                                                title: 'Rice Roll Medley',
+                                                title: 'Seafood Symphony',
                                                 description:
                                                   'Make a fish feast',
                                               },
@@ -577,12 +597,12 @@ onEvent('server.datapack.high_priority', event => {
                                           },
                                           {
                                             item: 'farmersrespite:kettle',
-                                            title: 'Kettle',
+                                            title: 'Kettle Craft',
                                             description: 'Craft a kettle',
                                             children: [
                                               {
                                                 item: 'farmersrespite:coffee',
-                                                title: 'Coffee',
+                                                title: 'Grinds of Success',
                                                 description:
                                                   'Finally make a cup of coffee',
                                               },
@@ -594,24 +614,24 @@ onEvent('server.datapack.high_priority', event => {
                                   },
                                   {
                                     item: 'rankine:sterling_silver_ingot',
-                                    title: 'Sterling Silver',
+                                    title: 'Silver Streams',
                                     description:
                                       'Forge a sterling silver ingot',
                                     children: [
                                       {
                                         item: 'rankine:tree_tap',
-                                        title: 'Tree Tap',
+                                        title: 'Sticky Business',
                                         description: 'Craft a tree tap',
                                         children: [
                                           {
                                             item: 'kubejs:freezing_sap_bucket',
-                                            title: 'Freezing Sap',
+                                            title: 'Chilled to Brim',
                                             description:
                                               'Collect some freezing sap from a bluebright tree',
                                             children: [
                                               {
                                                 item: 'rankine:snowflake_obsidian',
-                                                title: 'Snowflake Obsidian',
+                                                title: 'Chilled to The Core',
                                                 description:
                                                   'Cast freezing sap on a piece of obsidian',
                                               },
@@ -619,7 +639,7 @@ onEvent('server.datapack.high_priority', event => {
                                           },
                                           {
                                             item: 'rankine:resin_bucket',
-                                            title: 'Resin',
+                                            title: 'Sticky Fingers',
                                             description:
                                               'Collect resin, a more convenient tanning fluid',
                                           },
