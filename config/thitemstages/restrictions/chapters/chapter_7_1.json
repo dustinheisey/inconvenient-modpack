@@ -8,7 +8,7 @@
         "nbt": {
           "patchouli:book": "patchouli:community_handbook"
         }
-      }
+      },
       {
         "item": "patchouli:guide_book",
         "nbt": {
