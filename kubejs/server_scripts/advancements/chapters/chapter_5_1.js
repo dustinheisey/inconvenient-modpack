@@ -2,7 +2,7 @@ onEvent('server.datapack.high_priority', event => {
   addAdvancements(event, 'chapter_5_1', {
     icon: 'honeycomb',
     item: 'botania:mana_spreader',
-    title: 'Chapter 5: Satisfaction',
+    title: 'Chapter 5: Path of Satisfaction',
     description: 'Feed the world',
     background: 'minecraft:textures/block/honeycomb_block.png',
     children: [

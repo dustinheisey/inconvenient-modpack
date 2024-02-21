@@ -2,7 +2,7 @@ onEvent('server.datapack.high_priority', event => {
   addAdvancements(event, 'chapter_4', {
     icon: 'create:brass_hand',
     item: 'create:cinder_flour',
-    title: 'Chapter 4: Answers',
+    title: 'Chapter 4: Inconvenient Truths',
     description: 'Understand what happened',
     background: 'chipped:textures/block/nether_bricks/nether_bricks_9.png',
     children: [

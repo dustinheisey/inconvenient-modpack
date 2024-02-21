@@ -2,7 +2,7 @@ onEvent('server.datapack.high_priority', event => {
   addAdvancements(event, 'chapter_5_2', {
     icon: 'immersiveengineering:wirecoil_copper',
     item: 'createaddition:alternator',
-    title: 'Chapter 5: Ambition',
+    title: 'Chapter 5: Path of Ambition',
     description: 'Start a business',
     background:
       'immersiveengineering:textures/block/stone_decoration/concrete_tile.png',

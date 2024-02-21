@@ -2,7 +2,7 @@ onEvent('server.datapack.high_priority', event => {
   addAdvancements(event, 'chapter_3', {
     icon: 'minecraft:spyglass',
     item: 'naturesaura:eye',
-    title: 'Chapter 3: Exploration',
+    title: 'Chapter 3: Searching For Secrets',
     description: 'Search for answers',
     background: 'undergarden:textures/block/depthrock.png',
     children: [
