@@ -4382,6 +4382,7 @@ onEvent('tags.items', event => {
       'kubejs:molten_sterling_silver_bucket',
       'kubejs:freezing_sap_bucket',
       'kubejs:everbright_token',
+      'kubejs:glass_tube',
     ],
     chapter_3: [
       'kubejs:molten_forgotten_metal_bucket',

@@ -94,9 +94,15 @@ onEvent('recipes', event => {
         output: 'pneumaticcraft:plastic',
       },
       {
+        fluid: 'tconstruct:molten_glass',
+        amount: 90,
+        cast: 'tconstruct:ingot_cast',
+        output: 'kubejs:glass_tube',
+      },
+      {
         fluid: 'rankine:liquid_mercury',
         amount: 810,
-        cast: 'blue_skies:aquite',
+        cast: 'kubejs:glass_tube',
         output: 'cold_sweat:thermometer',
       },
       {

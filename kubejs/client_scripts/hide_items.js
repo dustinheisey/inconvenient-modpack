@@ -149,6 +149,7 @@ onEvent('jei.hide.items', event => {
       'charcoal_pit:engine',
     ],
     rankine: [
+      'rankine:thermometer',
       'rankine:flint_hoe',
       'rankine:alloy_helmet',
       'rankine:alloy_chestplate',

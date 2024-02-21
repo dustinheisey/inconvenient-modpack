@@ -15,6 +15,8 @@ onEvent('item.registry', event => {
   item('dried_hide');
   item('wet_tanned_hide');
 
+  item('glass_tube');
+
   item('lost_page_everbright', 'Frigid Lost Page', 64);
   item('lost_page_undergarden', 'Slimy Lost Page', 64);
   item('lost_page_everdawn', 'Tattered Lost Page', 64);

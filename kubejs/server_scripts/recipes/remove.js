@@ -608,6 +608,7 @@ onEvent('recipes', event => {
     .removeOutputs(['#im:chapter_7_1', '#im:chapter_7_2', '#im:chapter_8']);
 
   const filtered_stacks = [
+    'rankine:thermometer',
     'za:sea_urchin',
     'artifacts:mimic_spawn_egg',
     'artifacts:everlasting_beef',

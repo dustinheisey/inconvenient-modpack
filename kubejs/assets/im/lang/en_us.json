@@ -37,5 +37,18 @@
   "item.rankine.kjs_90mfk3gis2suon7u2oacfj51r": "Cupronickel Ingot",
   "item.rankine.kjs_9x6efngbriz39zh1jxzjt5xlr": "Nickel Silver Ingot",
   "item.rankine.kjs_ag7y3hrlj5j6p7sq0f2k5z8tu": "Cast Iron Ingot",
-  "item.rankine.kjs_bmkyit1i19y1wms7uol6n1awq": "Invar Ingot"
+  "item.rankine.kjs_bmkyit1i19y1wms7uol6n1awq": "Invar Ingot",
+  "block.blue_skies.everbright_pyrope_ore": "Frostfire Cinnabar Ore",
+  "block.blue_skies.everdawn_pyrope_ore": "Frostfire Cinnabar Ore",
+  "block.blue_skies.pyrope_block": "Frostfire Cinnabar Block",
+  "item.blue_skies.pyrope_axe": "Frostfire Cinnabar Axe",
+  "item.blue_skies.pyrope_pickaxe": "Frostfire Cinnabar Pickaxe",
+  "item.blue_skies.pyrope_shovel": "Frostfire Cinnabar Shovel",
+  "item.blue_skies.pyrope_sword": "Frostfire Cinnabar Sword",
+  "item.blue_skies.pyrope_hoe": "Frostfire Cinnabar Hoe",
+  "item.blue_skies.pyrope_helmet": "Frostfire Cinnabar Helmet",
+  "item.blue_skies.pyrope_chestplate": "Frostfire Cinnabar Chestplate",
+  "item.blue_skies.pyrope_leggings": "Frostfire Cinnabar Leggings",
+  "item.blue_skies.pyrope_boots": "Frostfire Cinnabar Boots",
+  "item.blue_skies.pyrope_gem": "Frostfire Cinnabar Gem"
 }
