@@ -52,25 +52,25 @@ onEvent('server.datapack.high_priority', event => {
       {
         item: 'ecofriendly:iron_can_ym',
         id: 'trash',
-        title: "Scavenger's Luck",
+        title: 'Community Service',
         description: 'Gather some debris from the ground',
       },
       {
         item: 'flint',
         title: 'Scrounging for Flint',
-        description: 'Scrape the earth for flint.',
+        description: 'Scrape the earth for flint',
         frame: 'goal',
         children: [
           {
             item: 'rankine:flint_knife',
             title: 'Crude Cutting Edge',
-            description: 'Carve out a basic flint knife.',
+            description: 'Carve out a basic flint knife',
             frame: 'goal',
             children: [
               {
                 item: 'farmersdelight:rope',
                 title: 'Frayed Bonds',
-                description: 'Collect plant fiber and twist together a rope.',
+                description: 'Collect plant fiber and twist together a rope',
                 frame: 'goal',
                 children: [
                   {
@@ -144,13 +144,13 @@ onEvent('server.datapack.high_priority', event => {
                   {
                     item: 'rankine:flint_axe',
                     title: 'Primitive Axe',
-                    description: 'Craft an axe from flint.',
+                    description: 'Craft a crude flint axe',
                     frame: 'goal',
                     children: [
                       {
                         icon: 'oak_log',
                         title: 'Echoes of Fallen Giants',
-                        description: 'Fell a tree, get logs.',
+                        description: 'Fell a tree, get logs',
                         tag: 'minecraft:logs',
                         frame: 'goal',
                         children: [
@@ -164,20 +164,20 @@ onEvent('server.datapack.high_priority', event => {
                               {
                                 item: 'charcoal',
                                 title: 'Ashes to Ashes',
-                                description: 'Burn wood, make charcoal.',
+                                description: 'Burn wood, make charcoal',
                                 frame: 'goal',
                                 children: [
                                   {
                                     item: 'campfire',
                                     title: 'Flickering Solace',
-                                    description: 'Build a campfire for warmth.',
+                                    description: 'Build a campfire for warmth',
                                     frame: 'goal',
                                     children: [
                                       {
                                         item: 'furnace',
                                         title: 'Stone Furnace',
                                         description:
-                                          'Erect a furnace from stones and fire.',
+                                          'Erect a furnace from stones and fire',
                                         frame: 'goal',
                                         children: [
                                           {
@@ -235,14 +235,14 @@ onEvent('server.datapack.high_priority', event => {
                                             item: 'charcoal_pit:alloy_mold',
                                             title: 'Molding Futures',
                                             description:
-                                              'Shape a mold for alloys.',
+                                              'Shape a mold for alloys',
                                             frame: 'goal',
                                             children: [
                                               {
                                                 item: 'rankine:bronze_ingot',
                                                 title: 'Bronze Age Beckons',
                                                 description:
-                                                  'Smelt bronze, a vital alloy.',
+                                                  'Smelt bronze, a vital alloy',
                                                 frame: 'goal',
                                                 children: [
                                                   {
@@ -319,14 +319,14 @@ onEvent('server.datapack.high_priority', event => {
                                                     title: "Bloomery's Breath",
                                                     frame: 'goal',
                                                     description:
-                                                      'Forge a bloomery for iron.',
+                                                      'Forge a bloomery for iron',
                                                     children: [
                                                       {
                                                         item: 'iron_ingot',
                                                         title: 'Iron Will',
                                                         frame: 'goal',
                                                         description:
-                                                          'Extract iron, forge ahead.',
+                                                          'Extract iron, forge ahead',
                                                         children: [
                                                           {
                                                             item: 'minecraft:cauldron',
@@ -341,7 +341,7 @@ onEvent('server.datapack.high_priority', event => {
                                                             title:
                                                               "Hearth's Embrace",
                                                             description:
-                                                              'Construct a hearth and stabilize your temperature.',
+                                                              'Construct a hearth and stabilize your temperature',
                                                             frame: 'challenge',
                                                             reward:
                                                               'im:chapters/chapter_2',
