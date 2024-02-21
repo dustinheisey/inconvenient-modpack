@@ -45,7 +45,7 @@ onEvent('recipes', event => {
       {
         output: 'blue_skies:bluebright_sapling',
         input: 'occultism:otherworld_sapling',
-        input_fluid: 'kubejs:molten_sterling_silver',
+        input_fluid: 'tconstruct:molten_amethyst_bronze',
         fluid_consumed: 1000,
       },
     ]);
