@@ -166,7 +166,44 @@ onEvent('server.datapack.high_priority', event => {
                                                             title: 'Wealth',
                                                             description:
                                                               'Create an amadron tablet',
-                                                            frame: 'challenge',
+                                                            frame: 'goal',
+                                                            children: [
+                                                              {
+                                                                icon: 'endrem:evil_eye',
+                                                                title:
+                                                                  'TODO: Fill',
+                                                                description:
+                                                                  'Go to sleep after gathering an iron coin pile',
+                                                                frame:
+                                                                  'challenge',
+                                                                id: 'eye_evil',
+                                                                parent:
+                                                                  'prophecy',
+                                                                criteria: {
+                                                                  collect: {
+                                                                    trigger:
+                                                                      'minecraft:inventory_changed',
+                                                                    conditions:
+                                                                      {
+                                                                        items: [
+                                                                          {
+                                                                            items:
+                                                                              [
+                                                                                'coinsje:iron_coin_pile',
+                                                                              ],
+                                                                          },
+                                                                        ],
+                                                                      },
+                                                                  },
+                                                                  sleep: {
+                                                                    trigger:
+                                                                      'minecraft:slept_in_bed',
+                                                                  },
+                                                                },
+                                                                reward:
+                                                                  'im:eyes/lost',
+                                                              },
+                                                            ],
                                                           },
                                                         ],
                                                       },

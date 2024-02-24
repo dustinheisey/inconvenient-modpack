@@ -4,7 +4,7 @@
   "category": "patchouli:nightmares",
   "sortnum": 8,
   "secret": true,
-  "advancement": "im:eyes/cursed",
+  "advancement": "im:chapter_5_1/eye_cursed",
   "pages": [
     {
       "type": "patchouli:text",

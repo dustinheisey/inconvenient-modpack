@@ -67,11 +67,11 @@ onEvent('server.datapack.high_priority', event => {
                         item: 'bloodmagic:weakbloodshard',
                         title: 'Weak Blood Shard',
                         description: 'Create a weak blood shard',
-                        frame: 'challenge',
+                        frame: 'goal',
                         children: [
                           {
                             item: 'occultism:chalk_red',
-                            title: 'Red Chalk',
+                            title: 'Circles of the Pheonix',
                             description: 'Craft some red chalk',
                             children: [
                               {
@@ -104,6 +104,30 @@ onEvent('server.datapack.high_priority', event => {
                             },
                             children: [
                               {
+                                icon: 'endrem:nether_eye',
+                                title: 'Forest Fires',
+                                description:
+                                  'Go to sleep after brewing some purulent tea',
+                                frame: 'challenge',
+                                id: 'eye_nether',
+                                criteria: {
+                                  collect: {
+                                    trigger: 'minecraft:inventory_changed',
+                                    conditions: {
+                                      items: [
+                                        {
+                                          items: ['bloodmagic:weakbloodshard'],
+                                        },
+                                      ],
+                                    },
+                                  },
+                                  sleep: {
+                                    trigger: 'minecraft:slept_in_bed',
+                                  },
+                                },
+                                reward: 'im:eyes/wither',
+                              },
+                              {
                                 icon: 'netherrack',
                                 title: 'Nether',
                                 criteria: {
@@ -118,6 +142,22 @@ onEvent('server.datapack.high_priority', event => {
                                 description: 'Enter the nether',
                                 frame: 'goal',
                                 children: [
+                                  {
+                                    title: 'Burning Truth',
+                                    description:
+                                      'Find a page from a lost story in the Nether',
+                                    item: 'kubejs:lost_page_nether',
+                                    children: [
+                                      {
+                                        title: 'A Dire Warning',
+                                        id: 'lost_story_nether',
+                                        frame: 'challenge',
+                                        description:
+                                          'Remake the lost story from the Nether',
+                                        item: 'kubejs:lost_story_nether',
+                                      },
+                                    ],
+                                  },
                                   {
                                     item: 'occultism:iesnium_ingot',
                                     title: 'Iesnium Ingot',
@@ -216,15 +256,69 @@ onEvent('server.datapack.high_priority', event => {
                                                             },
                                                             children: [
                                                               {
+                                                                title:
+                                                                  'A Nice Dream',
+                                                                parent:
+                                                                  'potential',
+                                                                description:
+                                                                  'Find a page from a lost story in Blueleaf',
+                                                                item: 'kubejs:lost_page_blueleaf',
+                                                                children: [
+                                                                  {
+                                                                    title:
+                                                                      'Welcome to Blueleaf',
+                                                                    id: 'lost_story_blueleaf',
+                                                                    frame:
+                                                                      'challenge',
+                                                                    description:
+                                                                      'Remake the lost story from Blueleaf',
+                                                                    item: 'kubejs:lost_story_blueleaf',
+                                                                  },
+                                                                ],
+                                                              },
+                                                              {
                                                                 item: 'pneumaticcraft:oil_bucket',
                                                                 title: 'Oil',
                                                                 parent:
                                                                   'potential',
                                                                 description:
-                                                                  'Craft a bucket of oil',
-                                                                frame:
-                                                                  'challenge',
+                                                                  'Collect a bucket of oil',
+                                                                frame: 'goal',
                                                                 children: [
+                                                                  {
+                                                                    icon: 'endrem:black_eye',
+                                                                    title:
+                                                                      'Black Gold',
+                                                                    description:
+                                                                      'Go to sleep after collecting a bucket of oil',
+                                                                    frame:
+                                                                      'challenge',
+                                                                    id: 'eye_black',
+                                                                    criteria: {
+                                                                      collect: {
+                                                                        trigger:
+                                                                          'minecraft:inventory_changed',
+                                                                        conditions:
+                                                                          {
+                                                                            items:
+                                                                              [
+                                                                                {
+                                                                                  items:
+                                                                                    [
+                                                                                      'pneumaticcraft:oil_bucket',
+                                                                                    ],
+                                                                                },
+                                                                              ],
+                                                                          },
+                                                                      },
+                                                                      sleep: {
+                                                                        trigger:
+                                                                          'minecraft:slept_in_bed',
+                                                                      },
+                                                                    },
+                                                                    reward:
+                                                                      'im:eyes/black',
+                                                                  },
                                                                   {
                                                                     item: 'rankine:carbon',
                                                                     title:

@@ -4,7 +4,7 @@
   "category": "patchouli:lost_stories",
   "sortnum": 1,
   "secret": true,
-  "advancement": "im:lost_stories/undergarden",
+  "advancement": "im:chapter_3/lost_story_undergarden",
   "pages": [
     {
       "type": "patchouli:text",

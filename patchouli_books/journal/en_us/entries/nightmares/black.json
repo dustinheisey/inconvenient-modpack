@@ -4,7 +4,7 @@
   "category": "patchouli:nightmares",
   "sortnum": 7,
   "secret": true,
-  "advancement": "im:eyes/black",
+  "advancement": "im:chapter_4/eye_black",
   "pages": [
     {
       "type": "patchouli:text",

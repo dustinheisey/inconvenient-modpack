@@ -233,6 +233,23 @@ onEvent('server.datapack.high_priority', event => {
                                             reward: 'im:dimensions/bumblezone',
                                             children: [
                                               {
+                                                title: 'Burnt Truth',
+                                                parent: 'bee_nest',
+                                                description:
+                                                  'Find a page from a lost story in the Bumblezone',
+                                                item: 'kubejs:lost_page_bumblezone',
+                                                children: [
+                                                  {
+                                                    title: 'The Last Flower',
+                                                    id: 'lost_story_bumblezone',
+                                                    frame: 'challenge',
+                                                    description:
+                                                      'Remake the lost story from the Bumblezone',
+                                                    item: 'kubejs:lost_story_bumblezone',
+                                                  },
+                                                ],
+                                              },
+                                              {
                                                 item: 'minecraft:honeycomb',
                                                 title: 'Honeycomb',
                                                 parent: 'bee_nest',
@@ -301,7 +318,7 @@ onEvent('server.datapack.high_priority', event => {
                                                             id: 'progress',
                                                             description:
                                                               'Make a deluxe cheeseburger',
-                                                            frame: 'challenge',
+                                                            frame: 'goal',
                                                             criteria: {
                                                               consume: {
                                                                 trigger:
@@ -315,6 +332,43 @@ onEvent('server.datapack.high_priority', event => {
                                                                 },
                                                               },
                                                             },
+                                                            children: [
+                                                              {
+                                                                icon: 'endrem:cursed_eye',
+                                                                title:
+                                                                  'Factory Farming',
+                                                                description:
+                                                                  'Go to sleep after eating a deluxe cheeseburger',
+                                                                frame:
+                                                                  'challenge',
+                                                                parent:
+                                                                  'progress',
+                                                                id: 'eye_cursed',
+                                                                criteria: {
+                                                                  collect: {
+                                                                    trigger:
+                                                                      'minecraft:inventory_changed',
+                                                                    conditions:
+                                                                      {
+                                                                        items: [
+                                                                          {
+                                                                            items:
+                                                                              [
+                                                                                'delightful:deluxe_cheeseburger',
+                                                                              ],
+                                                                          },
+                                                                        ],
+                                                                      },
+                                                                  },
+                                                                  sleep: {
+                                                                    trigger:
+                                                                      'minecraft:slept_in_bed',
+                                                                  },
+                                                                },
+                                                                reward:
+                                                                  'im:eyes/cursed',
+                                                              },
+                                                            ],
                                                           },
                                                         ],
                                                       },

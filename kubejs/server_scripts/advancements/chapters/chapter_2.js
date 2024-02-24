@@ -20,12 +20,13 @@ onEvent('server.datapack.high_priority', event => {
       },
       {
         item: 'rankine:wooden_gold_pan',
+        frame: 'goal',
         title: "Sifter's Start",
         description: 'Craft a wooden gold pan',
         children: [
           {
             item: 'rankine:jute',
-            title: 'Weave of The Wild',
+            title: 'Weave of the Wild',
             description: 'Grow some jute',
             children: [
               {
@@ -63,26 +64,31 @@ onEvent('server.datapack.high_priority', event => {
           },
           {
             item: 'occultism:datura',
+            frame: 'goal',
             title: 'Fruit of Nightmares',
             description: 'Grow some demon dream fruit',
             children: [
               {
                 item: 'occultism:burnt_otherstone',
+                frame: 'goal',
                 title: 'Burnt Into Memory',
                 description: 'Create some burnt otherstone',
                 children: [
                   {
                     item: 'tconstruct:seared_brick',
-                    title: 'Rekindling The Flames',
+                    frame: 'goal',
+                    title: 'Rekindling the Flames',
                     description: 'Craft a seared brick',
                     children: [
                       {
                         item: 'tconstruct:seared_melter',
+                        frame: 'goal',
                         title: "Forge's Beginnings",
                         description: 'Craft a seared melter',
                         children: [
                           {
                             item: 'tconstruct:smeltery_controller',
+                            frame: 'goal',
                             title: 'Heart of the Forge',
                             description: 'Craft a smeltery controller',
                             children: [
@@ -113,6 +119,7 @@ onEvent('server.datapack.high_priority', event => {
                                   {
                                     item: 'tconstruct:amethyst_bronze_ingot',
                                     title: 'Mystic Metallurgy',
+                                    frame: 'goal',
                                     description:
                                       'Forge an amethyst bronze ingot',
                                     children: [
@@ -163,7 +170,7 @@ onEvent('server.datapack.high_priority', event => {
                                                       {
                                                         item: 'blue_skies:loot_bag_summoner',
                                                         title:
-                                                          'Silence of Summons',
+                                                          'Silence of the Summoner',
                                                         parent: 'everbright',
                                                         description:
                                                           'Kill the Summoner',
@@ -192,7 +199,7 @@ onEvent('server.datapack.high_priority', event => {
                                                                   {
                                                                     item: 'relics:researching_table',
                                                                     title:
-                                                                      "Echo's of The Forgotten",
+                                                                      "Echo's of the Forgotten",
                                                                     description:
                                                                       'Craft an research table',
                                                                   },
@@ -230,7 +237,7 @@ onEvent('server.datapack.high_priority', event => {
                                                       {
                                                         item: 'blue_skies:loot_bag_starlit_crusher',
                                                         title:
-                                                          'Silence of The Verdant',
+                                                          'Silence of the Verdant',
                                                         parent: 'everbright',
                                                         description:
                                                           'Kill the Starlit Crusher',
@@ -253,7 +260,7 @@ onEvent('server.datapack.high_priority', event => {
                                                                   {
                                                                     item: 'occultism:chalk_white',
                                                                     title:
-                                                                      'Boundry of The Beyond',
+                                                                      'Circles of Beginnings',
                                                                     description:
                                                                       'Craft some white chalk',
                                                                     children: [
@@ -261,9 +268,9 @@ onEvent('server.datapack.high_priority', event => {
                                                                         icon: 'gateways:gate_pearl',
                                                                         id: 'gateways',
                                                                         title:
-                                                                          'Veil of The Waters',
+                                                                          'Veil of the Waters',
                                                                         description:
-                                                                          'Open a portal between Everbright and The Overworld',
+                                                                          'Open a portal between Everbright and the Overworld',
                                                                         nbt: '{gateway:"gateways:aquatic_gate"}',
                                                                         frame:
                                                                           'challenge',
@@ -300,7 +307,7 @@ onEvent('server.datapack.high_priority', event => {
                                                           {
                                                             item: 'totemic:totem_whittling_knife',
                                                             title:
-                                                              'Mark of The Woods',
+                                                              'Mark of the Woods',
                                                             frame: 'goal',
                                                             description:
                                                               'Collect a totem whittling knife from the Starlit Crusher',
@@ -323,26 +330,51 @@ onEvent('server.datapack.high_priority', event => {
                                                                       'goal',
                                                                     children: [
                                                                       {
-                                                                        item: 'naturesaura:wood_stand',
+                                                                        item: 'naturesaura:eye',
                                                                         title:
-                                                                          'Sacred Scaffolds',
-                                                                        description:
-                                                                          'Craft multiple wooden stands',
-                                                                        count: 4,
+                                                                          'Vision of the Verdant',
                                                                         frame:
                                                                           'goal',
+                                                                        description:
+                                                                          "Conduct a ritual of the forest, and see through nature's eyes",
                                                                         children:
                                                                           [
                                                                             {
-                                                                              item: 'naturesaura:eye',
+                                                                              icon: 'endrem:exotic_eye',
                                                                               title:
-                                                                                'Vision of The Verdant',
+                                                                                'Ocean Acidification',
                                                                               description:
-                                                                                "Conduct a ritual of the forest, and see through nature's eyes",
-                                                                              frame:
-                                                                                'challenge',
+                                                                                'Go to sleep after measuring the aura level in the atmosphere',
+                                                                              id: 'eye_exotic',
+                                                                              criteria:
+                                                                                {
+                                                                                  collect:
+                                                                                    {
+                                                                                      trigger:
+                                                                                        'minecraft:inventory_changed',
+                                                                                      conditions:
+                                                                                        {
+                                                                                          items:
+                                                                                            [
+                                                                                              {
+                                                                                                items:
+                                                                                                  [
+                                                                                                    'naturesaura:eye',
+                                                                                                  ],
+                                                                                              },
+                                                                                            ],
+                                                                                        },
+                                                                                    },
+                                                                                  sleep:
+                                                                                    {
+                                                                                      trigger:
+                                                                                        'minecraft:slept_in_bed',
+                                                                                    },
+                                                                                },
                                                                               reward:
                                                                                 'im:chapters/chapter_3',
+                                                                              frame:
+                                                                                'challenge',
                                                                             },
                                                                           ],
                                                                       },
@@ -359,7 +391,7 @@ onEvent('server.datapack.high_priority', event => {
                                                         parent: 'everbright',
                                                         id: 'ocean',
                                                         title:
-                                                          'Ruins of The Deep',
+                                                          'Ruins of the Deep',
                                                         description:
                                                           'Slay an elder guardian & collect its heart',
                                                       },
@@ -382,13 +414,14 @@ onEvent('server.datapack.high_priority', event => {
                                                       {
                                                         title: 'Thawing Truth',
                                                         description:
-                                                          'Find a page from a lost story',
+                                                          'Find a page from a lost story in Everbright',
                                                         parent: 'everbright',
                                                         item: 'kubejs:lost_page_everbright',
                                                         children: [
                                                           {
                                                             title:
                                                               "A Grandmother's Story",
+                                                            id: 'lost_story_everbright',
                                                             frame: 'challenge',
                                                             description:
                                                               'Remake the lost story from Everbright',
@@ -421,7 +454,7 @@ onEvent('server.datapack.high_priority', event => {
                                                                   {
                                                                     item: 'fishing_rod',
                                                                     title:
-                                                                      'Catch of The Day',
+                                                                      'Catch of the Day',
                                                                     description:
                                                                       'Craft a fishing rod',
                                                                   },
@@ -481,7 +514,7 @@ onEvent('server.datapack.high_priority', event => {
                                   },
                                   {
                                     item: 'rankine:pewter_ingot',
-                                    title: 'Feasts of The Forged',
+                                    title: 'Feasts of the Forged',
                                     description: 'Forge a pewter ingot',
                                     children: [
                                       {
@@ -515,7 +548,7 @@ onEvent('server.datapack.high_priority', event => {
                                           },
                                           {
                                             item: 'paragon_textiles:flax_seeds',
-                                            title: 'Seeds of The Artisan',
+                                            title: 'Seeds of the Artisan',
                                             description:
                                               'Find some flax seeds in the soil',
                                             children: [
@@ -631,7 +664,7 @@ onEvent('server.datapack.high_priority', event => {
                                             children: [
                                               {
                                                 item: 'rankine:snowflake_obsidian',
-                                                title: 'Chilled to The Core',
+                                                title: 'Chilled to the Core',
                                                 description:
                                                   'Cast freezing sap on a piece of obsidian',
                                               },

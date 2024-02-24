@@ -86,13 +86,13 @@ onEvent('server.datapack.high_priority', event => {
                     children: [
                       {
                         item: 'salt:raw_rock_salt',
-                        title: 'Veins of The Earth',
+                        title: 'Veins of the Earth',
                         description:
                           'Find some rock salt underground in a dripstone cave, ocean or beach',
                         children: [
                           {
                             item: 'salt:salt',
-                            title: 'Salt of The Earth',
+                            title: 'Salt of the Earth',
                             description:
                               'Collect some salt from the raw rock salt',
                           },
@@ -338,13 +338,48 @@ onEvent('server.datapack.high_priority', event => {
                                                           {
                                                             item: 'cold_sweat:hearth',
                                                             id: 'hearth',
+                                                            frame: 'goal',
                                                             title:
                                                               "Hearth's Embrace",
                                                             description:
                                                               'Construct a hearth and stabilize your temperature',
-                                                            frame: 'challenge',
-                                                            reward:
-                                                              'im:chapters/chapter_2',
+                                                            children: [
+                                                              {
+                                                                icon: 'endrem:cold_eye',
+                                                                title:
+                                                                  'The Bunker',
+                                                                description:
+                                                                  'Go to sleep after air conditioning your room',
+                                                                parent:
+                                                                  'hearth',
+                                                                id: 'cold_nightmare',
+                                                                criteria: {
+                                                                  collect: {
+                                                                    trigger:
+                                                                      'minecraft:inventory_changed',
+                                                                    conditions:
+                                                                      {
+                                                                        items: [
+                                                                          {
+                                                                            items:
+                                                                              [
+                                                                                'cold_sweat:hearth',
+                                                                              ],
+                                                                          },
+                                                                        ],
+                                                                      },
+                                                                  },
+                                                                  sleep: {
+                                                                    trigger:
+                                                                      'minecraft:slept_in_bed',
+                                                                  },
+                                                                },
+                                                                frame:
+                                                                  'challenge',
+                                                                reward:
+                                                                  'im:chapters/chapter_2',
+                                                              },
+                                                            ],
                                                           },
                                                         ],
                                                       },

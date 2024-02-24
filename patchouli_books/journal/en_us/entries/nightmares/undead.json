@@ -4,7 +4,7 @@
   "category": "patchouli:nightmares",
   "sortnum": 3,
   "secret": true,
-  "advancement": "im:eyes/undead",
+  "advancement": "im:chapter_3/eye_undead",
   "pages": [
     {
       "type": "patchouli:text",

@@ -4,7 +4,7 @@
   "category": "patchouli:lost_stories",
   "sortnum": 0,
   "secret": true,
-  "advancement": "im:lost_stories/everbright",
+  "advancement": "im:chapter_2/lost_story_everbright",
   "pages": [
     {
       "type": "patchouli:text",
