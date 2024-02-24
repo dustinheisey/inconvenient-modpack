@@ -1,7 +1,7 @@
 onEvent('server.datapack.high_priority', event => {
   addAdvancements(event, 'chapter_4', {
     icon: 'create:brass_hand',
-    item: 'create:cinder_flour',
+    item: 'endrem:lost_eye',
     title: 'Chapter 4: Inconvenient Truths',
     description: 'Understand what happened',
     background: 'chipped:textures/block/nether_bricks/nether_bricks_9.png',
@@ -111,21 +111,19 @@ onEvent('server.datapack.high_priority', event => {
                                 frame: 'challenge',
                                 id: 'eye_nether',
                                 criteria: {
-                                  collect: {
-                                    trigger: 'minecraft:inventory_changed',
+                                  consume: {
+                                    trigger: 'minecraft:consume_item',
                                     conditions: {
-                                      items: [
-                                        {
-                                          items: ['bloodmagic:weakbloodshard'],
-                                        },
-                                      ],
+                                      item: {
+                                        items: ['farmersrespite:purulent_tea'],
+                                      },
                                     },
                                   },
                                   sleep: {
                                     trigger: 'minecraft:slept_in_bed',
                                   },
                                 },
-                                reward: 'im:eyes/wither',
+                                reward: 'im:eyes/eye_nether',
                               },
                               {
                                 icon: 'netherrack',
@@ -317,7 +315,7 @@ onEvent('server.datapack.high_priority', event => {
                                                                       },
                                                                     },
                                                                     reward:
-                                                                      'im:eyes/black',
+                                                                      'im:eyes/eye_black',
                                                                   },
                                                                   {
                                                                     item: 'rankine:carbon',

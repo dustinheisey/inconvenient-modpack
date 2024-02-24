@@ -13,7 +13,7 @@ onEvent('server.datapack.high_priority', event => {
         },
       },
     },
-    reward: 'im:chapters/chapter_1',
+    reward: 'im:spawn',
     children: [
       {
         id: 'first_night',
@@ -352,7 +352,9 @@ onEvent('server.datapack.high_priority', event => {
                                                                   'Go to sleep after air conditioning your room',
                                                                 parent:
                                                                   'hearth',
-                                                                id: 'cold_nightmare',
+                                                                id: 'cold_eye',
+                                                                reward:
+                                                                  'im:eyes/eye_cold',
                                                                 criteria: {
                                                                   collect: {
                                                                     trigger:
@@ -376,8 +378,6 @@ onEvent('server.datapack.high_priority', event => {
                                                                 },
                                                                 frame:
                                                                   'challenge',
-                                                                reward:
-                                                                  'im:chapters/chapter_2',
                                                               },
                                                             ],
                                                           },

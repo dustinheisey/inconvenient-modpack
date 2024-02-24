@@ -1,7 +1,7 @@
 onEvent('server.datapack.high_priority', event => {
   addAdvancements(event, 'chapter_3', {
     icon: 'minecraft:spyglass',
-    item: 'naturesaura:eye',
+    item: 'endrem:exotic_eye',
     title: 'Chapter 3: Searching For Secrets',
     description: 'Search for answers',
     background: 'undergarden:textures/block/depthrock.png',
@@ -64,6 +64,7 @@ onEvent('server.datapack.high_priority', event => {
                         item: 'undergarden:catalyst',
                         title: 'Legacy of the Lost',
                         frame: 'goal',
+                        reward: 'im:dimensions/undergarden',
                         description: 'Create an iron hoe',
                         children: [
                           {
@@ -96,7 +97,7 @@ onEvent('server.datapack.high_priority', event => {
                                     trigger: 'minecraft:slept_in_bed',
                                   },
                                 },
-                                reward: 'im:eyes/undead',
+                                reward: 'im:eyes/eye_undead',
                               },
                               {
                                 item: 'malum:spirit_altar',
@@ -133,7 +134,6 @@ onEvent('server.datapack.high_priority', event => {
                                             item: 'bloodmagic:blankslate',
                                             title: 'Slate of the Sacrificed',
                                             description: 'Create a blank slate',
-                                            reward: 'im:dimensions/undergarden',
                                           },
                                           {
                                             item: 'bloodmagic:weakbloodorb',
@@ -157,6 +157,8 @@ onEvent('server.datapack.high_priority', event => {
                                                 title: 'Crushed to the Core',
                                                 description:
                                                   'Grind some blood obsidian in your millstone',
+                                                reward:
+                                                  'im:dimensions/everdawn',
                                                 frame: 'goal',
                                                 children: [
                                                   {
@@ -283,6 +285,8 @@ onEvent('server.datapack.high_priority', event => {
                                                             item: 'malum:corrupted_resonance',
                                                             title: 'Iron Hoe',
                                                             frame: 'goal',
+                                                            reward:
+                                                              'im:dimensions/twilight',
                                                             description:
                                                               'Create an iron hoe',
                                                             children: [
@@ -446,10 +450,12 @@ onEvent('server.datapack.high_priority', event => {
                                                                               title:
                                                                                 'Automation',
                                                                               description:
-                                                                                'Go to sleep after air create some cinder flour',
+                                                                                'Go to sleep after air creating some cinder flour',
                                                                               frame:
                                                                                 'challenge',
                                                                               id: 'eye_lost',
+                                                                              reward:
+                                                                                'im:eyes/eye_lost',
                                                                               criteria:
                                                                                 {
                                                                                   collect:
@@ -475,8 +481,6 @@ onEvent('server.datapack.high_priority', event => {
                                                                                         'minecraft:slept_in_bed',
                                                                                     },
                                                                                 },
-                                                                              reward:
-                                                                                'im:chapters/chapter_4',
                                                                             },
                                                                           ],
                                                                       },
@@ -513,7 +517,7 @@ onEvent('server.datapack.high_priority', event => {
                                                               {
                                                                 icon: 'endrem:corrupted_eye',
                                                                 title:
-                                                                  'TODO: Fill In Title',
+                                                                  'Parasite',
                                                                 description:
                                                                   'Go to sleep after crafting a dagger of sacrifice',
                                                                 frame:
@@ -543,7 +547,7 @@ onEvent('server.datapack.high_priority', event => {
                                                                   },
                                                                 },
                                                                 reward:
-                                                                  'im:eyes/corrupted',
+                                                                  'im:eyes/eye_corrupted',
                                                               },
                                                             ],
                                                           },
@@ -576,9 +580,9 @@ onEvent('server.datapack.high_priority', event => {
                                                     children: [
                                                       {
                                                         icon: 'endrem:wither_eye',
-                                                        title: 'The Bunker',
+                                                        title: 'Witherstorm',
                                                         description:
-                                                          'Go to sleep after air conditioning your room',
+                                                          'Go to sleep after defeating a Wither',
                                                         frame: 'challenge',
                                                         id: 'eye_wither',
                                                         criteria: {
@@ -589,7 +593,7 @@ onEvent('server.datapack.high_priority', event => {
                                                               items: [
                                                                 {
                                                                   items: [
-                                                                    'bloodmagic:daggerofsacrifice',
+                                                                    'minecraft:nether_star',
                                                                   ],
                                                                 },
                                                               ],
@@ -601,7 +605,7 @@ onEvent('server.datapack.high_priority', event => {
                                                           },
                                                         },
                                                         reward:
-                                                          'im:eyes/corrupted',
+                                                          'im:eyes/eye_wither',
                                                       },
                                                       {
                                                         item: 'chunkloaders:single_chunk_loader',

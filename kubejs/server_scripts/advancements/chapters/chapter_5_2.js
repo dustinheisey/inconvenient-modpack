@@ -171,7 +171,7 @@ onEvent('server.datapack.high_priority', event => {
                                                               {
                                                                 icon: 'endrem:evil_eye',
                                                                 title:
-                                                                  'TODO: Fill',
+                                                                  'Industry',
                                                                 description:
                                                                   'Go to sleep after gathering an iron coin pile',
                                                                 frame:
@@ -201,7 +201,7 @@ onEvent('server.datapack.high_priority', event => {
                                                                   },
                                                                 },
                                                                 reward:
-                                                                  'im:eyes/lost',
+                                                                  'im:eyes/eye_evil',
                                                               },
                                                             ],
                                                           },

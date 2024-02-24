@@ -336,7 +336,7 @@ onEvent('server.datapack.high_priority', event => {
                                                               {
                                                                 icon: 'endrem:cursed_eye',
                                                                 title:
-                                                                  'Factory Farming',
+                                                                  'The Slaughterhouse',
                                                                 description:
                                                                   'Go to sleep after eating a deluxe cheeseburger',
                                                                 frame:
@@ -345,20 +345,12 @@ onEvent('server.datapack.high_priority', event => {
                                                                   'progress',
                                                                 id: 'eye_cursed',
                                                                 criteria: {
-                                                                  collect: {
-                                                                    trigger:
-                                                                      'minecraft:inventory_changed',
-                                                                    conditions:
-                                                                      {
-                                                                        items: [
-                                                                          {
-                                                                            items:
-                                                                              [
-                                                                                'delightful:deluxe_cheeseburger',
-                                                                              ],
-                                                                          },
-                                                                        ],
-                                                                      },
+                                                                  conditions: {
+                                                                    item: {
+                                                                      items: [
+                                                                        'delightful:deluxe_cheeseburger',
+                                                                      ],
+                                                                    },
                                                                   },
                                                                   sleep: {
                                                                     trigger:
@@ -366,7 +358,7 @@ onEvent('server.datapack.high_priority', event => {
                                                                   },
                                                                 },
                                                                 reward:
-                                                                  'im:eyes/cursed',
+                                                                  'im:eyes/eye_cursed',
                                                               },
                                                             ],
                                                           },

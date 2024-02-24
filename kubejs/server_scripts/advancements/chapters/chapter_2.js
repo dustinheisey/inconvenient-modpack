@@ -1,7 +1,7 @@
 onEvent('server.datapack.high_priority', event => {
   addAdvancements(event, 'chapter_2', {
     icon: 'naturesaura:gold_leaf',
-    item: 'cold_sweat:hearth',
+    item: 'endrem:cold_eye',
     title: 'Chapter 2: Lingering Questions',
     description: 'Who am I? What Happened Here? Why am I here?',
     background: 'occultism:textures/block/otherstone.png',
@@ -346,6 +346,8 @@ onEvent('server.datapack.high_priority', event => {
                                                                               description:
                                                                                 'Go to sleep after measuring the aura level in the atmosphere',
                                                                               id: 'eye_exotic',
+                                                                              reward:
+                                                                                'im:eyes/eye_exotic',
                                                                               criteria:
                                                                                 {
                                                                                   collect:
@@ -371,8 +373,6 @@ onEvent('server.datapack.high_priority', event => {
                                                                                         'minecraft:slept_in_bed',
                                                                                     },
                                                                                 },
-                                                                              reward:
-                                                                                'im:chapters/chapter_3',
                                                                               frame:
                                                                                 'challenge',
                                                                             },
