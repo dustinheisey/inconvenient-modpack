@@ -15,12 +15,13 @@ onEvent('server.datapack.high_priority', event => {
         item: 'occultism:crushed_end_stone',
         title: 'Ender Echos',
         frame: 'goal',
-        description: 'Create an iron hoe',
+        description:
+          'Summon an endermite in an occult ritual and have a demon crush it into powder',
         children: [
           {
             item: 'occultism:chalk_gold',
             title: 'Circles of the Sun',
-            description: 'Craft some golden chalk',
+            description: 'Apply crushed end stone to white chalk',
             children: [
               {
                 item: 'wither_skeleton_skull',
@@ -33,23 +34,24 @@ onEvent('server.datapack.high_priority', event => {
             item: 'naturesaura:token_joy',
             title: 'Joyful Journeys',
             frame: 'goal',
-            description: 'Create an iron hoe',
+            description: 'Create a token of joy in a ritual of the forest',
             children: [
               {
                 item: 'naturesaura:nature_altar',
                 title: 'Aura Artisan',
                 frame: 'goal',
-                description: 'Create an iron hoe',
+                description: 'Create a nature altar',
                 children: [
                   {
                     item: 'naturesaura:infused_stone',
                     title: "Shale's Shadow",
-                    description: 'Craft a basic crushing head',
+                    description: 'Infuse some stone with aura',
                     children: [
                       {
                         item: 'rankine:shale',
                         title: 'Pillars of the Past',
-                        description: 'Craft a basic crushing head',
+                        description:
+                          'Throw infused stone in a puddle and forget about it',
                       },
                     ],
                   },
@@ -58,20 +60,21 @@ onEvent('server.datapack.high_priority', event => {
                     item: 'naturesaura:infused_iron',
                     title: 'Weight of Progress',
                     frame: 'goal',
-                    description: 'Create an iron hoe',
+                    description: 'Infuse some iron ingots with aura',
                     children: [
                       {
                         item: 'undergarden:catalyst',
                         title: 'Legacy of the Lost',
                         frame: 'goal',
                         reward: 'im:dimensions/undergarden',
-                        description: 'Create an iron hoe',
+                        description:
+                          'Craft a catalyst to open the portal to the Undergarden',
                         children: [
                           {
                             item: 'undergarden:forgotten_nugget',
                             frame: 'goal',
                             title: 'Echos of Confinement',
-                            description: 'Create an iron hoe',
+                            description: 'Slay a Forgotten Guardian',
                             children: [
                               {
                                 icon: 'endrem:undead_eye',
@@ -103,42 +106,47 @@ onEvent('server.datapack.high_priority', event => {
                                 item: 'malum:spirit_altar',
                                 title: "Soulsmith's Forge",
                                 frame: 'goal',
-                                description: 'Create an iron hoe',
+                                description: 'Craft a spirit altar',
                                 children: [
                                   {
                                     item: 'malum:esoteric_spool',
                                     title: 'Spectrum Spun',
-                                    description: 'Craft a basic crushing head',
+                                    description:
+                                      'Create an esoteric spool to show off your identity',
                                   },
                                   {
                                     id: 'blood',
                                     frame: 'goal',
                                     item: 'hexerei:blood_bottle',
                                     title: "Vein's Vessel",
-                                    description: 'Create an iron hoe',
+                                    description:
+                                      'Prick your finger and fill a bottle with blood',
                                     children: [
                                       {
                                         parent: 'blood',
                                         item: 'bloodmagic:sacrificialdagger',
                                         title: "Vein's Verdict",
-                                        description: 'Upgrade your chest',
+                                        description:
+                                          'Craft a sacrificial knife',
                                       },
                                       {
                                         item: 'bloodmagic:altar',
                                         parent: 'blood',
                                         frame: 'goal',
                                         title: "Vein's Altar",
-                                        description: 'Create an iron hoe',
+                                        description: 'Create a blood altar',
                                         children: [
                                           {
                                             item: 'bloodmagic:blankslate',
                                             title: 'Slate of the Sacrificed',
-                                            description: 'Create a blank slate',
+                                            description:
+                                              'Infuse stone with blood',
                                           },
                                           {
                                             item: 'bloodmagic:weakbloodorb',
                                             title: 'Crimson Conduit',
-                                            description: 'Create a blood orb',
+                                            description:
+                                              'Infuse a utherium crystal with blood',
                                           },
                                           {
                                             item: 'bloodmagic:incensealtar',
@@ -150,13 +158,14 @@ onEvent('server.datapack.high_priority', event => {
                                             item: 'rankine:blood_obsidian',
                                             title: 'Crimson to the Core',
                                             frame: 'goal',
-                                            description: 'Create an iron hoe',
+                                            description:
+                                              'Infuse snowflake obsidian with blood',
                                             children: [
                                               {
                                                 item: 'create:powdered_obsidian',
                                                 title: 'Crushed to the Core',
                                                 description:
-                                                  'Grind some blood obsidian in your millstone',
+                                                  'Have your crusher demon crush the blood obsidian',
                                                 reward:
                                                   'im:dimensions/everdawn',
                                                 frame: 'goal',
@@ -166,16 +175,26 @@ onEvent('server.datapack.high_priority', event => {
                                                     title:
                                                       'Capacity Beyond Belief',
                                                     description:
-                                                      'upgrade your bag into a substantial satchel',
+                                                      'Upgrade your bag into a substantial satchel',
                                                   },
                                                 ],
                                               },
                                               {
-                                                item: 'blue_skies:everdawn_portal',
+                                                icon: 'blue_skies:everdawn_portal',
                                                 title: 'Heatwave Herald',
                                                 frame: 'goal',
                                                 description:
-                                                  'Create an iron hoe',
+                                                  'Travel to Everdawn',
+                                                criteria: {
+                                                  explore: {
+                                                    trigger:
+                                                      'minecraft:changed_dimension',
+                                                    conditions: {
+                                                      from: 'minecraft:overworld',
+                                                      to: 'blue_skies:everdawn',
+                                                    },
+                                                  },
+                                                },
                                                 children: [
                                                   {
                                                     item: 'blue_skies:horizonite_ingot',
@@ -188,49 +207,50 @@ onEvent('server.datapack.high_priority', event => {
                                                     title:
                                                       'Silence of the Alchemist',
                                                     description:
-                                                      'Create an iron hoe',
+                                                      'Slay the Alchemist',
                                                     children: [
                                                       {
                                                         item: 'malum:cluster_of_brilliance',
                                                         title:
                                                           'Brilliant Discovery',
                                                         description:
-                                                          'Create an iron hoe',
+                                                          'Collect a cluster of brilliance from the Alchemist',
                                                         children: [
                                                           {
                                                             item: 'malum:brilliant_obelisk',
                                                             title:
                                                               'Harmonized Brilliance',
                                                             description:
-                                                              'Create an iron hoe',
+                                                              'Craft a brilliant obelisk',
                                                           },
                                                           {
                                                             item: 'occultism:chalk_purple',
                                                             title:
                                                               'Circles of the Veil',
                                                             description:
-                                                              'Create an iron hoe',
+                                                              'Apply powdered obsidian to gold chalk',
                                                             children: [
                                                               {
                                                                 item: 'occultism:afrit_essence',
                                                                 title:
                                                                   'Infernal Invasion',
                                                                 description:
-                                                                  'Create an iron hoe',
+                                                                  'Summon an slay an afrit demon',
                                                                 children: [],
                                                               },
                                                               {
                                                                 item: 'tconstruct:blazing_blood_bucket',
-                                                                title: 'Crate',
-                                                                description:
+                                                                title:
                                                                   'Blaze of Glory',
+                                                                description:
+                                                                  'Melt blaze in a smeltery and collect a bucket of blazing blood',
                                                                 children: [
                                                                   {
                                                                     item: 'minecraft:torch',
                                                                     title:
                                                                       'Light Unto the Darkness',
                                                                     description:
-                                                                      'Upgrade your chest',
+                                                                      'Finally make a permanent torch',
                                                                   },
                                                                 ],
                                                               },
@@ -243,7 +263,7 @@ onEvent('server.datapack.high_priority', event => {
                                                         title:
                                                           'Arcane Awakening',
                                                         description:
-                                                          'Create an iron hoe',
+                                                          'Collect an enchanting table from the Alchemist',
                                                         children: [],
                                                       },
                                                     ],
@@ -271,7 +291,7 @@ onEvent('server.datapack.high_priority', event => {
                                                       'Silence of the Arachnid',
                                                     frame: 'goal',
                                                     description:
-                                                      'Create an iron hoe',
+                                                      'Slay the Arachnarch',
                                                     children: [
                                                       {
                                                         item: 'malum:raw_soulstone',
@@ -279,24 +299,36 @@ onEvent('server.datapack.high_priority', event => {
                                                         title:
                                                           "Soulstone's Secret",
                                                         description:
-                                                          'Create an iron hoe',
+                                                          'Collect raw soulstone from the Arachnarch',
                                                         children: [
                                                           {
                                                             item: 'malum:corrupted_resonance',
-                                                            title: 'Iron Hoe',
+                                                            title:
+                                                              "Twilight's Tears",
                                                             frame: 'goal',
                                                             reward:
                                                               'im:dimensions/twilight',
                                                             description:
-                                                              'Create an iron hoe',
+                                                              'Create a corrupted resonance',
                                                             children: [
                                                               {
-                                                                item: 'twilightforest:twilight_portal_miniature_structure',
+                                                                icon: 'twilightforest:twilight_portal_miniature_structure',
                                                                 title:
                                                                   'Echos of Asylum',
                                                                 frame: 'goal',
                                                                 description:
-                                                                  'Create an iron hoe',
+                                                                  'Travel to the Twilight Forest',
+                                                                criteria: {
+                                                                  explore: {
+                                                                    trigger:
+                                                                      'minecraft:changed_dimension',
+                                                                    conditions:
+                                                                      {
+                                                                        from: 'minecraft:overworld',
+                                                                        to: 'twilightforest:twilight_forest',
+                                                                      },
+                                                                  },
+                                                                },
                                                                 children: [
                                                                   {
                                                                     title:
@@ -329,7 +361,7 @@ onEvent('server.datapack.high_priority', event => {
                                                                         title:
                                                                           'Pushing Past',
                                                                         description:
-                                                                          'Craft a basic crushing head',
+                                                                          'Craft a piston',
                                                                         children:
                                                                           [
                                                                             {
@@ -348,23 +380,21 @@ onEvent('server.datapack.high_priority', event => {
                                                                     title:
                                                                       "Waste's Warning",
                                                                     description:
-                                                                      'Create an iron hoe',
+                                                                      'Complete all dungeons in the Twilight Forest and slay the Pollutioner King at the top of the final castle',
                                                                     children: [
                                                                       {
                                                                         item: 'explorerscompass:explorerscompass',
                                                                         title:
                                                                           'Dungeon Seeker',
                                                                         description:
-                                                                          'Create an iron hoe',
-                                                                        children:
-                                                                          [],
+                                                                          "Craft an explorer's compass from garbage",
                                                                       },
                                                                       {
                                                                         item: 'create:andesite_alloy',
                                                                         title:
                                                                           'Alloyed Aspirations',
                                                                         description:
-                                                                          'Create an iron hoe',
+                                                                          'Craft andesite Alloys from garbage',
                                                                         children:
                                                                           [
                                                                             {
@@ -372,7 +402,7 @@ onEvent('server.datapack.high_priority', event => {
                                                                               title:
                                                                                 'Grinding Gears',
                                                                               description:
-                                                                                'Create an iron hoe',
+                                                                                'Craft a millstone in your basic workbench',
                                                                               children:
                                                                                 [],
                                                                             },
@@ -385,14 +415,14 @@ onEvent('server.datapack.high_priority', event => {
                                                                     title:
                                                                       "Forest's Forge",
                                                                     description:
-                                                                      'Create an iron hoe',
+                                                                      'Forge an ironwood ingot',
                                                                     children: [
                                                                       {
                                                                         item: 'extendedcrafting:black_iron_ingot',
                                                                         title:
                                                                           "Twilight's Temper",
                                                                         description:
-                                                                          'Create an iron hoe',
+                                                                          'Pour molten obsidian on the ironwood ingot',
                                                                         children:
                                                                           [
                                                                             {
@@ -400,7 +430,7 @@ onEvent('server.datapack.high_priority', event => {
                                                                               title:
                                                                                 'Altar of Ambition',
                                                                               description:
-                                                                                'Create an iron hoe',
+                                                                                'Craft a basic table and start your engineering journey',
                                                                               children:
                                                                                 [],
                                                                             },
@@ -413,14 +443,14 @@ onEvent('server.datapack.high_priority', event => {
                                                                     title:
                                                                       "This Won't End Well",
                                                                     description:
-                                                                      'Create an iron hoe',
+                                                                      'Bring chickens back to the overworld and collect an egg',
                                                                     children: [
                                                                       {
                                                                         item: 'naturesaura:birth_spirit',
                                                                         title:
                                                                           "Brood's Beginning",
                                                                         description:
-                                                                          'Create an iron hoe',
+                                                                          'Breed 2 chickens together',
                                                                         children:
                                                                           [],
                                                                       },
@@ -433,7 +463,7 @@ onEvent('server.datapack.high_priority', event => {
                                                                     frame:
                                                                       'goal',
                                                                     description:
-                                                                      'Create an iron hoe',
+                                                                      'Forge a fiery ingot',
                                                                     children: [
                                                                       {
                                                                         item: 'create:cinder_flour',
@@ -442,7 +472,7 @@ onEvent('server.datapack.high_priority', event => {
                                                                         frame:
                                                                           'goal',
                                                                         description:
-                                                                          'Create an iron hoe',
+                                                                          'Grind the firey ingot into powder',
                                                                         children:
                                                                           [
                                                                             {
@@ -450,7 +480,7 @@ onEvent('server.datapack.high_priority', event => {
                                                                               title:
                                                                                 'Automation',
                                                                               description:
-                                                                                'Go to sleep after air creating some cinder flour',
+                                                                                'Go to sleep after grinding some cinder flour',
                                                                               frame:
                                                                                 'challenge',
                                                                               id: 'eye_lost',
@@ -495,7 +525,7 @@ onEvent('server.datapack.high_priority', event => {
                                                             title:
                                                               'Corrupted Core',
                                                             description:
-                                                              'Create an iron hoe',
+                                                              'Create a soulwood totem',
                                                             children: [],
                                                           },
                                                         ],
@@ -504,7 +534,7 @@ onEvent('server.datapack.high_priority', event => {
                                                         item: 'blue_skies:venom_sac',
                                                         title: "Toxin's Touch",
                                                         description:
-                                                          'Create an iron hoe',
+                                                          'Collect a venom sac from the Arachnarch',
                                                         children: [
                                                           {
                                                             id: 'sacrifice',
@@ -512,7 +542,7 @@ onEvent('server.datapack.high_priority', event => {
                                                             title:
                                                               "Toxin's Harvest",
                                                             description:
-                                                              'Create an iron hoe',
+                                                              'Craft a dagger of sacrifice',
                                                             children: [
                                                               {
                                                                 icon: 'endrem:corrupted_eye',
@@ -663,7 +693,8 @@ onEvent('server.datapack.high_priority', event => {
                                     icon: 'balanced_crates:oak_crate',
                                     tag: 'im:crates',
                                     title: 'Storage Savvy',
-                                    description: 'Upgrade your chest',
+                                    description:
+                                      'Upgrade your chest into a crate',
                                   },
                                   {
                                     item: 'paper',
@@ -684,21 +715,20 @@ onEvent('server.datapack.high_priority', event => {
                                 item: 'hexerei:blood_sigil',
                                 title: 'Seal of Sacrifice',
                                 description:
-                                  'Create a blood sigil used to prick your finger and collect blood',
+                                  'Create a blood sigil used to prick your finger',
                               },
                             ],
                           },
                           {
                             item: 'undergarden:mogmoss',
                             title: 'Moss of Mourning',
-                            description:
-                              'Ttransmute the mogmoss into arcane ashes',
+                            description: 'Collect some mogmoss from a mog',
                             children: [
                               {
                                 item: 'bloodmagic:arcaneashes',
                                 title: 'Dust of the Damned',
                                 description:
-                                  'Ttransmute the mogmoss into arcane ashes',
+                                  'Transmute the mogmoss into arcane ashes',
                               },
                             ],
                           },
