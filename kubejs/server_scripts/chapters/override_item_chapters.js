@@ -4764,6 +4764,8 @@ onEvent('tags.items', event => {
       'malum:block_of_cthonic_gold',
       'malum:vivid_nitrate',
       'malum:etheric_nitrate',
+      'malum:crushed_soulstone',
+      'malum:crushed_brilliance',
     ],
     chapter_5_1: ['malum:unholy_caramel', 'malum:holy_caramel'],
     chapter_5_2: [
