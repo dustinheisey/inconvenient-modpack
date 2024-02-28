@@ -59,6 +59,37 @@ onEvent('recipes', event => {
       },
       {
         inputs: [
+          'kubejs:powdered_fiery',
+          'create:powdered_obsidian',
+          'ecofriendly:garbage_item_ym',
+          'create:powdered_obsidian',
+          'kubejs:powdered_fiery',
+          'create:powdered_obsidian',
+          'ecofriendly:garbage_item_ym',
+          'create:powdered_obsidian',
+        ],
+        output: 'create:cinder_flour',
+        fluid: 'minecraft:lava',
+        fluid_consumed: 1000,
+      },
+      {
+        inputs: [
+          'create:powdered_obsidian',
+          'malum:twisted_rock',
+          'create:powdered_obsidian',
+          'malum:twisted_rock',
+          'create:powdered_obsidian',
+          'malum:twisted_rock',
+          'create:powdered_obsidian',
+          'malum:twisted_rock',
+        ],
+        output: 'blue_skies:lunar_stone',
+        output_count: 4,
+        fluid: 'minecraft:lava',
+        fluid_consumed: 1000,
+      },
+      {
+        inputs: [
           'undergarden:regalium_crystal',
           'undergarden:regalium_crystal',
           'undergarden:regalium_crystal',

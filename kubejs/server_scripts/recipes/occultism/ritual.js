@@ -1,18 +1,27 @@
 onEvent('server.datapack.high_priority', event => {
-  event.addJson(`occultism:recipes/ritual/possess_enderman.json`, {
-    type: 'forge:conditional',
-    recipes: [
-      {
-        conditions: [
-          {
-            type: 'forge:false',
-          },
-        ],
-      },
-    ],
+  [
+    'occultism:recipes/ritual/possess_enderman',
+    'occultism:recipes/ritual/craft_miner_afrit_deeps',
+    'occultism:recipes/ritual/possess_ghast',
+    'occultism:recipes/ritual/familiar_guardian',
+    'occultism:recipes/ritual/craft_miner_foliot_unspecialized',
+    'occultism:recipes/ritual/familiar_fairy',
+    'occultism:recipes/ritual/craft_miner_marid_master',
+    'occultism:recipes/ritual/craft_infused_pickaxe',
+  ].forEach(id => {
+    event.addJson(`${id}.json`, {
+      type: 'forge:conditional',
+      recipes: [
+        {
+          conditions: [
+            {
+              type: 'forge:false',
+            },
+          ],
+        },
+      ],
+    });
   });
-
-  event.addJson(`occultism:recipes/ritual/craft_infused_pickaxe.json`, {});
 });
 
 onEvent('recipes', event => {
@@ -709,29 +718,6 @@ onEvent('recipes', event => {
         },
       },
       {
-        activation_item: {item: 'rankine:blood_obsidian'},
-        pentacle_id: 'occultism:craft_marid',
-        ritual_type: 'occultism:craft',
-        inputs: [
-          {
-            item: 'malum:twisted_rock',
-          },
-          {
-            item: 'malum:twisted_rock',
-          },
-          {
-            item: 'malum:twisted_rock',
-          },
-          {
-            item: 'malum:twisted_rock',
-          },
-        ],
-        output: {
-          item: 'blue_skies:lunar_stone',
-          count: 4,
-        },
-      },
-      {
         activation_item: {item: 'minecraft:amethyst_shard'},
         pentacle_id: 'occultism:craft_marid',
         ritual_type: 'occultism:craft',
@@ -817,47 +803,6 @@ onEvent('recipes', event => {
       //     item: 'twilightforest:uncrafting_table',
       //   },
       // },
-      {
-        global: true,
-        activation_item: {item: 'occultism:afrit_essence'},
-        pentacle_id: 'occultism:craft_marid',
-        ritual_type: 'occultism:craft',
-        inputs: [
-          {
-            item: 'twilightforest:ironwood_block',
-          },
-          {
-            item: 'twilightforest:ironwood_block',
-          },
-          {
-            item: 'twilightforest:ironwood_block',
-          },
-          {
-            item: 'extendedcrafting:basic_component',
-          },
-          {
-            item: 'extendedcrafting:basic_component',
-          },
-          {
-            item: 'extendedcrafting:basic_component',
-          },
-          {
-            item: 'extendedcrafting:basic_component',
-          },
-          {
-            item: 'extendedcrafting:black_iron_slate',
-          },
-          {
-            item: 'extendedcrafting:black_iron_slate',
-          },
-          {
-            item: 'extendedcrafting:basic_catalyst',
-          },
-        ],
-        output: {
-          item: 'extendedcrafting:basic_table',
-        },
-      },
     ])
     .modifyOutputs([
       {
@@ -1576,8 +1521,8 @@ onEvent('recipes', event => {
         pentacle_id: 'occultism:possess_djinni',
         duration: 30,
         entity_to_sacrifice: {
-          tag: 'forge:pigs',
-          display_name: 'ritual.occultism.sacrifice.pigs',
+          tag: 'forge:horses',
+          display_name: 'ritual.occultism.sacrifice.horses',
         },
         entity_to_summon: 'occultism:fairy_familiar',
         ritual_dummy: {

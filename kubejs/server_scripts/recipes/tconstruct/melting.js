@@ -103,11 +103,6 @@ onEvent('recipes', event => {
     ])
     .add([
       {
-        input: 'rankine:blood_obsidian',
-        fluid: 'tconstruct:molten_obsidian',
-        amount: 250,
-      },
-      {
         input: 'architects_palette:plating_block',
         fluid: 'tconstruct:molten_iron',
         amount: 30,

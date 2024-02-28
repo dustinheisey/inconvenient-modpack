@@ -175,11 +175,12 @@ onEvent('recipes', event => {
       },
       {
         output: 'create:millstone',
-        pattern: ['a', 'b', 'c'],
+        pattern: [' a ', ' b ', 'cdc'],
         key: {
           a: 'create:cogwheel',
           b: 'create:andesite_casing',
           c: 'rankine:gray_marble',
+          d: 'occultism:afrit_essence',
         },
       },
       {
@@ -235,7 +236,7 @@ onEvent('recipes', event => {
         key: {
           a: 'blue_skies:dusk_planks',
           b: 'rankine:gray_marble',
-          c: 'create:andesite_alloy',
+          c: 'twilightforest:carminite',
           d: 'blue_skies:horizonite_ingot',
         },
       },
@@ -380,8 +381,8 @@ onEvent('recipes', event => {
         output: 'balanced_crates:warped_crate',
         pattern: ['aba', 'bcb', 'aba'],
         key: {
-          a: 'minecraft:warped_planks',
-          b: 'hexerei:willow_slab',
+          a: 'minecraft:warped_stem',
+          b: 'rankine:sawdust',
           c: 'minecraft:chest',
         },
       },
@@ -389,8 +390,8 @@ onEvent('recipes', event => {
         output: 'balanced_crates:oak_crate',
         pattern: ['aba', 'bcb', 'aba'],
         key: {
-          a: 'minecraft:oak_planks',
-          b: 'hexerei:willow_slab',
+          a: 'minecraft:oak_log',
+          b: 'rankine:sawdust',
           c: 'minecraft:chest',
         },
       },
@@ -398,8 +399,8 @@ onEvent('recipes', event => {
         output: 'balanced_crates:spruce_crate',
         pattern: ['aba', 'bcb', 'aba'],
         key: {
-          a: 'minecraft:spruce_planks',
-          b: 'hexerei:willow_slab',
+          a: 'minecraft:spruce_log',
+          b: 'rankine:sawdust',
           c: 'minecraft:chest',
         },
       },
@@ -407,8 +408,8 @@ onEvent('recipes', event => {
         output: 'balanced_crates:birch_crate',
         pattern: ['aba', 'bcb', 'aba'],
         key: {
-          a: 'minecraft:birch_planks',
-          b: 'hexerei:willow_slab',
+          a: 'minecraft:birch_log',
+          b: 'rankine:sawdust',
           c: 'minecraft:chest',
         },
       },
@@ -416,8 +417,8 @@ onEvent('recipes', event => {
         output: 'balanced_crates:jungle_crate',
         pattern: ['aba', 'bcb', 'aba'],
         key: {
-          a: 'minecraft:jungle_planks',
-          b: 'hexerei:willow_slab',
+          a: 'minecraft:jungle_log',
+          b: 'rankine:sawdust',
           c: 'minecraft:chest',
         },
       },
@@ -425,8 +426,8 @@ onEvent('recipes', event => {
         output: 'balanced_crates:acacia_crate',
         pattern: ['aba', 'bcb', 'aba'],
         key: {
-          a: 'minecraft:acacia_planks',
-          b: 'hexerei:willow_slab',
+          a: 'minecraft:acacia_log',
+          b: 'rankine:sawdust',
           c: 'minecraft:chest',
         },
       },
@@ -434,8 +435,8 @@ onEvent('recipes', event => {
         output: 'balanced_crates:dark_oak_crate',
         pattern: ['aba', 'bcb', 'aba'],
         key: {
-          a: 'minecraft:dark_oak_planks',
-          b: 'hexerei:willow_slab',
+          a: 'minecraft:dark_oak_log',
+          b: 'rankine:sawdust',
           c: 'minecraft:chest',
         },
       },
@@ -443,8 +444,8 @@ onEvent('recipes', event => {
         output: 'balanced_crates:crimson_crate',
         pattern: ['aba', 'bcb', 'aba'],
         key: {
-          a: 'minecraft:crimson_planks',
-          b: 'hexerei:willow_slab',
+          a: 'minecraft:crimson_stem',
+          b: 'rankine:sawdust',
           c: 'minecraft:chest',
         },
       },
@@ -453,7 +454,7 @@ onEvent('recipes', event => {
         pattern: ['aba', 'bcb', 'aba'],
         key: {
           a: 'blue_skies:spider_webbing',
-          b: 'ecofriendly:garbage_item_ym',
+          b: 'extendedcrafting:black_iron_ingot',
           c: 'naturescompass:naturescompass',
         },
       },

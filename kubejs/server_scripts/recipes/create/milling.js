@@ -274,11 +274,6 @@ onEvent('recipes', event => {
         input: 'undergarden:regalium_crystal',
         output: 'extendedcrafting:luminessence',
       },
-      {
-        input: 'rankine:blood_obsidian',
-        output: 'create:powdered_obsidian',
-        global: true,
-      },
     ])
     .add([
       {
@@ -286,12 +281,16 @@ onEvent('recipes', event => {
         output: '3x minecraft:string',
       },
       {
+        input: 'rankine:blood_obsidian',
+        output: 'create:powdered_obsidian',
+      },
+      {
         input: 'minecraft:end_stone',
         output: '3x occultism:crushed_end_stone',
       },
       {
         input: 'twilightforest:fiery_ingot',
-        output: 'create:cinder_flour',
+        output: 'kubejs:powdered_fiery',
       },
       {
         output: 'minecraft:gray_dye',

@@ -152,22 +152,23 @@ onEvent('tags.items', event => {
 
   addCollection('eyes', {
     chapter_1: ['endrem:cold_eye', 'endrem:undead_soul'],
-    chapter_2: ['endrem:exotic_eye', 'endrem:guardian_eye'],
+    chapter_2: ['endrem:exotic_eye'],
     chapter_3: [
       'endrem:undead_eye',
       'endrem:corrupted_eye',
-      'endrem:magical_eye',
+      'endrem:wither_eye',
+      'endrem:lost_eye',
     ],
-    chapter_4: ['endrem:wither_eye', 'endrem:black_eye'],
+    chapter_4: ['endrem:nether_eye', 'endrem:black_eye'],
     chapter_5_1: ['endrem:cursed_eye'],
-    chapter_5_2: ['endrem:lost_eye'],
-    chapter_6: ['endrem:nether_eye'],
+    chapter_5_2: ['endrem:evil_eye'],
+    chapter_6: ['endrem:rogue_eye'],
     chapter_7_1: [
-      'endrem:rogue_eye',
       'endrem:cryptic_eye',
       'endrem:old_eye',
       'endrem:witch_eye',
-      'endrem:evil_eye',
+      'endrem:magical_eye',
+      'endrem:guardian_eye',
     ],
   });
 

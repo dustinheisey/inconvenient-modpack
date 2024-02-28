@@ -303,13 +303,13 @@ onEvent('recipes', event => {
         ],
       },
       {
-        input: {item: 'malum:processed_soulstone', count: 16},
+        input: {item: 'minecraft:nether_star'},
         output: {item: 'malum:corrupted_resonance'},
         extra_items: [
           {item: 'malum:chunk_of_brilliance', count: 32},
-          {item: 'minecraft:lapis_lazuli', count: 32},
-          {item: 'minecraft:glowstone_dust', count: 32},
-          {item: 'minecraft:redstone', count: 32},
+          {item: 'undergarden:regalium_crystal', count: 32},
+          {item: 'create:powdered_obsidian', count: 32},
+          {item: 'malum:processed_soulstone', count: 32},
           {item: 'malum:hex_ash', count: 32},
         ],
         spirits: [

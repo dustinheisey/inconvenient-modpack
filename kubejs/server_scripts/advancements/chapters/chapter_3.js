@@ -115,6 +115,12 @@ onEvent('server.datapack.high_priority', event => {
                                       'Create an esoteric spool to show off your identity',
                                   },
                                   {
+                                    item: 'malum:twisted_rock',
+                                    title: 'TODO: fix',
+                                    description:
+                                      'Infuse shale with wicked and arcane souls',
+                                  },
+                                  {
                                     id: 'blood',
                                     frame: 'goal',
                                     item: 'hexerei:blood_bottle',
@@ -142,6 +148,13 @@ onEvent('server.datapack.high_priority', event => {
                                             description:
                                               'Infuse stone with blood',
                                           },
+
+                                          {
+                                            item: 'bloodmagic:incensealtar',
+                                            title: 'Pyre of Potency',
+                                            description:
+                                              'Craft an incense altar',
+                                          },
                                           {
                                             item: 'bloodmagic:weakbloodorb',
                                             title: 'Crimson Conduit',
@@ -149,10 +162,65 @@ onEvent('server.datapack.high_priority', event => {
                                               'Infuse a utherium crystal with blood',
                                           },
                                           {
-                                            item: 'bloodmagic:incensealtar',
-                                            title: 'Pyre of Potency',
+                                            item: 'bloodmagic:basemonstersoul',
+                                            title: 'Luring the Lost',
                                             description:
-                                              'Craft an incense altar',
+                                              'Extract will using the soul snares',
+                                            children: [
+                                              {
+                                                item: 'minecraft:soul_sand',
+                                                title: 'Graveyard Grains',
+                                                description:
+                                                  'Cast some will onto sand',
+                                                children: [
+                                                  {
+                                                    item: 'minecraft:nether_star',
+                                                    title:
+                                                      'Shattering Stardust',
+                                                    description:
+                                                      'Summon & slay the wither',
+                                                    children: [
+                                                      {
+                                                        icon: 'endrem:wither_eye',
+                                                        title: 'Witherstorm',
+                                                        description:
+                                                          'Go to sleep after defeating a Wither',
+                                                        frame: 'challenge',
+                                                        id: 'eye_wither',
+                                                        criteria: {
+                                                          collect: {
+                                                            trigger:
+                                                              'minecraft:inventory_changed',
+                                                            conditions: {
+                                                              items: [
+                                                                {
+                                                                  items: [
+                                                                    'minecraft:nether_star',
+                                                                  ],
+                                                                },
+                                                              ],
+                                                            },
+                                                          },
+                                                          sleep: {
+                                                            trigger:
+                                                              'minecraft:slept_in_bed',
+                                                          },
+                                                        },
+                                                        reward:
+                                                          'im:eyes/eye_wither',
+                                                      },
+                                                      {
+                                                        item: 'chunkloaders:single_chunk_loader',
+                                                        title:
+                                                          'Compact Continuity',
+                                                        description:
+                                                          'Create your first chunk loader',
+                                                      },
+                                                    ],
+                                                  },
+                                                ],
+                                              },
+                                            ],
                                           },
                                           {
                                             item: 'rankine:blood_obsidian',
@@ -177,80 +245,107 @@ onEvent('server.datapack.high_priority', event => {
                                                     description:
                                                       'Upgrade your bag into a substantial satchel',
                                                   },
-                                                ],
-                                              },
-                                              {
-                                                icon: 'blue_skies:everdawn_portal',
-                                                title: 'Heatwave Herald',
-                                                frame: 'goal',
-                                                description:
-                                                  'Travel to Everdawn',
-                                                criteria: {
-                                                  explore: {
-                                                    trigger:
-                                                      'minecraft:changed_dimension',
-                                                    conditions: {
-                                                      from: 'minecraft:overworld',
-                                                      to: 'blue_skies:everdawn',
-                                                    },
-                                                  },
-                                                },
-                                                children: [
                                                   {
-                                                    item: 'blue_skies:horizonite_ingot',
-                                                    title: 'Embers Refined',
+                                                    item: 'blue_skies:lunar_stonebrick',
+                                                    icon: 'blue_skies:everdawn_portal',
+                                                    count: 10,
+                                                    title: 'Heatwave Herald',
                                                     description:
-                                                      'Forge a horizonite ingot',
-                                                  },
-                                                  {
-                                                    item: 'blue_skies:loot_bag_alchemist',
-                                                    title:
-                                                      'Silence of the Alchemist',
-                                                    description:
-                                                      'Slay the Alchemist',
+                                                      'Craft lunar stone bricks and open a portal to Everdawn',
                                                     children: [
                                                       {
-                                                        item: 'malum:cluster_of_brilliance',
+                                                        item: 'blue_skies:loot_bag_alchemist',
                                                         title:
-                                                          'Brilliant Discovery',
+                                                          'Silence of the Alchemist',
                                                         description:
-                                                          'Collect a cluster of brilliance from the Alchemist',
+                                                          'Slay the Alchemist',
                                                         children: [
                                                           {
-                                                            item: 'malum:brilliant_obelisk',
+                                                            item: 'malum:cluster_of_brilliance',
                                                             title:
-                                                              'Harmonized Brilliance',
+                                                              'Brilliant Discovery',
                                                             description:
-                                                              'Craft a brilliant obelisk',
-                                                          },
-                                                          {
-                                                            item: 'occultism:chalk_purple',
-                                                            title:
-                                                              'Circles of the Veil',
-                                                            description:
-                                                              'Apply powdered obsidian to gold chalk',
+                                                              'Collect a cluster of brilliance from the Alchemist',
                                                             children: [
                                                               {
-                                                                item: 'occultism:afrit_essence',
+                                                                item: 'malum:brilliant_obelisk',
                                                                 title:
-                                                                  'Infernal Invasion',
+                                                                  'Harmonized Brilliance',
                                                                 description:
-                                                                  'Summon an slay an afrit demon',
-                                                                children: [],
+                                                                  'Craft a brilliant obelisk',
                                                               },
                                                               {
-                                                                item: 'tconstruct:blazing_blood_bucket',
+                                                                item: 'occultism:chalk_purple',
                                                                 title:
-                                                                  'Blaze of Glory',
+                                                                  'Circles of the Veil',
                                                                 description:
-                                                                  'Melt blaze in a smeltery and collect a bucket of blazing blood',
+                                                                  'Apply powdered obsidian to gold chalk',
                                                                 children: [
                                                                   {
-                                                                    item: 'minecraft:torch',
+                                                                    item: 'occultism:afrit_essence',
                                                                     title:
-                                                                      'Light Unto the Darkness',
+                                                                      'Infernal Invasion',
                                                                     description:
-                                                                      'Finally make a permanent torch',
+                                                                      'Summon an slay an afrit demon',
+                                                                    children:
+                                                                      [],
+                                                                  },
+                                                                  {
+                                                                    item: 'tconstruct:blazing_blood_bucket',
+                                                                    title:
+                                                                      'Blaze of Glory',
+                                                                    description:
+                                                                      'Melt blaze in a smeltery and collect a bucket of blazing blood',
+                                                                    children: [
+                                                                      {
+                                                                        item: 'minecraft:torch',
+                                                                        title:
+                                                                          'Light Unto the Darkness',
+                                                                        description:
+                                                                          'Finally make a permanent torch',
+                                                                      },
+                                                                    ],
+                                                                  },
+                                                                ],
+                                                              },
+                                                            ],
+                                                          },
+                                                          {
+                                                            item: 'minecraft:enchanting_table',
+                                                            title:
+                                                              'Arcane Awakening',
+                                                            description:
+                                                              'Collect an enchanting table from the Alchemist',
+                                                            children: [],
+                                                          },
+                                                        ],
+                                                      },
+                                                      {
+                                                        item: 'blue_skies:horizonite_ingot',
+                                                        title: 'Embers Refined',
+                                                        description:
+                                                          'Forge a horizonite ingot',
+                                                        children: [
+                                                          {
+                                                            item: 'extendedcrafting:black_iron_ingot',
+                                                            title:
+                                                              "Twilight's Temper",
+                                                            description:
+                                                              'Pour molten obsidian on the horizonite ingot',
+                                                            children: [
+                                                              {
+                                                                item: 'extendedcrafting:basic_table',
+                                                                title:
+                                                                  'Altar of Ambition',
+                                                                description:
+                                                                  'Craft a basic table and start engineering more complex machines',
+                                                                children: [
+                                                                  {
+                                                                    item: 'explorerscompass:explorerscompass',
+                                                                    title:
+                                                                      'Dungeon Seeker',
+                                                                    description:
+                                                                      "Craft an explorer's compass in a basic table",
                                                                   },
                                                                 ],
                                                               },
@@ -259,76 +354,30 @@ onEvent('server.datapack.high_priority', event => {
                                                         ],
                                                       },
                                                       {
-                                                        item: 'minecraft:enchanting_table',
+                                                        item: 'blue_skies:loot_bag_arachnarch',
                                                         title:
-                                                          'Arcane Awakening',
-                                                        description:
-                                                          'Collect an enchanting table from the Alchemist',
-                                                        children: [],
-                                                      },
-                                                    ],
-                                                  },
-                                                  {
-                                                    title: 'Chaotic Truth',
-                                                    description:
-                                                      'Find a page from a lost story in the Everdawn',
-                                                    item: 'kubejs:lost_page_everdawn',
-                                                    children: [
-                                                      {
-                                                        title: 'Climate Chaose',
-                                                        id: 'lost_story_everdawn',
-                                                        frame: 'challenge',
-                                                        description:
-                                                          'Remake the lost story from the Everdawn',
-                                                        item: 'kubejs:lost_story_everdawn',
-                                                      },
-                                                    ],
-                                                  },
-
-                                                  {
-                                                    item: 'blue_skies:loot_bag_arachnarch',
-                                                    title:
-                                                      'Silence of the Arachnid',
-                                                    frame: 'goal',
-                                                    description:
-                                                      'Slay the Arachnarch',
-                                                    children: [
-                                                      {
-                                                        item: 'malum:raw_soulstone',
+                                                          'Silence of the Arachnid',
                                                         frame: 'goal',
-                                                        title:
-                                                          "Soulstone's Secret",
                                                         description:
-                                                          'Collect raw soulstone from the Arachnarch',
+                                                          'Slay the Arachnarch',
                                                         children: [
                                                           {
-                                                            item: 'malum:corrupted_resonance',
-                                                            title:
-                                                              "Twilight's Tears",
+                                                            item: 'malum:raw_soulstone',
                                                             frame: 'goal',
-                                                            reward:
-                                                              'im:dimensions/twilight',
+                                                            title:
+                                                              "Soulstone's Secret",
                                                             description:
-                                                              'Create a corrupted resonance',
+                                                              'Collect raw soulstone from the Arachnarch',
                                                             children: [
                                                               {
-                                                                icon: 'twilightforest:twilight_portal_miniature_structure',
+                                                                item: 'malum:corrupted_resonance',
                                                                 title:
                                                                   'Echos of Asylum',
                                                                 frame: 'goal',
+                                                                reward:
+                                                                  'im:dimensions/twilight',
                                                                 description:
-                                                                  'Travel to the Twilight Forest',
-                                                                criteria: {
-                                                                  explore: {
-                                                                    trigger:
-                                                                      'minecraft:changed_dimension',
-                                                                    conditions:
-                                                                      {
-                                                                        from: 'minecraft:overworld',
-                                                                        to: 'twilightforest:twilight_forest',
-                                                                      },
-                                                                  },
-                                                                },
+                                                                  'Create a corrupted resonance and open a portal to the Twilight Forest',
                                                                 children: [
                                                                   {
                                                                     title:
@@ -383,13 +432,6 @@ onEvent('server.datapack.high_priority', event => {
                                                                       'Complete all dungeons in the Twilight Forest and slay the Pollutioner King at the top of the final castle',
                                                                     children: [
                                                                       {
-                                                                        item: 'explorerscompass:explorerscompass',
-                                                                        title:
-                                                                          'Dungeon Seeker',
-                                                                        description:
-                                                                          "Craft an explorer's compass from garbage",
-                                                                      },
-                                                                      {
                                                                         item: 'create:andesite_alloy',
                                                                         title:
                                                                           'Alloyed Aspirations',
@@ -410,34 +452,7 @@ onEvent('server.datapack.high_priority', event => {
                                                                       },
                                                                     ],
                                                                   },
-                                                                  {
-                                                                    item: 'twilightforest:ironwood_ingot',
-                                                                    title:
-                                                                      "Forest's Forge",
-                                                                    description:
-                                                                      'Forge an ironwood ingot',
-                                                                    children: [
-                                                                      {
-                                                                        item: 'extendedcrafting:black_iron_ingot',
-                                                                        title:
-                                                                          "Twilight's Temper",
-                                                                        description:
-                                                                          'Pour molten obsidian on the ironwood ingot',
-                                                                        children:
-                                                                          [
-                                                                            {
-                                                                              item: 'extendedcrafting:basic_table',
-                                                                              title:
-                                                                                'Altar of Ambition',
-                                                                              description:
-                                                                                'Craft a basic table and start your engineering journey',
-                                                                              children:
-                                                                                [],
-                                                                            },
-                                                                          ],
-                                                                      },
-                                                                    ],
-                                                                  },
+
                                                                   {
                                                                     item: 'minecraft:egg',
                                                                     title:
@@ -446,13 +461,26 @@ onEvent('server.datapack.high_priority', event => {
                                                                       'Bring chickens back to the overworld and collect an egg',
                                                                     children: [
                                                                       {
-                                                                        item: 'naturesaura:birth_spirit',
+                                                                        icon: 'naturesaura:birth_spirit',
                                                                         title:
                                                                           "Brood's Beginning",
                                                                         description:
                                                                           'Breed 2 chickens together',
-                                                                        children:
-                                                                          [],
+                                                                        criteria:
+                                                                          {
+                                                                            breed:
+                                                                              {
+                                                                                trigger:
+                                                                                  'minecraft:bred_animals',
+                                                                                conditions:
+                                                                                  {
+                                                                                    child:
+                                                                                      {
+                                                                                        type: 'minecraft:chicken',
+                                                                                      },
+                                                                                  },
+                                                                              },
+                                                                          },
                                                                       },
                                                                     ],
                                                                   },
@@ -518,131 +546,89 @@ onEvent('server.datapack.high_priority', event => {
                                                                   },
                                                                 ],
                                                               },
+                                                              {
+                                                                item: 'malum:soulwood_totem_base',
+                                                                title:
+                                                                  'Corrupted Core',
+                                                                description:
+                                                                  'Create a soulwood totem',
+                                                                children: [],
+                                                              },
                                                             ],
                                                           },
                                                           {
-                                                            item: 'malum:soulwood_totem_base',
+                                                            item: 'blue_skies:venom_sac',
                                                             title:
-                                                              'Corrupted Core',
+                                                              "Toxin's Touch",
                                                             description:
-                                                              'Create a soulwood totem',
-                                                            children: [],
-                                                          },
-                                                        ],
-                                                      },
-                                                      {
-                                                        item: 'blue_skies:venom_sac',
-                                                        title: "Toxin's Touch",
-                                                        description:
-                                                          'Collect a venom sac from the Arachnarch',
-                                                        children: [
-                                                          {
-                                                            id: 'sacrifice',
-                                                            item: 'bloodmagic:daggerofsacrifice',
-                                                            title:
-                                                              "Toxin's Harvest",
-                                                            description:
-                                                              'Craft a dagger of sacrifice',
+                                                              'Collect a venom sac from the Arachnarch',
                                                             children: [
                                                               {
-                                                                icon: 'endrem:corrupted_eye',
+                                                                id: 'sacrifice',
+                                                                item: 'bloodmagic:daggerofsacrifice',
                                                                 title:
-                                                                  'Parasite',
+                                                                  "Toxin's Harvest",
                                                                 description:
-                                                                  'Go to sleep after crafting a dagger of sacrifice',
-                                                                frame:
-                                                                  'challenge',
-                                                                parent:
-                                                                  'sacrifice',
-                                                                id: 'eye_corrupted',
-                                                                criteria: {
-                                                                  collect: {
-                                                                    trigger:
-                                                                      'minecraft:inventory_changed',
-                                                                    conditions:
-                                                                      {
-                                                                        items: [
+                                                                  'Craft a dagger of sacrifice',
+                                                                children: [
+                                                                  {
+                                                                    icon: 'endrem:corrupted_eye',
+                                                                    title:
+                                                                      'Parasite',
+                                                                    description:
+                                                                      'Go to sleep after crafting a dagger of sacrifice',
+                                                                    frame:
+                                                                      'challenge',
+                                                                    parent:
+                                                                      'sacrifice',
+                                                                    id: 'eye_corrupted',
+                                                                    criteria: {
+                                                                      collect: {
+                                                                        trigger:
+                                                                          'minecraft:inventory_changed',
+                                                                        conditions:
                                                                           {
                                                                             items:
                                                                               [
-                                                                                'bloodmagic:daggerofsacrifice',
+                                                                                {
+                                                                                  items:
+                                                                                    [
+                                                                                      'bloodmagic:daggerofsacrifice',
+                                                                                    ],
+                                                                                },
                                                                               ],
                                                                           },
-                                                                        ],
                                                                       },
+                                                                      sleep: {
+                                                                        trigger:
+                                                                          'minecraft:slept_in_bed',
+                                                                      },
+                                                                    },
+                                                                    reward:
+                                                                      'im:eyes/eye_corrupted',
                                                                   },
-                                                                  sleep: {
-                                                                    trigger:
-                                                                      'minecraft:slept_in_bed',
-                                                                  },
-                                                                },
-                                                                reward:
-                                                                  'im:eyes/eye_corrupted',
+                                                                ],
                                                               },
                                                             ],
                                                           },
                                                         ],
                                                       },
-                                                    ],
-                                                  },
-                                                ],
-                                              },
-                                            ],
-                                          },
-                                          {
-                                            item: 'bloodmagic:basemonstersoul',
-                                            title: 'Luring the Lost',
-                                            description:
-                                              'Extract will using the soul snares',
-                                            children: [
-                                              {
-                                                item: 'minecraft:soul_sand',
-                                                title: 'Graveyard Grains',
-                                                description:
-                                                  'Cast some will onto sand',
-                                                children: [
-                                                  {
-                                                    item: 'minecraft:nether_star',
-                                                    title:
-                                                      'Shattering Stardust',
-                                                    description:
-                                                      'Summon & slay the wither',
-                                                    children: [
                                                       {
-                                                        icon: 'endrem:wither_eye',
-                                                        title: 'Witherstorm',
+                                                        title: 'Chaotic Truth',
                                                         description:
-                                                          'Go to sleep after defeating a Wither',
-                                                        frame: 'challenge',
-                                                        id: 'eye_wither',
-                                                        criteria: {
-                                                          collect: {
-                                                            trigger:
-                                                              'minecraft:inventory_changed',
-                                                            conditions: {
-                                                              items: [
-                                                                {
-                                                                  items: [
-                                                                    'minecraft:nether_star',
-                                                                  ],
-                                                                },
-                                                              ],
-                                                            },
+                                                          'Find a page from a lost story in the Everdawn',
+                                                        item: 'kubejs:lost_page_everdawn',
+                                                        children: [
+                                                          {
+                                                            title:
+                                                              'Climate Chaose',
+                                                            id: 'lost_story_everdawn',
+                                                            frame: 'challenge',
+                                                            description:
+                                                              'Remake the lost story from the Everdawn',
+                                                            item: 'kubejs:lost_story_everdawn',
                                                           },
-                                                          sleep: {
-                                                            trigger:
-                                                              'minecraft:slept_in_bed',
-                                                          },
-                                                        },
-                                                        reward:
-                                                          'im:eyes/eye_wither',
-                                                      },
-                                                      {
-                                                        item: 'chunkloaders:single_chunk_loader',
-                                                        title:
-                                                          'Compact Continuity',
-                                                        description:
-                                                          'Create your first chunk loader',
+                                                        ],
                                                       },
                                                     ],
                                                   },

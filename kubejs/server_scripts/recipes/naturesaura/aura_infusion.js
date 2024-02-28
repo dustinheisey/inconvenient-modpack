@@ -27,7 +27,7 @@ onEvent('recipes', event => {
     .modifyOutputs([
       {
         global: true,
-        input: 'rankine:shale',
+        input: 'minecraft:stone',
         aura_type: 'overworld',
         output: 'naturesaura:infused_stone',
         aura: 100,

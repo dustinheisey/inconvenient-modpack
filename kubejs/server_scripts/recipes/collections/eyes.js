@@ -4,118 +4,138 @@ onEvent('recipes', event => {
       event.remove({output: `endrem:${config.id}_eye`});
 
       event
-        .shaped(`endrem:${config.id}_eye`, ['aba', 'bcb', 'aba'], {
-          a: config.inputs[0],
-          b: config.inputs[1],
-          c: config.inputs[2],
-        })
+        .shaped(`endrem:${config.id}_eye`, ['aba', 'bcb', 'aba'], config.key)
         .stage(`eye_${config.id}`);
     })
     .modifyOutputs([
       {
         id: 'cold',
-        inputs: [
-          'minecraft:packed_ice',
-          'minecraft:leather',
-          'minecraft:iron_ingot',
-        ],
-      },
-      {
-        id: 'guardian',
-        inputs: [
-          'blue_skies:moonstone',
-          'occultism:otherworld_ashes',
-          'occultism:purified_ink',
-        ],
+        key: {
+          a: 'minecraft:packed_ice',
+          b: 'minecraft:leather',
+          c: 'minecraft:iron_ingot',
+        },
       },
       {
         id: 'exotic',
-        inputs: [
-          'blue_skies:diopside_gem',
-          'naturesaura:gold_powder',
-          'blue_skies:starlit_sapling',
-        ],
+        key: {
+          a: 'blue_skies:diopside_gem',
+          b: 'naturesaura:gold_powder',
+          c: 'blue_skies:starlit_sapling',
+        },
       },
       {
         id: 'undead',
-        inputs: [
-          'naturesaura:infused_iron',
-          'endrem:undead_soul',
-          'undergarden:forgotten_nugget',
-        ],
+        key: {
+          a: 'naturesaura:infused_iron',
+          b: 'endrem:undead_soul',
+          c: 'undergarden:forgotten_nugget',
+        },
+      },
+      {
+        id: 'wither',
+        key: {
+          a: 'minecraft:soul_sand',
+          b: 'bloodmagic:reinforcedslate',
+          c: 'minecraft:nether_star',
+        },
       },
       {
         id: 'corrupted',
-        inputs: [
-          'blue_skies:horizonite_ingot',
-          'malum:processed_soulstone',
-          'bloodmagic:infusedslate',
-        ],
-      },
-      {
-        id: 'magical',
-        inputs: [
-          'create:andesite_alloy',
-          'create:cinder_flour',
-          'twilightforest:carminite',
-        ],
-      },
-
-      {
-        id: 'wither',
-        inputs: [
-          'tconstruct:pig_iron_ingot',
-          'minecraft:blaze_powder',
-          'bloodmagic:weakbloodshard',
-        ],
-      },
-      {
-        id: 'black',
-        inputs: [
-          'cataclysm:witherite_ingot',
-          'hem:circuit_board',
-          'create:shadow_steel',
-        ],
-      },
-      {
-        id: 'cursed',
-        inputs: [
-          'naturesaura:tainted_gold',
-          'botania:pixie_dust',
-          'farmersdelight:hamburger',
-        ],
+        key: {
+          a: 'blue_skies:horizonite_ingot',
+          b: 'malum:processed_soulstone',
+          c: 'bloodmagic:infusedslate',
+        },
       },
       {
         id: 'lost',
-        inputs: [
-          'pneumaticcraft:ingot_iron_compressed',
-          'coinsje:iron_coin',
-          'create:precision_mechanism',
-        ],
+        key: {
+          a: 'create:andesite_alloy',
+          b: 'create:cinder_flour',
+          c: 'twilightforest:carminite',
+        },
       },
       {
         id: 'nether',
-        inputs: ['chemlib:oganesson', 'chemlib:oganesson', 'chemlib:oganesson'],
+        key: {
+          a: 'tconstruct:pig_iron_ingot',
+          b: 'minecraft:blaze_powder',
+          c: 'bloodmagic:weakbloodshard',
+        },
+      },
+      {
+        id: 'black',
+        key: {
+          a: 'cataclysm:witherite_ingot',
+          b: 'hem:circuit_board',
+          c: 'create:shadow_steel',
+        },
+      },
+
+      {
+        id: 'cursed',
+        key: {
+          a: 'naturesaura:tainted_gold',
+          b: 'botania:pixie_dust',
+          c: 'farmersdelight:hamburger',
+        },
       },
       {
         id: 'evil',
-        inputs: ['chemlib:oganesson', 'chemlib:oganesson', 'chemlib:oganesson'],
+        key: {
+          a: 'pneumaticcraft:ingot_iron_compressed',
+          b: 'coinsje:iron_coin',
+          c: 'create:precision_mechanism',
+        },
       },
-      {
-        id: 'rogue',
-        inputs: ['chemlib:oganesson', 'chemlib:oganesson', 'chemlib:oganesson'],
-      },
-      {
-        id: 'witch',
-        inputs: ['chemlib:oganesson', 'chemlib:oganesson', 'chemlib:oganesson'],
-      },
-      {
-        id: 'old',
-        inputs: ['chemlib:oganesson', 'chemlib:oganesson', 'chemlib:oganesson'],
-      },
-      {
-        id: 'cryptic',
-        inputs: ['chemlib:oganesson', 'chemlib:oganesson', 'chemlib:oganesson'],
-      },
+      // {
+      //   id: 'rogue',
+      //   key: {
+      //      a: '',
+      //      b: '',
+      //      c: '',
+      //   },
+      // },
+      // {
+      //   id: 'witch',
+      //   key: {
+      //      a: '',
+      //      b: '',
+      //      c: '',
+      //   },
+      // },
+      // {
+      //   id: 'old',
+      //   key: {
+      //      a: '',
+      //      b: '',
+      //      c: '',
+      //   },
+      // },
+      // {
+      //   id: 'cryptic',
+      //   key: {
+      //      a: '',
+      //      b: '',
+      //      c: '',
+      //   },
+      // },
+      // {
+      //   id: 'guardian',
+      //   key: {
+      //      a: '',
+      //      b: '',
+      //      c: '',
+      //   },
+      // },
+      // {
+      //   id: 'magical',
+      //   key: {
+      //      a: '',
+      //      b: '',
+      //      c: '',
+      //   },
+      // },
     ]);
 });

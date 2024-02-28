@@ -14,8 +14,18 @@ onEvent('recipes', event => {
       pattern: ['aba', 'bcb', 'aba'],
       key: {
         a: 'occultism:crushed_end_stone',
-        b: 'naturesaura:infused_stone',
+        b: 'rankine:shale',
         c: 'naturesaura:infused_iron',
+      },
+    },
+    {
+      output: 'extendedcrafting:basic_table',
+      pattern: ['aba', 'bcb', 'dad'],
+      key: {
+        a: 'extendedcrafting:black_iron_ingot',
+        b: 'extendedcrafting:basic_component',
+        c: 'extendedcrafting:basic_catalyst',
+        d: 'extendedcrafting:black_iron_slate',
       },
     },
     {
@@ -156,8 +166,8 @@ onEvent('recipes', event => {
       pattern: ['ab', 'cc'],
       key: {
         a: 'occultism:chalk_gold_impure',
-        b: 'minecraft:glowstone_dust',
-        c: 'malum:chunk_of_brilliance',
+        b: 'malum:chunk_of_brilliance',
+        c: 'create:powdered_obsidian',
       },
     },
     {

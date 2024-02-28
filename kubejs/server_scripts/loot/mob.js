@@ -7,6 +7,7 @@ onEvent('lootjs', event => {
     }
   }
 
+  removeLoot('minecraft:gunpowder');
   removeLoot('minecraft:leather_helmet');
   removeLoot('minecraft:chainmail_helmet');
   removeLoot('minecraft:iron_helmet');

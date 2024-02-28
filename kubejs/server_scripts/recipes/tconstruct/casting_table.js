@@ -134,7 +134,7 @@ onEvent('recipes', event => {
       {
         fluid: 'tconstruct:molten_obsidian',
         amount: 250,
-        cast: 'twilightforest:ironwood_ingot',
+        cast: 'blue_skies:horizonite_ingot',
         output: 'extendedcrafting:black_iron_ingot',
       },
       {

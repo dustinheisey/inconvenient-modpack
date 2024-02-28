@@ -113,7 +113,7 @@ onEvent('server.datapack.high_priority', event => {
         type: 'stack',
         stack: {
           item: 'gateways:gate_pearl',
-          nbt: `{gateway:"gateways:${config.id}_medium_gateway"}`,
+          nbt: `{gateway:"gateways:medium_${config.id}_gateway"}`,
           count: 1,
         },
       });
@@ -129,7 +129,7 @@ onEvent('server.datapack.high_priority', event => {
         type: 'stack',
         stack: {
           item: 'gateways:gate_pearl',
-          nbt: `{gateway:"gateways:${config.id}_large_gateway"}`,
+          nbt: `{gateway:"gateways:large_${config.id}_gateway"}`,
           count: 1,
         },
       });
@@ -149,7 +149,7 @@ onEvent('server.datapack.high_priority', event => {
     config.relics.forEach(id => {
       json.push({
         type: 'chanced',
-        chance: size === 'small' ? 0.05 : size === 'medium' ? 0.2 : 0.5,
+        chance: size === 'small' ? 0.1 : size === 'medium' ? 0.3 : 0.75,
         reward: {
           type: 'stack',
           stack: {
