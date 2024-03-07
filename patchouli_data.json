@@ -96,6 +96,17 @@
       "bookmarks": [],
       "completedManualQuests": []
     },
+    "bloodmagic:guide": {
+      "viewedEntries": [
+        "bloodmagic:rituals/ritual_list/ritual_simple_dungeon",
+        "bloodmagic:rituals/ritual_stones",
+        "bloodmagic:dungeons/tau_fruit",
+        "bloodmagic:dungeons/lobby",
+        "bloodmagic:dungeons/keys"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
     "patchouli:employee_handbook": {
       "viewedEntries": [
         "patchouli:family/persona",

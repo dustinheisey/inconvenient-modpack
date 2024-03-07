@@ -11,8 +11,8 @@ onEvent('recipes', event => {
     ])
     .add([
       {
-        output: 'kubejs:salted_hide',
-        inputs: ['kubejs:stripped_hide', 'salt:salt'],
+        output: 'kubejs:hide_salted',
+        inputs: ['kubejs:hide_stripped', 'salt:salt'],
       },
       {
         output: 'bloodmagic:enhancedteleposerfocus',
@@ -21,19 +21,19 @@ onEvent('recipes', event => {
     ]);
 
   event
-    .shapeless('24x kubejs:stripped_hide', [
+    .shapeless('24x kubejs:hide_stripped', [
       'butchercraft:cow_hide',
       'butchercraft:skinning_knife',
     ])
     .damageIngredient(Item.of('minecraft:shears').ignoreNBT());
   event
-    .shapeless('24x kubejs:stripped_hide', [
+    .shapeless('24x kubejs:hide_stripped', [
       'butchercraft:sheep_hide',
       'butchercraft:skinning_knife',
     ])
     .damageIngredient(Item.of('minecraft:shears').ignoreNBT());
   event
-    .shapeless('24x kubejs:stripped_hide', [
+    .shapeless('24x kubejs:hide_stripped', [
       'butchercraft:pig_hide',
       'butchercraft:skinning_knife',
     ])

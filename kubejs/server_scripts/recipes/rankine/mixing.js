@@ -317,13 +317,13 @@ onEvent('recipes', event => {
         },
         inputs: [
           {
-            id: 'kubejs:dried_hide',
+            id: 'kubejs:hide_dried',
             required: true,
             min: 1.0,
             max: 1.0,
           },
         ],
-        output: 'kubejs:wet_tanned_hide',
+        output: 'kubejs:hide_wet_tanned',
       },
       {
         fluid_input: {
@@ -332,13 +332,13 @@ onEvent('recipes', event => {
         },
         inputs: [
           {
-            id: 'kubejs:dried_hide',
+            id: 'kubejs:hide_dried',
             required: true,
             min: 1.0,
             max: 1.0,
           },
         ],
-        output: 'kubejs:wet_tanned_hide',
+        output: 'kubejs:hide_wet_tanned',
       },
     ]);
 });

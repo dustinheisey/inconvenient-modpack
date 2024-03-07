@@ -281,6 +281,10 @@ onEvent('recipes', event => {
         output: '3x minecraft:string',
       },
       {
+        input: 'paragon_textiles:flax_stalks',
+        output: 'paragon_textiles:flax_seeds',
+      },
+      {
         input: 'rankine:blood_obsidian',
         output: 'create:powdered_obsidian',
       },
@@ -290,7 +294,7 @@ onEvent('recipes', event => {
       },
       {
         input: 'twilightforest:fiery_ingot',
-        output: 'kubejs:powdered_fiery',
+        output: 'kubejs:dust_fiery',
       },
       {
         output: 'minecraft:gray_dye',

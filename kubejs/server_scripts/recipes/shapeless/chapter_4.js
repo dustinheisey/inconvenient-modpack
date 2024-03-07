@@ -12,5 +12,9 @@ onEvent('recipes', event => {
           'occultism:chalk_purple_impure',
         ],
       },
+      {
+        output: 'minecraft:magma_cream',
+        inputs: ['minecraft:blaze_powder', 'malum:unholy_sapball'],
+      },
     ]);
 });

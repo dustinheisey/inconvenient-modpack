@@ -97,12 +97,12 @@ onEvent('recipes', event => {
         fluid: 'tconstruct:molten_glass',
         amount: 90,
         cast: 'tconstruct:ingot_cast',
-        output: 'kubejs:glass_tube',
+        output: 'kubejs:tube_glass',
       },
       {
         fluid: 'rankine:liquid_mercury',
         amount: 810,
-        cast: 'kubejs:glass_tube',
+        cast: 'kubejs:tube_glass',
         output: 'cold_sweat:thermometer',
       },
       {

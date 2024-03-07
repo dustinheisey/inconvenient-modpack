@@ -536,22 +536,22 @@ onEvent('server.datapack.high_priority', event => {
                         description: 'Gather some rotten flesh from the undead',
                         children: [
                           {
-                            item: 'kubejs:stitched_hide',
+                            item: 'kubejs:hide_stitched',
                             title: 'Rotten Patchwork',
                             description: 'Stitch the flesh together',
                             children: [
                               {
-                                item: 'kubejs:salted_hide',
+                                item: 'kubejs:hide_salted',
                                 title: 'Salty Preservation',
                                 description: 'Salt the hide',
                                 children: [
                                   {
-                                    item: 'kubejs:dried_hide',
+                                    item: 'kubejs:hide_dried',
                                     title: 'Hanging to Harden',
                                     description: 'Dry the salted hide',
                                     children: [
                                       {
-                                        item: 'kubejs:wet_tanned_hide',
+                                        item: 'kubejs:hide_wet_tanned',
                                         title: 'Questionable Tanning',
                                         description:
                                           'Tan the dried hide with tanning fluid',

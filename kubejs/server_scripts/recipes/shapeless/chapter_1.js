@@ -57,11 +57,11 @@ onEvent('recipes', event => {
     ])
     .add([
       {
-        output: 'kubejs:salted_hide',
-        inputs: ['kubejs:stitched_hide', 'salt:salt', 'salt:salt', 'salt:salt'],
+        output: 'kubejs:hide_salted',
+        inputs: ['kubejs:hide_stitched', 'salt:salt', 'salt:salt', 'salt:salt'],
       },
       {
-        output: 'kubejs:stitched_hide',
+        output: 'kubejs:hide_stitched',
         inputs: ['biomancy:living_flesh', 'biomancy:living_flesh'],
       },
       {

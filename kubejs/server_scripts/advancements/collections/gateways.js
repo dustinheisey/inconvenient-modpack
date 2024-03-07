@@ -69,7 +69,7 @@ onEvent('server.datapack.high_priority', event => {
                   {
                     title: 'Aquatic Token',
                     description: 'Collect a token from Everbright',
-                    item: 'kubejs:everbright_token',
+                    item: 'kubejs:token_everbright',
                   },
                 ],
               },
@@ -142,7 +142,7 @@ onEvent('server.datapack.high_priority', event => {
                   {
                     title: 'Forgotten Token',
                     description: 'Collect a token from the Undergarden',
-                    item: 'kubejs:undergarden_token',
+                    item: 'kubejs:token_undergarden',
                   },
                 ],
               },
@@ -215,7 +215,7 @@ onEvent('server.datapack.high_priority', event => {
                   {
                     title: 'Poisonous Token',
                     description: 'Collect a token from Everdawn',
-                    item: 'kubejs:everdawn_token',
+                    item: 'kubejs:token_everdawn',
                   },
                 ],
               },
@@ -288,7 +288,7 @@ onEvent('server.datapack.high_priority', event => {
                   {
                     title: 'Magical Token',
                     description: 'Collect a token from the Twilight Forest',
-                    item: 'kubejs:twilight_token',
+                    item: 'kubejs:token_twilight',
                   },
                 ],
               },
@@ -361,7 +361,7 @@ onEvent('server.datapack.high_priority', event => {
                   {
                     title: 'Hellish Token',
                     description: 'Collect a token from the Nether',
-                    item: 'kubejs:nether_token',
+                    item: 'kubejs:token_nether',
                   },
                 ],
               },
@@ -434,7 +434,7 @@ onEvent('server.datapack.high_priority', event => {
                   {
                     title: 'Sooty Token',
                     description: 'Collect a token from Blueleaf',
-                    item: 'kubejs:blueleaf_token',
+                    item: 'kubejs:token_blueleaf',
                   },
                 ],
               },
@@ -507,7 +507,7 @@ onEvent('server.datapack.high_priority', event => {
                   {
                     title: 'Buzzing Token',
                     description: 'Collect a token from the Bumblezone',
-                    item: 'kubejs:bumblezone_token',
+                    item: 'kubejs:token_bumblezone',
                   },
                 ],
               },
@@ -580,7 +580,7 @@ onEvent('server.datapack.high_priority', event => {
                   {
                     title: 'Mysterious Token',
                     description: 'Collect a token from the End',
-                    item: 'kubejs:end_token',
+                    item: 'kubejs:token_end',
                   },
                 ],
               },

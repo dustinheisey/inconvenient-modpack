@@ -373,35 +373,35 @@ onEvent('recipes', event => {
         output: 'chemlib:sodium_dust',
       },
       {
-        output: 'kubejs:soy_flakes',
+        output: 'kubejs:flakes_soy',
         input: 'rankine:soybeans',
       },
       {
-        output: 'kubejs:barley_flakes',
+        output: 'kubejs:flakes_barley',
         input: 'rankine:barley',
       },
       {
-        output: 'kubejs:rye_flakes',
+        output: 'kubejs:flakes_rye',
         input: 'rankine:rye',
       },
       {
-        output: 'kubejs:millet_flakes',
+        output: 'kubejs:flakes_millet',
         input: 'rankine:millet',
       },
       {
-        output: 'kubejs:sorghum_flakes',
+        output: 'kubejs:flakes_sorghum',
         input: 'rankine:sorghum',
       },
       {
-        output: 'kubejs:oat_flakes',
+        output: 'kubejs:flakes_oat',
         input: 'rankine:oats',
       },
       {
-        output: 'kubejs:corn_flakes',
+        output: 'kubejs:flakes_corn',
         input: 'rankine:corn_ear',
       },
       {
-        output: 'kubejs:wheat_flakes',
+        output: 'kubejs:flakes_wheat',
         input: 'kubejs:wheat',
       },
       {

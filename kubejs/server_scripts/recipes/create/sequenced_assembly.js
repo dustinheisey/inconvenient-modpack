@@ -1,5 +1,31 @@
 onEvent('recipes', event => {
   event.recipes
+    .createSequencedAssembly(['create:blaze_cake'], 'create:blaze_cake_base', [
+      event.recipes.createFilling('create:blaze_cake_base', [
+        'create:blaze_cake_base',
+        Fluid.of('kubejs:flaxseed_oil', 500000),
+      ]),
+      event.recipes.createFilling('create:blaze_cake_base', [
+        'create:blaze_cake_base',
+        Fluid.of('kubejs:liquid_tau', 100000),
+      ]),
+      event.recipes.createFilling('create:blaze_cake_base', [
+        'create:blaze_cake_base',
+        Fluid.of('tconstruct:magma', 500000),
+      ]),
+      event.recipes.createFilling('create:blaze_cake_base', [
+        'create:blaze_cake_base',
+        Fluid.of('hexerei:blood_fluid', 1000000),
+      ]),
+      event.recipes.createFilling('create:blaze_cake', [
+        'create:blaze_cake_base',
+        Fluid.of('minecraft:lava', 500000),
+      ]),
+    ])
+    .transitionalItem('create:blaze_cake_base')
+    .loops(1);
+
+  event.recipes
     .createSequencedAssembly(
       [Item.of('rankine:pancake_breakfast')],
       'rankine:pancake',

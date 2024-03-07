@@ -603,9 +603,9 @@ onEvent('recipes', event => {
         output: 'productivebees:spawn_egg_configurable_bee',
         type: 'tconstruct:casting_table',
       },
-    ])
-    // TODO: Chapter 7_1, 7_2, 8
-    .removeOutputs(['#im:chapter_7_1', '#im:chapter_7_2', '#im:chapter_8']);
+    ]);
+  // TODO: Chapter 7_1, 7_2, 8
+  // .removeOutputs(['#im:chapter_7_1', '#im:chapter_7_2', '#im:chapter_8']);
 
   const filtered_stacks = [
     'rankine:thermometer',

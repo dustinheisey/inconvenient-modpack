@@ -98,7 +98,7 @@ onEvent('server.datapack.high_priority', event => {
                                 description: 'Melt sand and create some glass',
                                 children: [
                                   {
-                                    item: 'kubejs:glass_tube',
+                                    item: 'kubejs:tube_glass',
                                     title: 'Glass and Shadow',
                                     description: 'Craft a slender glass tube',
                                   },

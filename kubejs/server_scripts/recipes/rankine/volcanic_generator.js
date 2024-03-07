@@ -48,9 +48,5 @@ onEvent('recipes', event => {
       //     output: "rankine:rhyolitic_tuff",
       //     inputs: ["tconstruct:pig_iron_block"],
       // },
-      {
-        output: 'rankine:snowflake_obsidian',
-        inputs: ['undergarden:forgotten_block'],
-      },
     ]);
 });

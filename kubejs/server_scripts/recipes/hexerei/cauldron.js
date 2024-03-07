@@ -59,11 +59,11 @@ onEvent('recipes', event => {
       },
       {
         inputs: [
-          'kubejs:powdered_fiery',
+          'kubejs:dust_fiery',
           'create:powdered_obsidian',
           'ecofriendly:garbage_item_ym',
           'create:powdered_obsidian',
-          'kubejs:powdered_fiery',
+          'kubejs:dust_fiery',
           'create:powdered_obsidian',
           'ecofriendly:garbage_item_ym',
           'create:powdered_obsidian',
