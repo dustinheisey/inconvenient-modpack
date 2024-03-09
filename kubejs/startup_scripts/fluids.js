@@ -49,7 +49,7 @@ onEvent('fluid.registry', event => {
   fluid('verdant_variants', 0x394827);
   fluid('sunset_shades', 0x9f392b);
   fluid('twilight_tones', 0xad70a4);
-  fluid('mixed_berry_juice');
+  fluid('berry_juice', 0xb183b1);
   fluid('carbonate_slurry', 0x8b8378);
   fluid('tar_slurry', 0x000000);
   fluid('crimson_resin', 0xdc143c);
