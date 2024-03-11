@@ -289,3 +289,11 @@ function addAdvancements(event, stage, config, child_id, parent_id) {
     });
   }
 }
+
+function milestoneRecipes(config) {
+  config.recipe();
+  if (config.children)
+    config.children.forEach(child => {
+      milestone(child);
+    });
+}
