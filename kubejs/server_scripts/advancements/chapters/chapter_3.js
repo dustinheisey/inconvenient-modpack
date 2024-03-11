@@ -494,7 +494,7 @@ onEvent('server.datapack.high_priority', event => {
                                                                       'Forge a fiery ingot',
                                                                     children: [
                                                                       {
-                                                                        item: 'create:cinder_flour',
+                                                                        item: 'kubejs:dust_cinder',
                                                                         title:
                                                                           "Inferno's Promise",
                                                                         frame:
@@ -527,7 +527,7 @@ onEvent('server.datapack.high_priority', event => {
                                                                                               {
                                                                                                 items:
                                                                                                   [
-                                                                                                    'create:cinder_flour',
+                                                                                                    'kubejs:dust_cinder',
                                                                                                   ],
                                                                                               },
                                                                                             ],
