@@ -1,5 +1,5 @@
 onEvent('recipes', event => {
-  milestoneRecipes({
+  setMilestoneRecipes({
     id: 'blaze_cake',
     recipe: () => {
       event.remove({output: 'create:blaze_cake'});
@@ -41,7 +41,7 @@ onEvent('recipes', event => {
           event.recipes
             .createCompacting(
               'create:blaze_cake_base',
-              Fluid.of('kubejs:blaze_cake_batter', 1000)
+              Fluid.of('kubejs:blaze_cake_batter', 1000000)
             )
             .heated();
         },
@@ -52,8 +52,7 @@ onEvent('recipes', event => {
               event.recipes.create.mixing(
                 Fluid.of('kubejs:blaze_cake_batter', 1000),
                 [
-                  Fluid.of('charcoal_pit:sunflower_oil', 1000000),
-                  Fluid.of('charcoal_pit:vinegar_still', 100000),
+                  Fluid.of('charcoal_pit:sunflower_oil', 1000),
                   'kubejs:egg_whip',
                   'kubejs:cake_mix',
                 ]
@@ -64,7 +63,7 @@ onEvent('recipes', event => {
                 id: 'sunflower_oil',
                 recipe: () => {
                   event.recipes.createCompacting(
-                    Fluid.of('charcoal_pit:sunflower_oil', 1000),
+                    Fluid.of('charcoal_pit:sunflower_oil', 250),
                     'minecraft:sunflower'
                   );
                 },
@@ -75,14 +74,14 @@ onEvent('recipes', event => {
                   event.custom({
                     type: 'charcoal_pit:barrel',
                     item_in: {
-                      item: 'minecraft:beetroot',
+                      tag: 'forge:mushrooms',
                     },
                     fluid_in: {
                       fluid: 'charcoal_pit:alcohol_still',
                       amount: 1000,
                     },
                     fluid_out: {
-                      fluid: 'charcoal_pit:vinegar',
+                      fluid: 'charcoal_pit:vinegar_still',
                       amount: 1000,
                     },
                     flags: 1,
@@ -94,8 +93,8 @@ onEvent('recipes', event => {
                     id: 'alcohol',
                     recipe: () => {
                       event.recipes.create
-                        .mixing(Fluid.of('charcoal_pit:alcohol_still'), [
-                          Fluid.of('kubejs:wine'),
+                        .mixing(Fluid.of('charcoal_pit:alcohol_still', 250), [
+                          Fluid.of('kubejs:wine', 1000),
                         ])
                         .heated();
                     },
@@ -106,15 +105,18 @@ onEvent('recipes', event => {
                           event.custom({
                             type: 'charcoal_pit:barrel',
                             item_in: {
-                              item: 'minecraft:beetroot',
+                              tag: 'forge:mushrooms',
                             },
                             fluid_in: {
                               fluid: 'kubejs:berry_juice',
-                              amount: 1000,
+                              amount: 16000,
                             },
                             fluid_out: {
                               fluid: 'kubejs:wine',
-                              amount: 1000,
+                              amount: 4000,
+                            },
+                            item_out: {
+                              item: 'kubejs:tartaric_acid',
                             },
                             flags: 1,
                             time: 6000,
@@ -140,7 +142,7 @@ onEvent('recipes', event => {
                 id: 'egg_whip',
                 recipe: () => {
                   event.recipes.create.mixing('kubejs:egg_whip', [
-                    'minecraft:egg',
+                    '2x minecraft:egg',
                   ]);
                 },
               },
@@ -148,10 +150,10 @@ onEvent('recipes', event => {
                 id: 'cake_mix',
                 recipe: () => {
                   event.recipes.create.mixing('kubejs:cake_mix', [
-                    'kubejs:dust_cinnamon',
-                    'minecraft:sugar',
+                    '3x kubejs:dust_cinnamon',
+                    '3x minecraft:sugar',
                     'kubejs:baking_powder',
-                    'create:cinder_flour',
+                    '2x create:cinder_flour',
                   ]);
                 },
                 children: [
@@ -244,6 +246,9 @@ onEvent('recipes', event => {
                                           {
                                             id: 'trona',
                                             recipe: () => {
+                                              event.remove({
+                                                id: 'rankine:evaporation/water_river_evaporation',
+                                              });
                                               event.custom({
                                                 type: 'rankine:evaporation',
                                                 processTime: 12000,
@@ -290,7 +295,7 @@ onEvent('recipes', event => {
                             recipe: () => {
                               event.recipes.create
                                 .mixing('rankine:carbon_dioxide_gas_bottle', [
-                                  Fluid.of('charcoal_pit:alcohol_still', 1000),
+                                  Fluid.of('charcoal_pit:vinegar_still', 1000),
                                   'kubejs:dust_calcium_carbonate',
                                 ])
                                 .heated();
@@ -308,6 +313,9 @@ onEvent('recipes', event => {
                                   {
                                     id: 'gray_marble',
                                     recipe: () => {
+                                      event.remove({
+                                        id: 'rankine:stonegen_metamorphic/gray_marble_generator',
+                                      });
                                       event.recipes.create
                                         .mixing('rankine:gray_marble', [
                                           'rankine:white_marble',
@@ -330,23 +338,6 @@ onEvent('recipes', event => {
                             'kubejs:tartaric_acid'
                           );
                         },
-                        children: [
-                          {
-                            id: 'tartaric_acid',
-                            recipe: () => {
-                              event.custom({
-                                type: 'rankine:evaporation',
-                                processTime: 12000,
-                                input: {
-                                  fluid: 'kubejs:wine',
-                                },
-                                outputs: [
-                                  {item: 'kubejs:tartaric_acid', weight: 100},
-                                ],
-                              });
-                            },
-                          },
-                        ],
                       },
                     ],
                   },
@@ -389,14 +380,16 @@ onEvent('recipes', event => {
               fluid: 'kubejs:liquid_tau',
               amount: 1000,
             },
-            temperature: 605,
-            time: 54,
+            temperature: 1200,
+            time: 30,
           });
         },
       },
       {
         id: 'lava',
         recipe: () => {
+          event.remove({id: 'rankine:treetapping/crimson_stem_treetapping'});
+          event.remove({id: 'rankine:treetapping/warped_stem_treetapping'});
           event.custom({
             type: 'tconstruct:melting',
             ingredient: {
@@ -404,10 +397,10 @@ onEvent('recipes', event => {
             },
             result: {
               fluid: 'minecraft:lava',
-              amount: 250,
+              amount: 50,
             },
-            temperature: 605,
-            time: 54,
+            temperature: 600,
+            time: 30,
           });
         },
         children: [

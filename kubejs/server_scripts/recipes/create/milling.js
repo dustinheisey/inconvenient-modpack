@@ -208,10 +208,6 @@ onEvent('recipes', event => {
         global: true,
       },
       {
-        input: 'minecraft:sugar_cane',
-        output: 'minecraft:sugar',
-      },
-      {
         input: 'minecraft:bone',
         output: '3x minecraft:bone_meal',
       },

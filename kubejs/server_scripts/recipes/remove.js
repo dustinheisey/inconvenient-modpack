@@ -1661,6 +1661,7 @@ onEvent('recipes', event => {
     'charcoal_pit:squish',
     'rankine:crucible',
     'rankine:foraging',
+    'rankine:cauldron_drying',
   ];
 
   filtered_stacks.forEach(item => {
