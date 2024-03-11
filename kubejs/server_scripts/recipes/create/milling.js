@@ -281,10 +281,6 @@ onEvent('recipes', event => {
         output: '3x minecraft:string',
       },
       {
-        input: 'paragon_textiles:flax_stalks',
-        output: 'paragon_textiles:flax_seeds',
-      },
-      {
         input: 'rankine:blood_obsidian',
         output: 'create:powdered_obsidian',
       },

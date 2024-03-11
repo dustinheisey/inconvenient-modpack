@@ -22,28 +22,6 @@ onEvent('recipes', event => {
         global: true,
       },
       {
-        output: Fluid.of('kubejs:flaxseed_oil', 250),
-        inputs: ['paragon_textiles:flax_seeds'],
-        heated: true,
-        global: true,
-      },
-      {
-        output: Fluid.of('kubejs:liquid_tau', 1000),
-        inputs: ['bloodmagic:strong_tau'],
-        heated: true,
-        global: true,
-      },
-      {
-        output: Fluid.of('minecraft:lava', 1000),
-        inputs: ['kubejs:dust_cinder'],
-        heated: true,
-      },
-      {
-        output: 'kubejs:dust_cinder',
-        inputs: ['create:powdered_obsidian'],
-        heated: true,
-      },
-      {
         output: 'create:shadow_steel',
         inputs: [
           'naturesaura:token_fear',

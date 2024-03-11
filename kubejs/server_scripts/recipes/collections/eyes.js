@@ -52,7 +52,7 @@ onEvent('recipes', event => {
         id: 'lost',
         key: {
           a: 'create:andesite_alloy',
-          b: 'create:cinder_flour',
+          b: 'kubejs:dust_cinder',
           c: 'twilightforest:carminite',
         },
       },

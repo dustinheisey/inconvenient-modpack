@@ -33,10 +33,6 @@ onEvent('recipes', event => {
         input: 'twilightforest:carminite_block',
       },
       {
-        output: 'rankine:gray_marble',
-        input: 'blue_skies:sunstone_block',
-      },
-      {
         output: 'rankine:white_marble',
         input: 'blue_skies:moonstone_block',
       },

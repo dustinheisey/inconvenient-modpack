@@ -68,7 +68,7 @@ onEvent('recipes', event => {
           'ecofriendly:garbage_item_ym',
           'create:powdered_obsidian',
         ],
-        output: 'create:cinder_flour',
+        output: 'kubejs:dust_cinder',
         fluid: 'minecraft:lava',
         fluid_consumed: 1000,
       },
