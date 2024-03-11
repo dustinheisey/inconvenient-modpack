@@ -4382,9 +4382,10 @@ onEvent('tags.items', event => {
       'kubejs:molten_sterling_silver_bucket',
       'kubejs:freezing_sap_bucket',
       'kubejs:token_everbright',
-      'kubejs:tube_glass',
+      'kubejs:glass_tube',
     ],
     chapter_3: [
+      'kubejs:dust_cinder',
       'kubejs:molten_forgotten_metal_bucket',
       'kubejs:molten_utherium_bucket',
       'kubejs:molten_regalium_bucket',
@@ -5032,7 +5033,6 @@ onEvent('tags.items', event => {
       'create:green_seat',
       'create:black_seat',
       'create:millstone',
-      'create:cinder_flour',
       'create:cogwheel',
       'create:large_cogwheel',
       'create:shaft',
@@ -5040,6 +5040,7 @@ onEvent('tags.items', event => {
       'create:andesite_alloy',
     ],
     chapter_4: [
+      'create:cinder_flour',
       'create:rose_quartz_lamp',
       'create:copper_tiles',
       'create:exposed_copper_tiles',
