@@ -102,7 +102,10 @@
         "bloodmagic:rituals/ritual_stones",
         "bloodmagic:dungeons/tau_fruit",
         "bloodmagic:dungeons/lobby",
-        "bloodmagic:dungeons/keys"
+        "bloodmagic:dungeons/keys",
+        "bloodmagic:dungeons/demonite",
+        "bloodmagic:dungeons/endless_realm",
+        "bloodmagic:utility/ore_processing"
       ],
       "bookmarks": [],
       "completedManualQuests": []

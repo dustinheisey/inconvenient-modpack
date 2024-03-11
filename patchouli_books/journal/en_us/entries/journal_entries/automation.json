@@ -1,6 +1,6 @@
 {
   "name": "Automation",
-  "icon": "create:cinder_flour",
+  "icon": "kubejs:dust_cinder",
   "category": "patchouli:entries",
   "secret": true,
   "sortnum": 12,
