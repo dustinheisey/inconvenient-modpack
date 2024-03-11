@@ -24,7 +24,7 @@ onEvent('item.registry', event => {
     'brass',
     'mixed',
   ]);
-  items('pebble', ['turquoise', 'depthrock', 'lunar', 'deadrock', 'mixed']);
+  items('pebble', ['turquoise', 'lunar', 'deadrock', 'mixed']);
   items('flakes', [
     'wheat',
     'corn',

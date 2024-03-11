@@ -42,7 +42,6 @@ onEvent('fluid.registry', event => {
 
   // Chapter 4
   fluid('liquid_tau', 0xffca00);
-  fluid('flaxseed_oil', 0xd0c478);
   fluid('crystallized_sap', 0xb994b7, true);
   fluid('molten_iesnium', 0x9fd3dd);
   fluid('polar_pigments', 0xd3e1eb);
@@ -54,6 +53,8 @@ onEvent('fluid.registry', event => {
   fluid('tar_slurry', 0x000000);
   fluid('crimson_resin', 0xdc143c);
   fluid('warped_resin', 0x008b8b);
+  fluid('blaze_cake_batter', 0xff4019);
+  fluid('wine', 0x4e032b);
 
   // Chapter 5.1
   fluid('antibiotics', 0xa091b3, true);
