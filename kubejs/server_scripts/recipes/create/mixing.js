@@ -22,32 +22,6 @@ onEvent('recipes', event => {
         global: true,
       },
       {
-        output: 'create:shadow_steel',
-        inputs: [
-          'naturesaura:token_fear',
-          'naturesaura:token_sorrow',
-          'bloodmagic:corrupted_dust',
-          'cataclysm:witherite_ingot',
-          'create:chromatic_compound',
-          Fluid.of('kubejs:crystallized_sap', 1000),
-        ],
-        superheated: true,
-        global: true,
-      },
-      {
-        output: 'create:refined_radiance',
-        inputs: [
-          'naturesaura:token_joy',
-          'naturesaura:token_anger',
-          'bloodmagic:corrupted_dust',
-          'cataclysm:ignitium_ingot',
-          'create:chromatic_compound',
-          Fluid.of('kubejs:crystallized_sap', 1000),
-        ],
-        superheated: true,
-        global: true,
-      },
-      {
         output: 'chemlib:chromium_oxide',
         inputs: ['rankine:chromium_nugget', '3x rankine:oxygen_gas_bottle'],
         superheated: true,
@@ -57,17 +31,6 @@ onEvent('recipes', event => {
         output: 'chemlib:silicon_dioxide',
         inputs: ['chemlib:silicon_dust', '2x rankine:oxygen_gas_bottle'],
         superheated: true,
-        global: true,
-      },
-      {
-        output: 'create:chromatic_compound',
-        inputs: [
-          '2x rankine:dry_rubber',
-          '2x create:experience_nugget',
-          '2x rankine:carbon_dioxide_gas_bottle',
-          '2x create:polished_rose_quartz',
-          Fluid.of('kubejs:crystallized_sap', 1000),
-        ],
         global: true,
       },
       {
@@ -256,11 +219,6 @@ onEvent('recipes', event => {
           'rankine:calcium_chloride',
           Fluid.of('kubejs:antibiotics', 250),
         ],
-      },
-      {
-        output: 'cataclysm:witherite_ingot',
-        inputs: ['minecraft:netherite_ingot', 'charcoal_pit:nether_shard'],
-        heated: true,
       },
       {
         output: 'rankine:promethium_ingot',

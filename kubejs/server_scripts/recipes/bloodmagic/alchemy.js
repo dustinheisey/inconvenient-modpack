@@ -100,15 +100,5 @@ onEvent('recipes', event => {
         syphon: 200,
         ticks: 200,
       },
-      {
-        inputs: [
-          {item: 'rankine:sulfur'},
-          {item: 'bloodmagic:saltpeter'},
-          {item: 'minecraft:coal'},
-        ],
-        output: {item: 'minecraft:gunpowder', count: 3},
-        syphon: 0,
-        ticks: 0,
-      },
     ]);
 });

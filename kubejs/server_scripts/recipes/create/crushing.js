@@ -118,14 +118,6 @@ onEvent('recipes', event => {
       },
       {
         global: true,
-        input: 'rankine:sphalerite',
-        output: [
-          '2x chemlib:zinc_dust',
-          Item.of('create:experience_nugget').withChance(0.5),
-        ],
-      },
-      {
-        global: true,
         input: 'rankine:malachite',
         output: [
           '2x chemlib:copper_dust',

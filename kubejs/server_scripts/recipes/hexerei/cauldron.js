@@ -261,22 +261,6 @@ onEvent('recipes', event => {
       {
         fluid: 'minecraft:water',
         inputs: [
-          'minecraft:beetroot',
-          'minecraft:beetroot',
-          'minecraft:beetroot',
-          'minecraft:beetroot',
-          'minecraft:beetroot',
-          'minecraft:beetroot',
-          'minecraft:beetroot',
-          'minecraft:beetroot',
-        ],
-        output: 'minecraft:red_dye',
-        output_count: 3,
-        fluid_consumed: 500,
-      },
-      {
-        fluid: 'minecraft:water',
-        inputs: [
           'rankine:fire_clay_ball',
           'rankine:sawdust',
           'rankine:sawdust',

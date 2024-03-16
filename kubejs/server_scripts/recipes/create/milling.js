@@ -288,39 +288,5 @@ onEvent('recipes', event => {
         input: 'twilightforest:fiery_ingot',
         output: 'kubejs:dust_fiery',
       },
-      {
-        output: 'minecraft:gray_dye',
-        input: 'undergarden:veil_mushroom',
-      },
-      {output: 'minecraft:lime_dye', input: 'hexerei:mugwort_leaves'},
-      {
-        output: 'minecraft:light_gray_dye',
-        input: 'undergarden:shimmerweed',
-      },
-      {output: 'minecraft:red_dye', input: 'blue_skies:brumble'},
-      {output: 'minecraft:orange_dye', input: 'blue_skies:blaze_bud'},
-      {
-        output: 'minecraft:black_dye',
-        input: 'undergarden:ink_mushroom',
-      },
-      {output: 'minecraft:blue_dye', input: 'blue_skies:nightcress'},
-      {output: 'minecraft:pink_dye', input: 'blue_skies:blush_blossom'},
-      {
-        output: 'minecraft:yellow_dye',
-        input: 'twilightforest:torchberries',
-      },
-      {output: 'minecraft:green_dye', input: 'undergarden:mogmoss'},
-      {
-        output: 'minecraft:light_blue_dye',
-        input: 'blue_skies:snowcap_pinhead',
-      },
-      {output: 'minecraft:magenta_dye', input: 'blue_skies:camellia'},
-      {
-        output: 'minecraft:purple_dye',
-        input: 'undergarden:gloomgourd_seeds',
-      },
-      {output: 'minecraft:cyan_dye', input: 'blue_skies:moonlit_bloom'},
-      {output: 'minecraft:brown_dye', input: 'hexerei:mandrake_root'},
-      {output: 'minecraft:white_dye', input: 'minecraft:bone_meal'},
     ]);
 });

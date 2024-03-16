@@ -32,19 +32,5 @@ onEvent('recipes', event => {
         output: 'naturesaura:infused_stone',
         aura: 100,
       },
-      {
-        global: true,
-        input: 'rankine:rose_gold_ingot',
-        aura_type: 'nether',
-        output: 'naturesaura:tainted_gold',
-        aura: 10000,
-      },
-      {
-        global: true,
-        input: 'botania:manasteel_block',
-        aura_type: 'nether',
-        output: 'naturesaura:tainted_gold_block',
-        aura: 90000,
-      },
     ]);
 });

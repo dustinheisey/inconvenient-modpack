@@ -69,13 +69,6 @@ onEvent('recipes', event => {
     .modifyOutputs([
       {
         global: true,
-        fluid: 'kubejs:molten_redstone',
-        amount: 810,
-        cast: 'minecraft:quartz',
-        output: 'create:rose_quartz',
-      },
-      {
-        global: true,
         fluid: 'tconstruct:blazing_blood',
         cast: 'minecraft:coal',
         amount: 10,
