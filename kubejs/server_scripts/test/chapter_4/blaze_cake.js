@@ -77,12 +77,12 @@ onEvent('recipes', event => {
                       tag: 'forge:mushrooms',
                     },
                     fluid_in: {
-                      fluid: 'charcoal_pit:alcohol_still',
+                      fluid: 'kubejs:wine',
                       amount: 1000,
                     },
                     fluid_out: {
                       fluid: 'charcoal_pit:vinegar_still',
-                      amount: 1000,
+                      amount: 250,
                     },
                     flags: 1,
                     time: 6000,
@@ -90,49 +90,37 @@ onEvent('recipes', event => {
                 },
                 children: [
                   {
-                    id: 'alcohol',
+                    id: 'wine',
                     recipe: () => {
-                      event.recipes.create
-                        .mixing(Fluid.of('charcoal_pit:alcohol_still', 250), [
-                          Fluid.of('kubejs:wine', 1000),
-                        ])
-                        .heated();
+                      event.custom({
+                        type: 'charcoal_pit:barrel',
+                        item_in: {
+                          tag: 'forge:mushrooms',
+                        },
+                        fluid_in: {
+                          fluid: 'kubejs:berry_juice',
+                          amount: 16000,
+                        },
+                        fluid_out: {
+                          fluid: 'kubejs:wine',
+                          amount: 4000,
+                        },
+                        item_out: {
+                          item: 'kubejs:tartaric_acid',
+                        },
+                        flags: 1,
+                        time: 6000,
+                      });
                     },
                     children: [
                       {
-                        id: 'wine',
+                        id: 'berry_juice',
                         recipe: () => {
-                          event.custom({
-                            type: 'charcoal_pit:barrel',
-                            item_in: {
-                              tag: 'forge:mushrooms',
-                            },
-                            fluid_in: {
-                              fluid: 'kubejs:berry_juice',
-                              amount: 16000,
-                            },
-                            fluid_out: {
-                              fluid: 'kubejs:wine',
-                              amount: 4000,
-                            },
-                            item_out: {
-                              item: 'kubejs:tartaric_acid',
-                            },
-                            flags: 1,
-                            time: 6000,
-                          });
+                          event.recipes.createCompacting(
+                            Fluid.of('kubejs:berry_juice', 50),
+                            '#forge:berries'
+                          );
                         },
-                        children: [
-                          {
-                            id: 'berry_juice',
-                            recipe: () => {
-                              event.recipes.createCompacting(
-                                Fluid.of('kubejs:berry_juice', 50),
-                                '#forge:berries'
-                              );
-                            },
-                          },
-                        ],
                       },
                     ],
                   },
