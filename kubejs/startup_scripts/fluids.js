@@ -41,21 +41,53 @@ onEvent('fluid.registry', event => {
   fluid('fiery_tears', 0xe84118);
 
   // Chapter 4
+
+  // Blaze Cake
   fluid('liquid_tau', 0xffca00);
-  fluid('crystallized_sap', 0xb994b7, true);
-  fluid('molten_iesnium', 0x9fd3dd);
-  fluid('polar_pigments', 0xd3e1eb);
-  fluid('verdant_variants', 0x394827);
-  fluid('sunset_shades', 0x9f392b);
-  fluid('twilight_tones', 0xad70a4);
   fluid('berry_juice', 0xb183b1);
   fluid('carbonate_slurry', 0x8b8378);
-  fluid('tar_slurry', 0x000000);
-  fluid('crimson_resin', 0xdc143c);
-  fluid('warped_resin', 0x008b8b);
   fluid('blaze_cake_batter', 0xff4019);
   fluid('wine', 0x4e032b);
 
+  // Chromatic Compound
+  fluid('tar_slurry', 0x1e272e);
+  fluid('pure_tar', 0x1e272e);
+  fluid('mysterious_adhesive', 0x1e272e);
+  fluid('crimson_resin', 0xdc143c);
+  fluid('warped_resin', 0x008b8b);
+  fluid('hellish_resin', 0x008b8b);
+
+  // Gunpowder
+  fluid('compost', 0x1e272e);
+
+  // Silica Dust
+  fluid('distilled_water', 0x1e272e);
+  fluid('polar_pigments', 0xd3e1eb);
+  fluid('blue_dye', 0x1e3799);
+  fluid('light_blue_dye', 0x82ccdd);
+  fluid('cyan_dye', 0x079992);
+  fluid('white_dye', 0xffffff);
+  fluid('verdant_variants', 0x394827);
+  fluid('green_dye', 0x009432);
+  fluid('lime_dye', 0xc4e538);
+  fluid('gray_dye', 0x485460);
+  fluid('black_dye', 0x1e272e);
+  fluid('sunset_shades', 0x9f392b);
+  fluid('red_dye', 0xc23616);
+  fluid('orange_dye', 0xffa801);
+  fluid('yellow_dye', 0xe1b12c);
+  fluid('brown_dye', 0x7c3f00);
+  fluid('twilight_tones', 0xad70a4);
+  fluid('purple_dye', 0x82589f);
+  fluid('magenta_dye', 0xb33771);
+  fluid('pink_dye', 0xfd7272);
+  fluid('light_gray_dye', 0xcad3c8);
+
+  fluid('molten_iesnium', 0x9fd3dd);
+
   // Chapter 5.1
   fluid('antibiotics', 0xa091b3, true);
+
+  // Chapter 5.2
+  fluid('crystallized_sap', 0xb994b7, true);
 });

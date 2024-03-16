@@ -24,6 +24,7 @@ onEvent('item.registry', event => {
     'brass',
     'mixed',
   ]);
+  items('chunks', ['potassium_nitrate']);
   items('pebble', ['turquoise', 'lunar', 'deadrock', 'mixed']);
   items('flakes', [
     'wheat',
@@ -66,6 +67,9 @@ onEvent('item.registry', event => {
   item('feed_mix');
   item('catalyst');
   item('inert_compound');
+  item('madder_root');
+  item('onion_skin');
+  item('juniper_bark');
 
   item('lost_page_everbright', 'Frigid Lost Page');
   item('lost_page_undergarden', 'Slimy Lost Page');
