@@ -8,7 +8,7 @@
   },
   "output": {
     "type": "ITEM",
-    "id": "coinsje:copper_coin",
+    "id": "kubejs:coin_copper",
     "amount": 24
   },
   "level": 0

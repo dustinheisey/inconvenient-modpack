@@ -105,7 +105,9 @@
         "bloodmagic:dungeons/keys",
         "bloodmagic:dungeons/demonite",
         "bloodmagic:dungeons/endless_realm",
-        "bloodmagic:utility/ore_processing"
+        "bloodmagic:utility/ore_processing",
+        "bloodmagic:altar/blood_altar",
+        "bloodmagic:altar/slates"
       ],
       "bookmarks": [],
       "completedManualQuests": []

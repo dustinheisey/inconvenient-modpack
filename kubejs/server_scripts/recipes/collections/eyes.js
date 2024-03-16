@@ -85,7 +85,7 @@ onEvent('recipes', event => {
         id: 'evil',
         key: {
           a: 'pneumaticcraft:ingot_iron_compressed',
-          b: 'coinsje:iron_coin',
+          b: 'kubejs:coin_iron',
           c: 'create:precision_mechanism',
         },
       },

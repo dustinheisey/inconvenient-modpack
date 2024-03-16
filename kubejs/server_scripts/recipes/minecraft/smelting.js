@@ -43,7 +43,6 @@ onEvent('recipes', event => {
       'butchercraft:cooked_pork_block_item',
       'butchercraft:cooked_lamb_block_item',
       '#forge:ingots',
-      '@coinsje',
       '#forge:gems',
       '#forge:nuggets',
       '#forge:glass',

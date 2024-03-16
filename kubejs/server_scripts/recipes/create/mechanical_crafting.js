@@ -765,7 +765,7 @@ onEvent('recipes', event => {
       },
       {
         global: true,
-        output: 'coinsje:copper_coin_pile',
+        output: 'kubejs:coin_tin',
         pattern: [
           '  aaaaa  ',
           ' aaaaaaa ',
@@ -778,12 +778,12 @@ onEvent('recipes', event => {
           '  aaaaa  ',
         ],
         key: {
-          a: `coinsje:copper_coin`,
+          a: `kubejs:coin_copper`,
         },
       },
       {
         global: true,
-        output: 'coinsje:iron_coin',
+        output: 'kubejs:coin_iron',
         pattern: [
           '  aaaaa  ',
           ' aaaaaaa ',
@@ -796,12 +796,12 @@ onEvent('recipes', event => {
           '  aaaaa  ',
         ],
         key: {
-          a: `coinsje:copper_coin_pile`,
+          a: `kubejs:coin_tin`,
         },
       },
       {
         global: true,
-        output: 'coinsje:iron_coin_pile',
+        output: 'kubejs:coin_lead',
         pattern: [
           '  aaaaa  ',
           ' aaaaaaa ',
@@ -814,7 +814,133 @@ onEvent('recipes', event => {
           '  aaaaa  ',
         ],
         key: {
-          a: `coinsje:iron_coin`,
+          a: `kubejs:coin_iron`,
+        },
+      },
+      {
+        global: true,
+        output: 'kubejs:coin_silver',
+        pattern: [
+          '  aaaaa  ',
+          ' aaaaaaa ',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          ' aaaaaaa ',
+          '  aaaaa  ',
+        ],
+        key: {
+          a: `kubejs:coin_lead`,
+        },
+      },
+      {
+        global: true,
+        output: 'kubejs:coin_zinc',
+        pattern: [
+          '  aaaaa  ',
+          ' aaaaaaa ',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          ' aaaaaaa ',
+          '  aaaaa  ',
+        ],
+        key: {
+          a: `kubejs:coin_silver`,
+        },
+      },
+      {
+        global: true,
+        output: 'kubejs:coin_aluminum',
+        pattern: [
+          '  aaaaa  ',
+          ' aaaaaaa ',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          ' aaaaaaa ',
+          '  aaaaa  ',
+        ],
+        key: {
+          a: `kubejs:coin_zinc`,
+        },
+      },
+      {
+        global: true,
+        output: 'kubejs:coin_gold',
+        pattern: [
+          '  aaaaa  ',
+          ' aaaaaaa ',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          ' aaaaaaa ',
+          '  aaaaa  ',
+        ],
+        key: {
+          a: `kubejs:coin_aluminum`,
+        },
+      },
+      {
+        global: true,
+        output: 'kubejs:coin_steel',
+        pattern: [
+          '  aaaaa  ',
+          ' aaaaaaa ',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          ' aaaaaaa ',
+          '  aaaaa  ',
+        ],
+        key: {
+          a: `kubejs:coin_gold`,
+        },
+      },
+      {
+        global: true,
+        output: 'kubejs:coin_nickel',
+        pattern: [
+          '  aaaaa  ',
+          ' aaaaaaa ',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          ' aaaaaaa ',
+          '  aaaaa  ',
+        ],
+        key: {
+          a: `kubejs:coin_steel`,
+        },
+      },
+      {
+        global: true,
+        output: 'kubejs:coin_platinum',
+        pattern: [
+          '  aaaaa  ',
+          ' aaaaaaa ',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          'aaaaaaaaa',
+          ' aaaaaaa ',
+          '  aaaaa  ',
+        ],
+        key: {
+          a: `kubejs:coin_nickel`,
         },
       },
     ]);

@@ -8,7 +8,6 @@ onEvent('recipes', event => {
       '#forge:gems',
       '#forge:dusts',
       '#forge:slimeballs',
-      '@coinsje',
       '#minecraft:coals',
       '#forge:glass',
       '#forge:gunpowder',

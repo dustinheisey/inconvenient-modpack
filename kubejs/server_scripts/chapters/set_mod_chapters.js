@@ -89,7 +89,6 @@ onEvent('tags.items', event => {
     'compactcrafting',
     'immersiveengineering',
     'pneumaticcraft',
-    'coinsje',
     'compressedcreativity',
     'immersivepetroleum',
   ]);

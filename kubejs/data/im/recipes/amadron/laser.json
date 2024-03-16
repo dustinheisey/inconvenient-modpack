@@ -3,7 +3,7 @@
   "static": true,
   "input": {
     "type": "ITEM",
-    "id": "coinsje:iron_coin",
+    "id": "kubejs:coin_iron",
     "amount": 1
   },
   "output": {

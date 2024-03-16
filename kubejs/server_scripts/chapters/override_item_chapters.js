@@ -3403,16 +3403,6 @@ onEvent('tags.items', event => {
       'paraglider:essence',
     ],
   });
-  overrideChapters('coinsje', {
-    chapter_7: [
-      'coinsje:netherite_coin_pile',
-      'coinsje:netherite_coin',
-      'coinsje:diamond_coin_pile',
-      'coinsje:diamond_coin',
-      'coinsje:gold_coin_pile',
-      'coinsje:gold_coin',
-    ],
-  });
   overrideChapters('occultism', {
     chapter_2: [
       'occultism:spirit_torch',
@@ -4403,7 +4393,6 @@ onEvent('tags.items', event => {
     ],
     chapter_4: [
       'kubejs:molten_iesnium_bucket',
-      'kubejs:crystallized_sap_bucket',
       'kubejs:flakes_soy',
       'kubejs:flakes_barley',
       'kubejs:flakes_rye',
@@ -4413,7 +4402,6 @@ onEvent('tags.items', event => {
       'kubejs:flakes_corn',
       'kubejs:flakes_wheat',
       'kubejs:token_nether',
-      'kubejs:token_blueleaf',
     ],
     chapter_5_1: [
       'kubejs:hide_stripped',
@@ -4422,11 +4410,28 @@ onEvent('tags.items', event => {
       'kubejs:pre_mix',
       'kubejs:token_bumblezone',
     ],
-    chapter_5_2: ['kubejs:catalyst'],
+    chapter_5_2: [
+      'kubejs:catalyst',
+      'kubejs:token_blueleaf',
+      'kubejs:crystallized_sap_bucket',
+      'kubejs:coin_copper',
+      'kubejs:coin_tin',
+      'kubejs:coin_iron',
+      'kubejs:coin_lead',
+      'kubejs:coin_silver',
+      'kubejs:coin_zinc',
+    ],
     chapter_7_1: [
       'kubejs:token_end',
       'kubejs:token_restoration',
       'kubejs:token_earth',
+    ],
+    chapter_7_2: [
+      'kubejs:coin_aluminum',
+      'kubejs:coin_gold',
+      'kubejs:coin_steel',
+      'kubejs:coin_nickel',
+      'kubejs:coin_platinum',
     ],
   });
   overrideChapters('undergarden', {

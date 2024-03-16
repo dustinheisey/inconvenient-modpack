@@ -162,7 +162,7 @@ onEvent('server.datapack.high_priority', event => {
                                                           {
                                                             id: 'prophecy',
                                                             parent: 'hunger',
-                                                            item: 'coinsje:iron_coin_pile',
+                                                            item: 'kubejs:coin_iron',
                                                             title: 'Wealth',
                                                             description:
                                                               'Create an amadron tablet',
@@ -189,7 +189,7 @@ onEvent('server.datapack.high_priority', event => {
                                                                           {
                                                                             items:
                                                                               [
-                                                                                'coinsje:iron_coin_pile',
+                                                                                'kubejs:coin_iron',
                                                                               ],
                                                                           },
                                                                         ],
@@ -449,7 +449,7 @@ onEvent('server.datapack.high_priority', event => {
                     {
                       items: [
                         'delightful:deluxe_cheeseburger',
-                        'coinsje:iron_coin_pile',
+                        'kubejs:coin_iron',
                       ],
                     },
                   ],
