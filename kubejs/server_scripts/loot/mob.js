@@ -299,5 +299,11 @@ onEvent('lootjs', event => {
 
   event
     .addEntityLootModifier('cataclysm:ignis')
-    .addLoot('24x cataclysm:ignitium_ingot');
+    .addLoot('24x cataclysm:ignitium_ingot')
+    .addLoot('biomancy:elastic_fibers');
+
+  event
+    .addEntityLootModifier('cataclysm:netherite_monstrosity')
+    .addLoot('12x minecraft:netherite_scrap')
+    .addLoot('biomancy:tough_fibers');
 });
