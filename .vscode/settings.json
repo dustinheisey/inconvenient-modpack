@@ -27,7 +27,7 @@
         "kubejs/assets/ponderjs_generated": true,
         "logs/*.log.gz": true,
 
-        ".gitignore": true,
+        ".gitignore": false,
         "package.json": false,
         "crash-reports": true,
         "resourcepacks": true,
