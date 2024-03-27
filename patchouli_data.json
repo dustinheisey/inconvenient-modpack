@@ -2,6 +2,73 @@
   "bookGuiScale": 0,
   "clickedVisualize": false,
   "bookData": {
+    "caupona:book": {
+      "viewedEntries": [
+        "caupona:intro/chimney",
+        "caupona:resting/aspics",
+        "caupona:resting/oil",
+        "caupona:intro/integration",
+        "caupona:intro/hypocaust",
+        "caupona:intro/kitchen_materials",
+        "caupona:intro/base",
+        "caupona:intro/soup"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
+    "botania:lexicon": {
+      "viewedEntries": [
+        "botania:generating_flowers/gourmaryllis",
+        "botania:functional_flowers/pollidisiac",
+        "botania:functional_flowers/spectranthemum",
+        "mythicbotany:alfheim/alfheim_resources",
+        "mythicbotany:alfheim/alfheim_landscape",
+        "mythicbotany:alfheim/andwari",
+        "botania:basics/black_lotus"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
+    "bloodmagic:guide": {
+      "viewedEntries": [
+        "bloodmagic:rituals/ritual_list/ritual_simple_dungeon",
+        "bloodmagic:rituals/ritual_stones",
+        "bloodmagic:dungeons/tau_fruit",
+        "bloodmagic:dungeons/lobby",
+        "bloodmagic:dungeons/keys",
+        "bloodmagic:dungeons/demonite",
+        "bloodmagic:dungeons/endless_realm",
+        "bloodmagic:utility/ore_processing",
+        "bloodmagic:altar/blood_altar",
+        "bloodmagic:altar/slates",
+        "bloodmagic:rituals/ritual_list/ritual_standard_dungeon",
+        "bloodmagic:utility/nyi",
+        "bloodmagic:demon_will/will_manipulation/crystallized_will",
+        "bloodmagic:demon_will/will_manipulation/demon_will",
+        "bloodmagic:demon_will/will_manipulation/soul_snare",
+        "bloodmagic:demon_will/will_manipulation/aspected_will",
+        "bloodmagic:demon_will/will_manipulation/aura",
+        "bloodmagic:rituals/ritual_list/ritual_crystal_harvest"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
+    "patchouli:employee_handbook": {
+      "viewedEntries": [
+        "patchouli:family/persona",
+        "patchouli:family/corporate_speak",
+        "patchouli:family/hierarchy",
+        "patchouli:family/ladder_climbing",
+        "patchouli:family/hr",
+        "patchouli:family/fun",
+        "patchouli:family/vision",
+        "patchouli:family/looking_busy",
+        "patchouli:family/benefits",
+        "patchouli:family/welcome"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
     "tofucraft:tofu_book": {
       "viewedEntries": [
         "tofucraft:first_step/compat",
@@ -64,6 +131,16 @@
       "bookmarks": [],
       "completedManualQuests": []
     },
+    "productivebees:guide": {
+      "viewedEntries": [
+        "productivebees:genetics/collecting",
+        "productivebees:genetics/attributes",
+        "productivebees:genetics/transferring",
+        "productivebees:guide/start"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
     "patchouli:restoration_manifest": {
       "viewedEntries": [
         "patchouli:colds/cryptic",
@@ -78,52 +155,6 @@
         "patchouli:bestiary/oceans",
         "patchouli:bestiary/savannahs",
         "patchouli:bestiary/wetlands"
-      ],
-      "bookmarks": [],
-      "completedManualQuests": []
-    },
-    "caupona:book": {
-      "viewedEntries": [
-        "caupona:intro/chimney",
-        "caupona:resting/aspics",
-        "caupona:resting/oil",
-        "caupona:intro/integration",
-        "caupona:intro/hypocaust",
-        "caupona:intro/kitchen_materials",
-        "caupona:intro/base",
-        "caupona:intro/soup"
-      ],
-      "bookmarks": [],
-      "completedManualQuests": []
-    },
-    "bloodmagic:guide": {
-      "viewedEntries": [
-        "bloodmagic:rituals/ritual_list/ritual_simple_dungeon",
-        "bloodmagic:rituals/ritual_stones",
-        "bloodmagic:dungeons/tau_fruit",
-        "bloodmagic:dungeons/lobby",
-        "bloodmagic:dungeons/keys",
-        "bloodmagic:dungeons/demonite",
-        "bloodmagic:dungeons/endless_realm",
-        "bloodmagic:utility/ore_processing",
-        "bloodmagic:altar/blood_altar",
-        "bloodmagic:altar/slates"
-      ],
-      "bookmarks": [],
-      "completedManualQuests": []
-    },
-    "patchouli:employee_handbook": {
-      "viewedEntries": [
-        "patchouli:family/persona",
-        "patchouli:family/corporate_speak",
-        "patchouli:family/hierarchy",
-        "patchouli:family/ladder_climbing",
-        "patchouli:family/hr",
-        "patchouli:family/fun",
-        "patchouli:family/vision",
-        "patchouli:family/looking_busy",
-        "patchouli:family/benefits",
-        "patchouli:family/welcome"
       ],
       "bookmarks": [],
       "completedManualQuests": []
@@ -227,6 +258,27 @@
         "patchouli:journal_entries/sacrifice",
         "patchouli:journal_entries/ocean",
         "patchouli:nightmares/nether"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
+    "croptopia:guide": {
+      "viewedEntries": [
+        "croptopia:crops/crops",
+        "croptopia:crops/trees"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
+    "industrialforegoing:industrial_foregoing": {
+      "viewedEntries": [
+        "industrialforegoing:generators/mycelial_reactor",
+        "industrialforegoing:generators/biofuel_generator",
+        "industrialforegoing:misc/stasis_chamber",
+        "industrialforegoing:agr_hus/mob_slaughter_factory",
+        "industrialforegoing:agr_hus/pink_slime",
+        "industrialforegoing:agr_hus/meat",
+        "industrialforegoing:basics/dissolution_chamber"
       ],
       "bookmarks": [],
       "completedManualQuests": []

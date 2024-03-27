@@ -12,4 +12,5 @@ minecraftinstance.json
 xaerominimap_entities.json
 /config/jei/world/**/*
 /node_modules
+/docs/mods_src/
 package-lock.json

@@ -1,13 +1,13 @@
 
 [recipes]
 	#Determines if the BioForge recipes need to be unlocked to be able to craft them
-	doBioForgeRecipeProgression = true
+	doBioForgeRecipeProgression = false
 
 [trades]
 	#Determines if villagers will sell biomancy items
-	addTradesToVillagers = true
+	addTradesToVillagers = false
 	#Determines if wandering traders will sell biomancy items
-	addTradesToWanderingTrader = true
+	addTradesToWanderingTrader = false
 
 [flesh-growth]
 	#Determines how much primal energy the Cradle can supply to nearby malignant flesh veins
