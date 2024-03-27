@@ -2,12 +2,12 @@ onEvent('recipes', event => {
   new recipes(event)
     .setFunction(config => {
       event.shaped(
-        `kubejs:lost_story_${config.dimension}`,
+        `kubejs:${config.dimension}_lost_story`,
         ['abb', 'bcc', 'bcc'],
         {
           a: 'paragon_textiles:silk',
           b: 'minecraft:leather',
-          c: `kubejs:lost_page_${config.dimension}`,
+          c: `kubejs:${config.dimension}_lost_page`,
         }
       );
     })
@@ -45,7 +45,7 @@ onEvent('item.right_click', event => {
     'nether',
     'blueleaf',
   ].forEach(dimension => {
-    if (event.item.id == `kubejs:lost_story_${dimension}`) {
+    if (event.item.id == `kubejs:${dimension}_lost_story`) {
       event.item.count--;
       event.cancel();
     }

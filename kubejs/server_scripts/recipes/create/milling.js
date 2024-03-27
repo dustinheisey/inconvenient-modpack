@@ -286,7 +286,7 @@ onEvent('recipes', event => {
       },
       {
         input: 'twilightforest:fiery_ingot',
-        output: 'kubejs:dust_fiery',
+        output: 'kubejs:fiery_dust',
       },
     ]);
 });

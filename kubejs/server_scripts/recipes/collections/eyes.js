@@ -52,7 +52,7 @@ onEvent('recipes', event => {
         id: 'lost',
         key: {
           a: 'create:andesite_alloy',
-          b: 'kubejs:dust_cinder',
+          b: 'kubejs:cinder_dust',
           c: 'twilightforest:carminite',
         },
       },
@@ -85,7 +85,7 @@ onEvent('recipes', event => {
         id: 'evil',
         key: {
           a: 'pneumaticcraft:ingot_iron_compressed',
-          b: 'kubejs:coin_iron',
+          b: 'kubejs:iron_coin',
           c: 'create:precision_mechanism',
         },
       },

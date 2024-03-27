@@ -190,7 +190,7 @@ onEvent('lootjs', event => {
   addChestLoot('blue_skies:everbright', [
     {
       rarity: 0.2,
-      id: 'kubejs:lost_page_everbright',
+      id: 'kubejs:everbright_lost_page',
     },
     {rarity: 0.3, id: 'brewinandchewin:salty_folly'},
   ]);
@@ -198,42 +198,42 @@ onEvent('lootjs', event => {
   addChestLoot('undergarden:undergarden', [
     {
       rarity: 0.2,
-      id: 'kubejs:lost_page_undergarden',
+      id: 'kubejs:undergarden_lost_page',
     },
   ]);
 
   addChestLoot('blue_skies:everdawn', [
     {
       rarity: 0.2,
-      id: 'kubejs:lost_page_everdawn',
+      id: 'kubejs:everdawn_lost_page',
     },
   ]);
 
   addChestLoot('twilightforest:twilight_forest', [
     {
       rarity: 0.2,
-      id: 'kubejs:lost_page_twilight',
+      id: 'kubejs:twilight_lost_page',
     },
   ]);
 
   addChestLoot('minecraft:nether', [
     {
       rarity: 0.2,
-      id: 'kubejs:lost_page_nether',
+      id: 'kubejs:nether_lost_page',
     },
   ]);
 
   addChestLoot('hem:blueleaf', [
     {
       rarity: 0.2,
-      id: 'kubejs:lost_page_blueleaf',
+      id: 'kubejs:blueleaf_lost_page',
     },
   ]);
 
   addChestLoot('the_bumblezone:the_bumblezone', [
     {
       rarity: 0.2,
-      id: 'kubejs:lost_page_bumblezone',
+      id: 'kubejs:bumblezone_lost_page',
     },
   ]);
 

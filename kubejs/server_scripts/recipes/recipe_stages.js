@@ -290,13 +290,13 @@ onEvent('recipes', event => {
     },
   ]);
 
-  stageRecipes('chapter_7_2', [
-    {
-      input: '@biomancy',
-      or: [
-        {type: 'minecraft:crafting_shaped'},
-        {type: 'minecraft:crafting_shapeless'},
-      ],
-    },
-  ]);
+  // stageRecipes('chapter_7_2', [
+  //   {
+  //     input: '@biomancy',
+  //     or: [
+  //       {type: 'minecraft:crafting_shaped'},
+  //       {type: 'minecraft:crafting_shapeless'},
+  //     ],
+  //   },
+  // ]);
 });

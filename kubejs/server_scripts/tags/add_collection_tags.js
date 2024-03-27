@@ -173,25 +173,25 @@ onEvent('tags.items', event => {
   });
 
   addCollection('lost_stories', {
-    chapter_2: ['kubejs:lost_story_everbright'],
+    chapter_2: ['kubejs:everbright_lost_story'],
     chapter_3: [
-      'kubejs:lost_story_undergarden',
-      'kubejs:lost_story_everdawn',
-      'kubejs:lost_story_twilight',
+      'kubejs:undergarden_lost_story',
+      'kubejs:everdawn_lost_story',
+      'kubejs:twilight_lost_story',
     ],
-    chapter_4: ['kubejs:lost_story_nether', 'kubejs:lost_story_blueleaf'],
-    chapter_5_1: ['kubejs:lost_story_bumblezone'],
+    chapter_4: ['kubejs:nether_lost_story', 'kubejs:blueleaf_lost_story'],
+    chapter_5_1: ['kubejs:bumblezone_lost_story'],
   });
 
   addCollection('lost_pages', {
-    chapter_2: ['kubejs:lost_page_everbright'],
+    chapter_2: ['kubejs:everbright_lost_page'],
     chapter_3: [
-      'kubejs:lost_page_undergarden',
-      'kubejs:lost_page_everdawn',
-      'kubejs:lost_page_twilight',
+      'kubejs:undergarden_lost_page',
+      'kubejs:everdawn_lost_page',
+      'kubejs:twilight_lost_page',
     ],
-    chapter_4: ['kubejs:lost_page_nether', 'kubejs:lost_page_blueleaf'],
-    chapter_5_1: ['kubejs:lost_page_bumblezone'],
+    chapter_4: ['kubejs:nether_lost_page', 'kubejs:blueleaf_lost_page'],
+    chapter_5_1: ['kubejs:bumblezone_lost_page'],
   });
 
   addCollection('relics', {

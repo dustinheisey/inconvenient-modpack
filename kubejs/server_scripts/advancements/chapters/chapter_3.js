@@ -384,17 +384,17 @@ onEvent('server.datapack.high_priority', event => {
                                                                       'Dark Truth',
                                                                     description:
                                                                       'Find a page from a lost story in the Twilight Forest',
-                                                                    item: 'kubejs:lost_page_twilight',
+                                                                    item: 'kubejs:twilight_lost_page',
                                                                     children: [
                                                                       {
                                                                         title:
                                                                           'The Rise of a Dictator',
-                                                                        id: 'lost_story_twilight',
+                                                                        id: 'twilight_lost_story',
                                                                         frame:
                                                                           'challenge',
                                                                         description:
                                                                           'Remake the lost story from the Twilight Forest',
-                                                                        item: 'kubejs:lost_story_twilight',
+                                                                        item: 'kubejs:twilight_lost_story',
                                                                       },
                                                                     ],
                                                                   },
@@ -494,7 +494,7 @@ onEvent('server.datapack.high_priority', event => {
                                                                       'Forge a fiery ingot',
                                                                     children: [
                                                                       {
-                                                                        item: 'kubejs:dust_cinder',
+                                                                        item: 'kubejs:cinder_dust',
                                                                         title:
                                                                           "Inferno's Promise",
                                                                         frame:
@@ -527,7 +527,7 @@ onEvent('server.datapack.high_priority', event => {
                                                                                               {
                                                                                                 items:
                                                                                                   [
-                                                                                                    'kubejs:dust_cinder',
+                                                                                                    'kubejs:cinder_dust',
                                                                                                   ],
                                                                                               },
                                                                                             ],
@@ -617,16 +617,16 @@ onEvent('server.datapack.high_priority', event => {
                                                         title: 'Chaotic Truth',
                                                         description:
                                                           'Find a page from a lost story in the Everdawn',
-                                                        item: 'kubejs:lost_page_everdawn',
+                                                        item: 'kubejs:everdawn_lost_page',
                                                         children: [
                                                           {
                                                             title:
                                                               'Climate Chaose',
-                                                            id: 'lost_story_everdawn',
+                                                            id: 'everdawn_lost_story',
                                                             frame: 'challenge',
                                                             description:
                                                               'Remake the lost story from the Everdawn',
-                                                            item: 'kubejs:lost_story_everdawn',
+                                                            item: 'kubejs:everdawn_lost_story',
                                                           },
                                                         ],
                                                       },
@@ -653,15 +653,15 @@ onEvent('server.datapack.high_priority', event => {
                             title: 'Lost Truth',
                             description:
                               'Find a page from a lost story in the Undergarden',
-                            item: 'kubejs:lost_page_undergarden',
+                            item: 'kubejs:undergarden_lost_page',
                             children: [
                               {
                                 title: 'A Virus',
-                                id: 'lost_story_undergarden',
+                                id: 'undergarden_lost_story',
                                 frame: 'challenge',
                                 description:
                                   'Remake the lost story from the Undergarden',
-                                item: 'kubejs:lost_story_undergarden',
+                                item: 'kubejs:undergarden_lost_story',
                               },
                             ],
                           },

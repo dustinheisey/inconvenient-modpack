@@ -233,19 +233,19 @@ onEvent('server.datapack.high_priority', event => {
                                             reward: 'im:dimensions/bumblezone',
                                             children: [
                                               {
-                                                title: 'Burnt Truth',
+                                                title: 'Buzzing Truth',
                                                 parent: 'bee_nest',
                                                 description:
                                                   'Find a page from a lost story in the Bumblezone',
-                                                item: 'kubejs:lost_page_bumblezone',
+                                                item: 'kubejs:bumblezone_lost_page',
                                                 children: [
                                                   {
                                                     title: 'The Last Flower',
-                                                    id: 'lost_story_bumblezone',
+                                                    id: 'bumblezone_lost_story',
                                                     frame: 'challenge',
                                                     description:
                                                       'Remake the lost story from the Bumblezone',
-                                                    item: 'kubejs:lost_story_bumblezone',
+                                                    item: 'kubejs:bumblezone_lost_story',
                                                   },
                                                 ],
                                               },

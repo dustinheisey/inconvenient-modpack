@@ -252,7 +252,7 @@ onEvent('recipes', event => {
     ])
     .add([
       {
-        output: 'kubejs:hide_stitched',
+        output: 'kubejs:stitched_hide',
         pattern: [' a ', 'aaa', ' a '],
         key: {a: 'minecraft:rotten_flesh'},
       },

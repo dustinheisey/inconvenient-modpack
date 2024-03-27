@@ -4,7 +4,7 @@ onEvent('server.datapack.high_priority', event => {
     item: 'endrem:lost_eye',
     title: 'Chapter 4: Inconvenient Truths',
     description: 'Understand what happened',
-    background: 'chipped:textures/block/nether_bricks/nether_bricks_9.png',
+    background: 'im:textures/block/polished_nether_bricks.png',
     children: [
       {
         item: 'create:mechanical_press',
@@ -118,7 +118,7 @@ onEvent('server.datapack.high_priority', event => {
                         description: 'Make your first piece of bread',
                         children: [
                           {
-                            item: 'kubejs:dust_calcium_carbonate',
+                            item: 'kubejs:calcium_carbonate_dust',
                             title: 'Bread',
                             description: 'Make your first piece of bread',
                             children: [
@@ -283,15 +283,15 @@ onEvent('server.datapack.high_priority', event => {
                                                     title: 'Burning Truth',
                                                     description:
                                                       'Find a page from a lost story in the Nether',
-                                                    item: 'kubejs:lost_page_nether',
+                                                    item: 'kubejs:nether_lost_page',
                                                     children: [
                                                       {
                                                         title: 'A Dire Warning',
-                                                        id: 'lost_story_nether',
+                                                        id: 'nether_lost_story',
                                                         frame: 'challenge',
                                                         description:
                                                           'Remake the lost story from the Nether',
-                                                        item: 'kubejs:lost_story_nether',
+                                                        item: 'kubejs:nether_lost_story',
                                                       },
                                                     ],
                                                   },
@@ -322,7 +322,7 @@ onEvent('server.datapack.high_priority', event => {
                                                                   'Collect a tainted gold ingot from a crimson altar',
                                                                 children: [
                                                                   {
-                                                                    item: 'kubejs:dust_mixed',
+                                                                    item: 'kubejs:mixed_dust',
                                                                     title:
                                                                       'Tainted Gold',
                                                                     description:
@@ -429,7 +429,7 @@ onEvent('server.datapack.high_priority', event => {
                                                               'Collect a tainted gold ingot from a crimson altar',
                                                             children: [
                                                               {
-                                                                item: 'kubejs:dust_witherite',
+                                                                item: 'kubejs:witherite_dust',
                                                                 title:
                                                                   'Tainted Gold',
                                                                 description:
@@ -625,28 +625,13 @@ onEvent('server.datapack.high_priority', event => {
                                                     ],
                                                   },
                                                   {
-                                                    item: 'minecraft:warped_fungus',
-                                                    title: 'Tainted Gold',
-                                                    description:
-                                                      'Collect a tainted gold ingot from a crimson altar',
-                                                    children: [
-                                                      {
-                                                        item: 'kubejs:warped_resin_bucket',
-                                                        title: 'Tainted Gold',
-                                                        description:
-                                                          'Collect a tainted gold ingot from a crimson altar',
-                                                        children: [],
-                                                      },
-                                                    ],
-                                                  },
-                                                  {
                                                     item: 'rankine:sulfur',
                                                     title: 'Tainted Gold',
                                                     description:
                                                       'Collect a tainted gold ingot from a crimson altar',
                                                     children: [
                                                       {
-                                                        item: 'chemlib:sulfur_dust',
+                                                        item: 'vintageimprovements:sulfuric_acid_bucket',
                                                         title: 'Tainted Gold',
                                                         description:
                                                           'Collect a tainted gold ingot from a crimson altar',

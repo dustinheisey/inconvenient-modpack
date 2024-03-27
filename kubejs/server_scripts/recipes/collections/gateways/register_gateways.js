@@ -285,7 +285,7 @@ onEvent('server.datapack.high_priority', event => {
       {id: 'minecraft:pufferfish', count: 15},
       {id: 'blue_skies:municipal_monkfish', count: 15},
       {id: 'rankine:tuna', count: 15},
-      {id: 'kubejs:token_everbright', count: 1},
+      {id: 'kubejs:everbright_token', count: 1},
     ],
   });
 
@@ -340,7 +340,7 @@ onEvent('server.datapack.high_priority', event => {
       'artifacts:night_vision_goggles',
       'artifacts:kitty_slippers',
     ],
-    rewards: [{id: 'kubejs:token_undergarden', count: 1}],
+    rewards: [{id: 'kubejs:undergarden_token', count: 1}],
   });
 
   // Everdawn
@@ -390,7 +390,7 @@ onEvent('server.datapack.high_priority', event => {
       'artifacts:panic_necklace',
       'artifacts:power_glove',
     ],
-    rewards: [{id: 'kubejs:token_everdawn', count: 1}],
+    rewards: [{id: 'kubejs:everdawn_token', count: 1}],
   });
 
   // Twilight
@@ -513,7 +513,7 @@ onEvent('server.datapack.high_priority', event => {
       'artifacts:crystal_heart',
     ],
 
-    rewards: [{id: 'kubejs:token_twilight', count: 1}],
+    rewards: [{id: 'kubejs:twilight_token', count: 1}],
   });
 
   // Nether
@@ -576,7 +576,7 @@ onEvent('server.datapack.high_priority', event => {
       'artifacts:flame_pendant',
       'artifacts:obsidian_skull',
     ],
-    rewards: [{id: 'kubejs:token_nether', count: 1}],
+    rewards: [{id: 'kubejs:nether_token', count: 1}],
   });
 
   // Blueleaf
@@ -639,7 +639,7 @@ onEvent('server.datapack.high_priority', event => {
       'artifacts:villager_hat',
       'artifacts:novelty_drinking_hat',
     ],
-    rewards: [{id: 'kubejs:token_blueleaf', count: 1}],
+    rewards: [{id: 'kubejs:blueleaf_token', count: 1}],
   });
 
   // Bumblezone
@@ -662,7 +662,7 @@ onEvent('server.datapack.high_priority', event => {
       'artifacts:bunny_hoppers',
       'artifacts:whoopee_cushion',
     ],
-    rewards: [{id: 'kubejs:token_bumblezone', count: 1}],
+    rewards: [{id: 'kubejs:bumblezone_token', count: 1}],
   });
 
   // End
@@ -687,6 +687,6 @@ onEvent('server.datapack.high_priority', event => {
       'relics:spatial_sign',
       'artifacts:shock_pendant',
     ],
-    rewards: [{id: 'kubejs:token_end', count: 1}],
+    rewards: [{id: 'kubejs:end_token', count: 1}],
   });
 });

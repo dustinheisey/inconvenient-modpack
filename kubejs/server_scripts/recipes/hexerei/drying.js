@@ -22,11 +22,11 @@ onEvent('recipes', event => {
         drying_time: 1200,
       },
       {
-        input: 'kubejs:hide_salted',
-        output: 'kubejs:hide_dried',
+        input: 'kubejs:salted_hide',
+        output: 'kubejs:dried_hide',
       },
       {
-        input: 'kubejs:hide_wet_tanned',
+        input: 'kubejs:wet_tanned_hide',
         output: 'minecraft:leather',
       },
       {

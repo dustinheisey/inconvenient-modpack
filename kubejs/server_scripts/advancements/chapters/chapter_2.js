@@ -416,16 +416,16 @@ onEvent('server.datapack.high_priority', event => {
                                                         description:
                                                           'Find a page from a lost story in Everbright',
                                                         parent: 'everbright',
-                                                        item: 'kubejs:lost_page_everbright',
+                                                        item: 'kubejs:everbright_lost_page',
                                                         children: [
                                                           {
                                                             title:
                                                               "A Grandmother's Story",
-                                                            id: 'lost_story_everbright',
+                                                            id: 'everbright_lost_story',
                                                             frame: 'challenge',
                                                             description:
                                                               'Remake the lost story from Everbright',
-                                                            item: 'kubejs:lost_story_everbright',
+                                                            item: 'kubejs:everbright_lost_story',
                                                           },
                                                         ],
                                                       },
