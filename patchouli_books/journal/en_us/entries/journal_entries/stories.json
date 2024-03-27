@@ -1,6 +1,6 @@
 {
   "name": "Stories",
-  "icon": "kubejs:lost_story_twilight",
+  "icon": "kubejs:twilight_lost_story",
   "category": "patchouli:entries",
   "secret": true,
   "sortnum": 11,

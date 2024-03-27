@@ -1,6 +1,6 @@
 {
   "name": "Hunger",
-  "icon": "kubejs:coin_copper",
+  "icon": "kubejs:copper_coin",
   "category": "patchouli:entries",
   "secret": true,
   "sortnum": 22,

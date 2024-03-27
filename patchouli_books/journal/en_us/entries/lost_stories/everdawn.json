@@ -4,7 +4,7 @@
   "category": "patchouli:lost_stories",
   "sortnum": 2,
   "secret": true,
-  "advancement": "im:chapter_3/lost_story_everdawn",
+  "advancement": "im:chapter_3/everdawn_lost_story",
   "pages": [
     {
       "type": "patchouli:text",

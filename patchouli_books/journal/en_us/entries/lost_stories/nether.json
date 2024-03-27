@@ -4,7 +4,7 @@
   "category": "patchouli:lost_stories",
   "sortnum": 4,
   "secret": true,
-  "advancement": "im:chapter_4/lost_story_nether",
+  "advancement": "im:chapter_4/nether_lost_story",
   "pages": [
     {
       "type": "patchouli:text",

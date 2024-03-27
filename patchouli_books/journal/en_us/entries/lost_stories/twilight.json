@@ -4,7 +4,7 @@
   "category": "patchouli:lost_stories",
   "sortnum": 3,
   "secret": true,
-  "advancement": "im:chapter_3/lost_story_twilight",
+  "advancement": "im:chapter_3/twilight_lost_story",
   "pages": [
     {
       "type": "patchouli:text",

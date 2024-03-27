@@ -4,7 +4,7 @@
   "category": "patchouli:lost_stories",
   "sortnum": 5,
   "secret": true,
-  "advancement": "im:chapter_4/lost_story_blueleaf",
+  "advancement": "im:chapter_4/blueleaf_lost_story",
   "pages": [
     {
       "type": "patchouli:text",

@@ -4,7 +4,7 @@
   "category": "patchouli:lost_stories",
   "sortnum": 6,
   "secret": true,
-  "advancement": "im:chapter_5_1/lost_story_bumblezone",
+  "advancement": "im:chapter_5_1/bumblezone_lost_story",
   "pages": [
     {
       "type": "patchouli:text",
